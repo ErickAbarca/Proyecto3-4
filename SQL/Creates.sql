@@ -1,5 +1,3 @@
--- Creación de tablas principales
-
 CREATE TABLE TipoCuentaMaestra (
     id INT PRIMARY KEY IDENTITY(1,1),
     nombre_tipo_tcm VARCHAR(16) NOT NULL
@@ -131,4 +129,17 @@ CREATE TABLE EstadoCuenta (
     intereses_moratorios DECIMAL(18,2) NOT NULL,
     FOREIGN KEY (id_tcm) REFERENCES CuentaTarjetaMaestra(id)
 );
+
+CREATE TABLE [dbo].[DBErrors](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[UserName] [varchar](128) NULL,
+	[Number] [int] NULL,
+	[State] [int] NULL,
+	[Severity] [int] NULL,
+	[Line] [int] NULL,
+	[Procedure] [varchar](64) NULL,
+	[Message] [varchar](128) NULL,
+	[DateTime] [datetime] NULL
+);
+
 
