@@ -10,14 +10,13 @@ conn = pyodbc.connect(
 )
 
 
-# Leer el archivo XML y convertirlo a UTF-16
+# Leer el archivo XML
 with open('SQL\Datos.xml', 'r', encoding='utf-8') as file:
     xml_data = file.read()
 
-
 # Crear el cursor y ejecutar el procedimiento almacenado
 cursor = conn.cursor()
-cursor.execute("EXEC CargarDatosDesdeXML ?", xml_data)  # Pasar xml_data como texto (str)
+cursor.execute("EXEC CargarDatosDesdeXML ?", xml_data)
 
 # Confirmar los cambios
 conn.commit()
