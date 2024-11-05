@@ -8,11 +8,11 @@ BEGIN
         INSERT INTO dbo.Tarjetahabiente (nombre, id_tipo_documento, documento_identidad, nombre_usuario, password)
         SELECT 
             NTH.value('@Nombre', 'VARCHAR(128)') AS nombre,
-            1 AS id_tipo_documento,  -- Se asume un tipo de documento válido por defecto
+            1 AS id_tipo_documento,  -- Valor predeterminado para el tipo de documento
             NTH.value('@ValorDocIdentidad', 'VARCHAR(32)') AS documento_identidad,
             NTH.value('@NombreUsuario', 'VARCHAR(64)') AS nombre_usuario,
             HASHBYTES('SHA2_256', NTH.value('@Password', 'VARCHAR(128)')) AS password
-        FROM @xmlData.nodes('/root/fechaOperacion/NTH/NTH') AS Temp(NTH);
+        FROM @xmlData.nodes('/root/fechaOperacion/NTH/NTH') AS T(NTH);
 
         -- Insertar en la tabla CuentaTarjetaMaestra
         INSERT INTO dbo.CuentaTarjetaMaestra (codigo_tcm, tipo_tcm, limite_credito, saldo_actual, id_th, fecha_creacion)
@@ -24,10 +24,10 @@ BEGIN
                 WHEN 'Platino' THEN 3
                 ELSE NULL END AS tipo_tcm,
             NTCM.value('@LimiteCredito', 'DECIMAL(18,2)') AS limite_credito,
-            0 AS saldo_actual,
+            0 AS saldo_actual,  -- Saldo inicial en cero
             th.id AS id_th,
             GETDATE() AS fecha_creacion
-        FROM @xmlData.nodes('/root/fechaOperacion/NTCM/NTCM') AS Temp(NTCM)
+        FROM @xmlData.nodes('/root/fechaOperacion/NTCM/NTCM') AS T(NTCM)
         JOIN Tarjetahabiente th ON th.documento_identidad = NTCM.value('@TH', 'VARCHAR(32)');
 
         -- Insertar en la tabla CuentaTarjetaAdicional
@@ -36,7 +36,7 @@ BEGIN
             NTCA.value('@CodigoTCA', 'VARCHAR(32)') AS codigo_tca,
             ctm.id AS id_tcm,
             th.id AS id_th
-        FROM @xmlData.nodes('/root/fechaOperacion/NTCA/NTCA') AS Temp(NTCA)
+        FROM @xmlData.nodes('/root/fechaOperacion/NTCA/NTCA') AS T(NTCA)
         JOIN CuentaTarjetaMaestra ctm ON ctm.codigo_tcm = NTCA.value('@CodigoTCM', 'VARCHAR(32)')
         JOIN Tarjetahabiente th ON th.documento_identidad = NTCA.value('@TH', 'VARCHAR(32)');
 
@@ -49,7 +49,7 @@ BEGIN
             ctm.id AS id_tcm,
             NULLIF(cta.id, 0) AS id_tca,
             'Activa' AS estado
-        FROM @xmlData.nodes('/root/fechaOperacion/NTF/NTF') AS Temp(NTF)
+        FROM @xmlData.nodes('/root/fechaOperacion/NTF/NTF') AS T(NTF)
         LEFT JOIN CuentaTarjetaMaestra ctm ON ctm.codigo_tcm = NTF.value('@TCAsociada', 'VARCHAR(32)')
         LEFT JOIN CuentaTarjetaAdicional cta ON cta.codigo_tca = NTF.value('@TCAsociada', 'VARCHAR(32)');
 
@@ -58,7 +58,7 @@ BEGIN
         SELECT 
             tf.id AS id_tf,
             CONVERT(DATETIME, M.value('@FechaMovimiento', 'VARCHAR(10)'), 120) AS fecha_movimiento,
-            1 AS tipo_movimiento,  -- Ajuste según el tipo específico
+            1 AS tipo_movimiento,  -- Ajuste según el tipo de movimiento específico
             M.value('@Monto', 'DECIMAL(18,2)') AS monto,
             M.value('@Descripcion', 'VARCHAR(256)') AS descripcion,
             M.value('@Referencia', 'VARCHAR(64)') AS referencia
@@ -69,8 +69,10 @@ BEGIN
         COMMIT TRANSACTION;
     END TRY
     BEGIN CATCH
+        -- Deshacer la transacción en caso de error
         ROLLBACK TRANSACTION;
-        -- Manejar el error y registrar en DBErrors
+
+        -- Registrar el error en la tabla DBErrors
         INSERT INTO dbo.DBErrors (UserName, Number, State, Severity, Line, [Procedure], Message, DateTime)
         VALUES (
             SYSTEM_USER,

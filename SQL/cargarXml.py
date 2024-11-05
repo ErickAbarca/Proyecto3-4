@@ -16,7 +16,7 @@ with open('SQL\Datos.xml', 'r', encoding='utf-8') as file:
 
 # Crear el cursor y ejecutar el procedimiento almacenado
 cursor = conn.cursor()
-cursor.execute("EXEC CargarDatosDesdeXML ?", xml_data)
+cursor.execute("EXEC CargarCatalogosDesdeXML ?", xml_data)
 
 # Confirmar los cambios
 conn.commit()
