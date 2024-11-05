@@ -11,7 +11,7 @@ def get_db_connection():
         'DRIVER={ODBC Driver 17 for SQL Server};'
         #'SERVER=ERICKPC;'
         'SERVER=JESUSPC;'
-        'DATABASE=proyecto3;'
+        'DATABASE=Proyecto3BD;'
         'UID=sa;'
         'PWD=12345678'
     )
