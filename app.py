@@ -9,9 +9,10 @@ CORS(app)
 def get_db_connection():
     connection = pyodbc.connect(
         'DRIVER={ODBC Driver 17 for SQL Server};'
-        'SERVER=ERICKPC;'
-        'DATABASE=proyecto2;'
-        'UID=hola;'
+        #'SERVER=ERICKPC;'
+        'SERVER=JESUSPC;'
+        'DATABASE=proyecto3;'
+        'UID=sa;'
         'PWD=12345678'
     )
     return connection
