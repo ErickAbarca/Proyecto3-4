@@ -25,7 +25,7 @@ BEGIN
             ERROR_LINE(), 
             ERROR_PROCEDURE(), 
             ERROR_MESSAGE(),
-            SGETDATE());
+            GETDATE());
 
         SET @OutResulTCode = 50008;
     END CATCH;
