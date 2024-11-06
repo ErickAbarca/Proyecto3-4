@@ -2,8 +2,10 @@ ALTER PROCEDURE CargarDatosDesdeXML
     @xmlData XML
 AS
 BEGIN
-    BEGIN TRANSACTION;
+    SET NOCOUNT ON;
     BEGIN TRY
+        -- Iniciar la transacción
+        BEGIN TRANSACTION;
         -- Insertar en la tabla Tarjetahabiente
         INSERT INTO dbo.Tarjetahabiente (nombre, id_tipo_documento, documento_identidad, nombre_usuario, password)
         SELECT 
@@ -73,7 +75,7 @@ BEGIN
         ROLLBACK TRANSACTION;
 
         -- Registrar el error en la tabla DBErrors
-        INSERT INTO dbo.DBErrors (UserName, Number, State, Severity, Line, [Procedure], Message, DateTime)
+        INSERT INTO dbo.DBErrors
         VALUES (
             SYSTEM_USER,
             ERROR_NUMBER(),
@@ -84,6 +86,10 @@ BEGIN
             ERROR_MESSAGE(),
             GETDATE()
         );
+
+        -- Código de error estándar
+        THROW;
     END CATCH;
+    SET NOCOUNT OFF;
 END;
 GO
