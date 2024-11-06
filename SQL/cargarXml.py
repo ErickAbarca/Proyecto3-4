@@ -3,9 +3,10 @@ import pyodbc
 # Establecer la conexión
 conn = pyodbc.connect(
     'DRIVER={ODBC Driver 17 for SQL Server};'
-    'SERVER=JESUSPC;'
-    'DATABASE=Proyecto3BD;'
-    'UID=sa;' 
+    'SERVER=ERICKPC;'
+    #"'SERVER=JESUSPC;'
+    'DATABASE=proyecto3;'
+    'UID=hola;' 
     'PWD=12345678'
 )
 
