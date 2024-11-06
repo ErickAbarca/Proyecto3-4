@@ -27,7 +27,6 @@
 			<NTF Codigo="5525247354599728" TCAsociada="22627" FechaVencimiento="1/2028" CCV="5619" />
 		</NTF>
 		<Movimiento>
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5525247354599728" FechaMovimiento="2024-01-01" Monto="49351" Descripcion="Walmart en Orotina" Referencia="TRBQZ" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5373571423133445" FechaMovimiento="2024-01-01" Monto="90358" Descripcion="En Goicoechea" Referencia="S3W04" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5655636577940569" FechaMovimiento="2024-01-01" Monto="73024" Descripcion="ATM de San José" Referencia="66P34" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5373571423133445" FechaMovimiento="2024-01-01" Monto="27449" Descripcion="Walmart en Goicoechea" Referencia="2XK1S" />
@@ -42,6 +41,17 @@
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5373571423133445" FechaMovimiento="2024-01-01" Monto="88023" Descripcion="En San Carlos" Referencia="F04BT" />
 			<Movimiento Nombre="Pago en ATM" TF="5655636577940569" FechaMovimiento="2024-01-01" Monto="39744" Descripcion="Sucursal en Puntarenas" Referencia="K55TC" />
 			<Movimiento Nombre="Pago en ATM" TF="5655636577940569" FechaMovimiento="2024-01-01" Monto="50855" Descripcion="Walmart en Quepos" Referencia="HKZTI" />
+			<Movimiento Nombre="Compra" TF="5525247354599728" FechaMovimiento="2024-01-01" Monto="70494" Descripcion="Walmart en Quepos" Referencia="EQXAS" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2256488286809408" FechaMovimiento="2024-01-01" Monto="54075" Descripcion="Walmart en Liberia" Referencia="JMXVV" />
+			<Movimiento Nombre="Pago en Linea" TF="2855446415731838" FechaMovimiento="2024-01-01" Monto="23137" Descripcion="En San Carlos" Referencia="K4L29" />
+			<Movimiento Nombre="Pago en ATM" TF="5373571423133445" FechaMovimiento="2024-01-01" Monto="34808" Descripcion="Walmart en Santa Cruz" Referencia="2FFD4" />
+			<Movimiento Nombre="Retiro en ATM" TF="5525247354599728" FechaMovimiento="2024-01-01" Monto="81918" Descripcion="Walmart en Santa Cruz" Referencia="R7FBG" />
+			<Movimiento Nombre="Retiro en ATM" TF="5655636577940569" FechaMovimiento="2024-01-01" Monto="79308" Descripcion="Sucursal en Santa Ana" Referencia="F7FV6" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5525247354599728" FechaMovimiento="2024-01-01" Monto="58321" Descripcion="Sucursal en Escazú" Referencia="V7CPC" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5655636577940569" FechaMovimiento="2024-01-01" Monto="78587" Descripcion="Sucursal en Talamanca" Referencia="EE6RZ" />
+			<Movimiento Nombre="Pago en Linea" TF="2256488286809408" FechaMovimiento="2024-01-01" Monto="38826" Descripcion="ATM de Pavas" Referencia="FZIKQ" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2256488286809408" FechaMovimiento="2024-01-01" Monto="0" Descripcion="Sucursal en Quepos" Referencia="S47I9" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5525247354599728" FechaMovimiento="2024-01-01" Monto="81847" Descripcion="Sucursal en San Rafael" Referencia="UTXFQ" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-01-03">
@@ -51,7 +61,7 @@
 			<NTH Nombre="Daniela Fernández" ValorDocIdentidad="9-0123-4567" FechaNacimiento="1969-08-12" NombreUsuario="dfernández" Password="hola123" />
 			<NTH Nombre="Pablo Rodríguez" ValorDocIdentidad="1-1234-5678" FechaNacimiento="1970-01-25" NombreUsuario="prodríguez" Password="hola123" />
 			<NTH Nombre="Camila Silva" ValorDocIdentidad="2-2345-6789" FechaNacimiento="1971-12-11" NombreUsuario="csilva" Password="hola123" />
-			<NTH Nombre="Mateo Delgado" ValorDocIdentidad="3-3456-7890" FechaNacimiento="1972-05-09" NombreUsuario="mdelgado" Password="hola123" />
+			<NTH Nombre="Mateo Delgado" ValorDocIdentidad="3-3456-7890" FechaNacimiento="1972-05-09" NombreUsuario="madelgado" Password="hola123" />
 		</NTH>
 		<NTCM>
 			<NTCM Codigo="54279" TipoTCM="Platino" LimiteCredito="7000000" TH="7-8901-2345" />
@@ -72,7 +82,6 @@
 			<NTF Codigo="9982757494520271" TCAsociada="73442" FechaVencimiento="6/2027" CCV="6822" />
 		</NTF>
 		<Movimiento>
-			<Movimiento Nombre="Pago en ATM" TF="5655636577940569" FechaMovimiento="2024-01-01" Monto="50855" Descripcion="Walmart en Quepos" Referencia="HKZTI" />
 			<Movimiento Nombre="Cargos por Servicio" TF="2855446415731838" FechaMovimiento="2024-01-03" Monto="82994" Descripcion="Walmart en Moravia" Referencia="0JQFO" />
 			<Movimiento Nombre="Retiro en Ventana" TF="2256488286809408" FechaMovimiento="2024-01-03" Monto="68789" Descripcion="Walmart en Parrita" Referencia="2MY8S" />
 			<Movimiento Nombre="Cargos por Servicio" TF="2256488286809408" FechaMovimiento="2024-01-03" Monto="13813" Descripcion="ATM de Tibás" Referencia="6CNN0" />
@@ -88,6 +97,16 @@
 			<Movimiento Nombre="Recuperacion por Perdida" TF="8978920513967653" FechaMovimiento="2024-01-03" Monto="0" Descripcion="ATM de Cartago" Referencia="9B103" />
 			<Movimiento Nombre="Retiro en Ventana" TF="9982757494520271" FechaMovimiento="2024-01-03" Monto="45784" Descripcion="En Curridabat" Referencia="MLIQD" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="9982757494520271" FechaMovimiento="2024-01-03" Monto="45915" Descripcion="Sucursal en Liberia" Referencia="OJEJ1" />
+			<Movimiento Nombre="Compra" TF="5655636577940569" FechaMovimiento="2024-01-03" Monto="29995" Descripcion="Walmart en Quepos" Referencia="96J9F" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2256488286809408" FechaMovimiento="2024-01-03" Monto="0" Descripcion="En Puntarenas" Referencia="PFDWL" />
+			<Movimiento Nombre="Compra" TF="8978920513967653" FechaMovimiento="2024-01-03" Monto="46178" Descripcion="ATM de Barva" Referencia="XZWRB" />
+			<Movimiento Nombre="Compra" TF="5134942862922132" FechaMovimiento="2024-01-03" Monto="29698" Descripcion="ATM de Puriscal" Referencia="83569" />
+			<Movimiento Nombre="Retiro en Ventana" TF="1524776262565386" FechaMovimiento="2024-01-03" Monto="85608" Descripcion="Walmart en Guápiles" Referencia="26RB3" />
+			<Movimiento Nombre="Retiro en Ventana" TF="9585994043536904" FechaMovimiento="2024-01-03" Monto="69088" Descripcion="ATM de Liberia" Referencia="Z5FDT" />
+			<Movimiento Nombre="Retiro en ATM" TF="1524776262565386" FechaMovimiento="2024-01-03" Monto="85218" Descripcion="ATM de Tibás" Referencia="GPNRN" />
+			<Movimiento Nombre="Pago en Linea" TF="1524776262565386" FechaMovimiento="2024-01-03" Monto="9153" Descripcion="Walmart en Grecia" Referencia="2FFD4" />
+			<Movimiento Nombre="Pago en Linea" TF="5373571423133445" FechaMovimiento="2024-01-03" Monto="53080" Descripcion="En Ciudad Quesada" Referencia="C3JL5" />
+			<Movimiento Nombre="Compra" TF="5373571423133445" FechaMovimiento="2024-01-03" Monto="81878" Descripcion="Walmart en Orotina" Referencia="3KQ9A" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-01-05">
@@ -97,7 +116,7 @@
 			<NTH Nombre="Julia Ruiz" ValorDocIdentidad="6-6789-0123" FechaNacimiento="1975-03-04" NombreUsuario="jruiz" Password="hola123" />
 			<NTH Nombre="Luis Morales" ValorDocIdentidad="7-7890-1234" FechaNacimiento="1976-11-30" NombreUsuario="lmorales" Password="hola123" />
 			<NTH Nombre="Gabriela Soto" ValorDocIdentidad="8-8901-2345" FechaNacimiento="1977-08-18" NombreUsuario="gsoto" Password="hola123" />
-			<NTH Nombre="Fernando López" ValorDocIdentidad="9-9012-3456" FechaNacimiento="1978-01-05" NombreUsuario="flópez" Password="hola123" />
+			<NTH Nombre="Fernando López" ValorDocIdentidad="9-9012-3456" FechaNacimiento="1978-01-05" NombreUsuario="felópez" Password="hola123" />
 		</NTH>
 		<NTCM>
 			<NTCM Codigo="43594" TipoTCM="Oro" LimiteCredito="5000000" TH="4-4567-8901" />
@@ -118,21 +137,31 @@
 			<NTF Codigo="4286961520207211" TCAsociada="43710" FechaVencimiento="12/2026" CCV="1615" />
 		</NTF>
 		<Movimiento>
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5373571423133445" FechaMovimiento="2024-01-05" Monto="42875" Descripcion="ATM de Alajuela" Referencia="63FIB" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="7407888157510632" FechaMovimiento="2024-01-05" Monto="0" Descripcion="Walmart en Heredia" Referencia="292BK" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="4286961520207211" FechaMovimiento="2024-01-05" Monto="0" Descripcion="ATM de Palmares" Referencia="C4HO1" />
 			<Movimiento Nombre="Retiro en Ventana" TF="7407888157510632" FechaMovimiento="2024-01-05" Monto="40260" Descripcion="Walmart en Quepos" Referencia="LROAI" />
 			<Movimiento Nombre="Renovacion de TF" TF="2855446415731838" FechaMovimiento="2024-01-05" Monto="19263" Descripcion="Walmart en Quepos" Referencia="25GMQ" />
 			<Movimiento Nombre="Renovacion de TF" TF="3488477239742811" FechaMovimiento="2024-01-05" Monto="81796" Descripcion="Sucursal en Cartago" Referencia="Y8TLR" />
 			<Movimiento Nombre="Retiro en Ventana" TF="2794325256592805" FechaMovimiento="2024-01-05" Monto="14905" Descripcion="En Upala" Referencia="QACA5" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5585087340448535" FechaMovimiento="2024-01-05" Monto="80575" Descripcion="Walmart en Santa Cruz" Referencia="C4IVG" />
 			<Movimiento Nombre="Retiro en Ventana" TF="1524776262565386" FechaMovimiento="2024-01-05" Monto="29334" Descripcion="Sucursal en Talamanca" Referencia="LKHS2" />
 			<Movimiento Nombre="Retiro en Ventana" TF="9982757494520271" FechaMovimiento="2024-01-05" Monto="18377" Descripcion="En Naranjo" Referencia="DWYMZ" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5655636577940569" FechaMovimiento="2024-01-05" Monto="94462" Descripcion="Walmart en San Rafael" Referencia="YPO39" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="9982757494520271" FechaMovimiento="2024-01-05" Monto="0" Descripcion="ATM de Grecia" Referencia="FUQPS" />
 			<Movimiento Nombre="Cargos por Servicio" TF="5373571423133445" FechaMovimiento="2024-01-05" Monto="57818" Descripcion="En Corredores" Referencia="HKQDM" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="8371868300839996" FechaMovimiento="2024-01-05" Monto="76003" Descripcion="Walmart en Cartago" Referencia="I9FDN" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="6582011518402719" FechaMovimiento="2024-01-05" Monto="86955" Descripcion="En Santa Ana" Referencia="6V92Z" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="3488477239742811" FechaMovimiento="2024-01-05" Monto="0" Descripcion="Walmart en San Ramón" Referencia="K4L29" />
+			<Movimiento Nombre="Renovacion de TF" TF="4286961520207211" FechaMovimiento="2024-01-05" Monto="49199" Descripcion="Walmart en Cartago" Referencia="3GBO5" />
+			<Movimiento Nombre="Cargos por Servicio" TF="2855446415731838" FechaMovimiento="2024-01-05" Monto="22830" Descripcion="ATM de Escazú" Referencia="C3JL5" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="1524776262565386" FechaMovimiento="2024-01-05" Monto="19446" Descripcion="Sucursal en San Rafael" Referencia="67LX9" />
+			<Movimiento Nombre="Pago en Linea" TF="9982757494520271" FechaMovimiento="2024-01-05" Monto="76708" Descripcion="Walmart en Pavas" Referencia="09275" />
+			<Movimiento Nombre="Retiro en Ventana" TF="5134942862922132" FechaMovimiento="2024-01-05" Monto="31512" Descripcion="ATM de Orotina" Referencia="H9IZQ" />
+			<Movimiento Nombre="Pago en ATM" TF="2794325256592805" FechaMovimiento="2024-01-05" Monto="56582" Descripcion="En Tibás" Referencia="PBMTU" />
+			<Movimiento Nombre="Retiro en ATM" TF="8371868300839996" FechaMovimiento="2024-01-05" Monto="65432" Descripcion="Walmart en Quepos" Referencia="FFS6A" />
+			<Movimiento Nombre="Pago en Linea" TF="5655636577940569" FechaMovimiento="2024-01-05" Monto="59966" Descripcion="En Tibás" Referencia="UUHKF" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="9982757494520271" FechaMovimiento="2024-01-05" Monto="0" Descripcion="ATM de Liberia" Referencia="VWMZO" />
+			<Movimiento Nombre="Compra" TF="5585087340448535" FechaMovimiento="2024-01-05" Monto="73706" Descripcion="En Naranjo" Referencia="PZEDT" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="3488477239742811" FechaMovimiento="2024-01-05" Monto="0" Descripcion="Sucursal en Heredia" Referencia="3MSQ3" />
+			<Movimiento Nombre="Renovacion de TF" TF="5585087340448535" FechaMovimiento="2024-01-05" Monto="58943" Descripcion="Sucursal en Cañas" Referencia="GPNRN" />
+			<Movimiento Nombre="Pago en Linea" TF="1524776262565386" FechaMovimiento="2024-01-05" Monto="63946" Descripcion="Sucursal en Santa Ana" Referencia="A2CIR" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-01-08">
@@ -167,17 +196,27 @@
 			<Movimiento Nombre="Retiro en ATM" TF="8978920513967653" FechaMovimiento="2024-01-08" Monto="74285" Descripcion="En Curridabat" Referencia="C4IVG" />
 			<Movimiento Nombre="Compra" TF="7407888157510632" FechaMovimiento="2024-01-08" Monto="62373" Descripcion="En Curridabat" Referencia="S9LVC" />
 			<Movimiento Nombre="Pago en Linea" TF="9982757494520271" FechaMovimiento="2024-01-08" Monto="55252" Descripcion="ATM de Desamparados" Referencia="HXER6" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="4286961520207211" FechaMovimiento="2024-01-08" Monto="39866" Descripcion="Sucursal en Golfito" Referencia="GRVSG" />
 			<Movimiento Nombre="Cargos por Servicio" TF="1694998673342057" FechaMovimiento="2024-01-08" Monto="41715" Descripcion="En Santo Tomás" Referencia="A9QZN" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="8371868300839996" FechaMovimiento="2024-01-08" Monto="0" Descripcion="En Ciudad Colón" Referencia="C4IVG" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5655636577940569" FechaMovimiento="2024-01-08" Monto="26461" Descripcion="ATM de Pococí" Referencia="P8YDZ" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5655636577940569" FechaMovimiento="2024-01-08" Monto="99495" Descripcion="En Curridabat" Referencia="5CHB7" />
 			<Movimiento Nombre="Compra" TF="1694998673342057" FechaMovimiento="2024-01-08" Monto="22044" Descripcion="Sucursal en Quepos" Referencia="C4IVG" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="7407888157510632" FechaMovimiento="2024-01-08" Monto="55037" Descripcion="ATM de Barva" Referencia="9B103" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="7407888157510632" FechaMovimiento="2024-01-08" Monto="0" Descripcion="Walmart en Nicoya" Referencia="LDZMP" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="8371868300839996" FechaMovimiento="2024-01-08" Monto="99929" Descripcion="Sucursal en Pérez Zeledón" Referencia="0T56Q" />
 			<Movimiento Nombre="Pago en ATM" TF="6418223953029167" FechaMovimiento="2024-01-08" Monto="74065" Descripcion="En Santa Ana" Referencia="JB8MG" />
 			<Movimiento Nombre="Retiro en Ventana" TF="7400420298822588" FechaMovimiento="2024-01-08" Monto="25516" Descripcion="En Pococí" Referencia="Y4CYA" />
+			<Movimiento Nombre="Retiro en ATM" TF="8978920513967653" FechaMovimiento="2024-01-08" Monto="45621" Descripcion="Sucursal en Montes de Oca" Referencia="FFS6A" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="7407888157510632" FechaMovimiento="2024-01-08" Monto="54938" Descripcion="Walmart en San Rafael" Referencia="EMVJY" />
+			<Movimiento Nombre="Retiro en ATM" TF="4286961520207211" FechaMovimiento="2024-01-08" Monto="63544" Descripcion="En Belén" Referencia="6MWD9" />
+			<Movimiento Nombre="Retiro en ATM" TF="1694998673342057" FechaMovimiento="2024-01-08" Monto="82182" Descripcion="Walmart en Curridabat" Referencia="2Z4MM" />
+			<Movimiento Nombre="Compra" TF="2668231324191095" FechaMovimiento="2024-01-08" Monto="43763" Descripcion="Walmart en Tres Ríos" Referencia="PKI8T" />
+			<Movimiento Nombre="Retiro en Ventana" TF="4286961520207211" FechaMovimiento="2024-01-08" Monto="50417" Descripcion="Sucursal en Santa Ana" Referencia="QUK2Q" />
+			<Movimiento Nombre="Pago en ATM" TF="8978920513967653" FechaMovimiento="2024-01-08" Monto="96221" Descripcion="Walmart en Liberia" Referencia="0VMT7" />
+			<Movimiento Nombre="Retiro en ATM" TF="5134942862922132" FechaMovimiento="2024-01-08" Monto="83442" Descripcion="Sucursal en Cartago" Referencia="XZWRB" />
+			<Movimiento Nombre="Pago en Linea" TF="3488477239742811" FechaMovimiento="2024-01-08" Monto="72100" Descripcion="Sucursal en San Pablo" Referencia="7IGQO" />
+			<Movimiento Nombre="Pago en Linea" TF="5585087340448535" FechaMovimiento="2024-01-08" Monto="19750" Descripcion="Walmart en Liberia" Referencia="IR8ZK" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="7407888157510632" FechaMovimiento="2024-01-08" Monto="0" Descripcion="ATM de Moravia" Referencia="7R2O0" />
+			<Movimiento Nombre="Pago en ATM" TF="1694998673342057" FechaMovimiento="2024-01-08" Monto="23565" Descripcion="Sucursal en San Rafael" Referencia="0PISX" />
+			<Movimiento Nombre="Renovacion de TF" TF="9982757494520271" FechaMovimiento="2024-01-08" Monto="21008" Descripcion="Sucursal en Montes de Oca" Referencia="780R8" />
+			<Movimiento Nombre="Renovacion de TF" TF="5655636577940569" FechaMovimiento="2024-01-08" Monto="30373" Descripcion="ATM de Tibás" Referencia="O4BBP" />
+			<Movimiento Nombre="Renovacion de TF" TF="5585087340448535" FechaMovimiento="2024-01-08" Monto="14250" Descripcion="En Belén" Referencia="W6NS5" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-01-10">
@@ -223,6 +262,16 @@
 			<Movimiento Nombre="Recuperacion por Perdida" TF="2855446415731838" FechaMovimiento="2024-01-10" Monto="0" Descripcion="Sucursal en Turrialba" Referencia="L7ZN3" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="4366645788435358" FechaMovimiento="2024-01-10" Monto="25058" Descripcion="Walmart en San Carlos" Referencia="RNP5C" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2810488571833172" FechaMovimiento="2024-01-10" Monto="52736" Descripcion="Walmart en Santa Cruz" Referencia="H3M4W" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2668231324191095" FechaMovimiento="2024-01-10" Monto="76590" Descripcion="ATM de Cartago" Referencia="8P489" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="7137219698255989" FechaMovimiento="2024-01-10" Monto="0" Descripcion="Sucursal en Puntarenas" Referencia="EMVJY" />
+			<Movimiento Nombre="Renovacion de TF" TF="6582011518402719" FechaMovimiento="2024-01-10" Monto="10726" Descripcion="En Alajuela" Referencia="HZICS" />
+			<Movimiento Nombre="Pago en ATM" TF="2794325256592805" FechaMovimiento="2024-01-10" Monto="55720" Descripcion="ATM de Escazú" Referencia="HZICS" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="9426782141767763" FechaMovimiento="2024-01-10" Monto="70985" Descripcion="ATM de Grecia" Referencia="67LX9" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2794325256592805" FechaMovimiento="2024-01-10" Monto="0" Descripcion="Walmart en San José" Referencia="F7FV6" />
+			<Movimiento Nombre="Retiro en ATM" TF="8371868300839996" FechaMovimiento="2024-01-10" Monto="60470" Descripcion="Walmart en Liberia" Referencia="4K9CG" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2315327303879021" FechaMovimiento="2024-01-10" Monto="38105" Descripcion="Sucursal en Heredia" Referencia="IXYS5" />
+			<Movimiento Nombre="Cargos por Servicio" TF="8371868300839996" FechaMovimiento="2024-01-10" Monto="38806" Descripcion="ATM de Palmares" Referencia="09275" />
+			<Movimiento Nombre="Renovacion de TF" TF="5373571423133445" FechaMovimiento="2024-01-10" Monto="75885" Descripcion="Sucursal en Desamparados" Referencia="ZAX8T" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-01-12">
@@ -264,10 +313,20 @@
 			<Movimiento Nombre="Renovacion de TF" TF="9585994043536904" FechaMovimiento="2024-01-12" Monto="47126" Descripcion="Sucursal en San Ramón" Referencia="C4IVG" />
 			<Movimiento Nombre="Renovacion de TF" TF="2810488571833172" FechaMovimiento="2024-01-12" Monto="42788" Descripcion="ATM de Pérez Zeledón" Referencia="OJEJ1" />
 			<Movimiento Nombre="Retiro en ATM" TF="7400420298822588" FechaMovimiento="2024-01-12" Monto="27818" Descripcion="Sucursal en Santa Ana" Referencia="AXZ0I" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="2855446415731838" FechaMovimiento="2024-01-12" Monto="50308" Descripcion="Walmart en Parrita" Referencia="JVMNJ" />
 			<Movimiento Nombre="Pago en ATM" TF="3620383385494061" FechaMovimiento="2024-01-12" Monto="54354" Descripcion="Sucursal en Heredia" Referencia="94VNQ" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="1524776262565386" FechaMovimiento="2024-01-12" Monto="16084" Descripcion="En San Carlos" Referencia="AQTK3" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="1694998673342057" FechaMovimiento="2024-01-12" Monto="0" Descripcion="Sucursal en Puriscal" Referencia="LTZE5" />
+			<Movimiento Nombre="Retiro en ATM" TF="6418223953029167" FechaMovimiento="2024-01-12" Monto="81582" Descripcion="ATM de Orotina" Referencia="PZEDT" />
+			<Movimiento Nombre="Pago en ATM" TF="8978920513967653" FechaMovimiento="2024-01-12" Monto="47941" Descripcion="Sucursal en Palmares" Referencia="0VMT7" />
+			<Movimiento Nombre="Pago en ATM" TF="8371868300839996" FechaMovimiento="2024-01-12" Monto="47295" Descripcion="Sucursal en Quepos" Referencia="A2CIR" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2256488286809408" FechaMovimiento="2024-01-12" Monto="50075" Descripcion="En Belén" Referencia="2Z4MM" />
+			<Movimiento Nombre="Pago en Linea" TF="8978920513967653" FechaMovimiento="2024-01-12" Monto="83795" Descripcion="ATM de Turrialba" Referencia="MYX36" />
+			<Movimiento Nombre="Retiro en Ventana" TF="5585087340448535" FechaMovimiento="2024-01-12" Monto="83486" Descripcion="ATM de Barva" Referencia="DKRZX" />
+			<Movimiento Nombre="Renovacion de TF" TF="8348133262205011" FechaMovimiento="2024-01-12" Monto="11294" Descripcion="Sucursal en Atenas" Referencia="VU1A1" />
+			<Movimiento Nombre="Compra" TF="2315327303879021" FechaMovimiento="2024-01-12" Monto="29004" Descripcion="En Alajuela" Referencia="HY26R" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2197620817888201" FechaMovimiento="2024-01-12" Monto="0" Descripcion="Sucursal en Heredia" Referencia="Z5FDT" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="8796152434508582" FechaMovimiento="2024-01-12" Monto="0" Descripcion="ATM de Orotina" Referencia="REX80" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="9982757494520271" FechaMovimiento="2024-01-12" Monto="0" Descripcion="En Santo Domingo" Referencia="QUK2Q" />
+			<Movimiento Nombre="Pago en ATM" TF="6418223953029167" FechaMovimiento="2024-01-12" Monto="10481" Descripcion="Sucursal en Liberia" Referencia="96J9F" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-01-15">
@@ -301,7 +360,6 @@
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="4202962751833120" FechaMovimiento="2024-01-15" Monto="96152" Descripcion="Walmart en Orotina" Referencia="XE6IP" />
 			<Movimiento Nombre="Pago en Linea" TF="5525247354599728" FechaMovimiento="2024-01-15" Monto="18895" Descripcion="ATM de Orotina" Referencia="HIWF5" />
 			<Movimiento Nombre="Retiro en Ventana" TF="7343138089572132" FechaMovimiento="2024-01-15" Monto="40180" Descripcion="En Corredores" Referencia="72GB4" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="9426782141767763" FechaMovimiento="2024-01-15" Monto="66520" Descripcion="Sucursal en Turrialba" Referencia="DX7H6" />
 			<Movimiento Nombre="Pago en Linea" TF="4286961520207211" FechaMovimiento="2024-01-15" Monto="35171" Descripcion="Sucursal en Coto Brus" Referencia="H9WG6" />
 			<Movimiento Nombre="Renovacion de TF" TF="8371868300839996" FechaMovimiento="2024-01-15" Monto="88668" Descripcion="En Esparza" Referencia="C3Y4I" />
 			<Movimiento Nombre="Retiro en ATM" TF="5538858134303627" FechaMovimiento="2024-01-15" Monto="38863" Descripcion="En Goicoechea" Referencia="FLA89" />
@@ -311,8 +369,19 @@
 			<Movimiento Nombre="Pago en Linea" TF="9982757494520271" FechaMovimiento="2024-01-15" Monto="89555" Descripcion="Walmart en Santa Cruz" Referencia="HKZTI" />
 			<Movimiento Nombre="Retiro en ATM" TF="5508364630862234" FechaMovimiento="2024-01-15" Monto="81381" Descripcion="En Limón" Referencia="48PQU" />
 			<Movimiento Nombre="Cargos por Servicio" TF="7343138089572132" FechaMovimiento="2024-01-15" Monto="32927" Descripcion="Walmart en Coronado" Referencia="DKT4I" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="7137219698255989" FechaMovimiento="2024-01-15" Monto="19116" Descripcion="Sucursal en San Pablo" Referencia="742IF" />
 			<Movimiento Nombre="Compra" TF="3620383385494061" FechaMovimiento="2024-01-15" Monto="19373" Descripcion="ATM de San Ramón" Referencia="H9I2M" />
+			<Movimiento Nombre="Renovacion de TF" TF="5373571423133445" FechaMovimiento="2024-01-15" Monto="33323" Descripcion="ATM de Liberia" Referencia="G2FXQ" />
+			<Movimiento Nombre="Retiro en Ventana" TF="7137219698255989" FechaMovimiento="2024-01-15" Monto="55665" Descripcion="ATM de Pérez Zeledón" Referencia="TQ0P4" />
+			<Movimiento Nombre="Cargos por Servicio" TF="6418223953029167" FechaMovimiento="2024-01-15" Monto="25302" Descripcion="ATM de Liberia" Referencia="IW467" />
+			<Movimiento Nombre="Pago en ATM" TF="5655636577940569" FechaMovimiento="2024-01-15" Monto="91873" Descripcion="En San Rafael" Referencia="0WF3Y" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2337742938367048" FechaMovimiento="2024-01-15" Monto="45888" Descripcion="En Palmares" Referencia="DFPBP" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="7407888157510632" FechaMovimiento="2024-01-15" Monto="0" Descripcion="Walmart en San Carlos" Referencia="0PISX" />
+			<Movimiento Nombre="Retiro en ATM" TF="5538858134303627" FechaMovimiento="2024-01-15" Monto="30072" Descripcion="Walmart en Coronado" Referencia="HY26R" />
+			<Movimiento Nombre="Pago en Linea" TF="5655636577940569" FechaMovimiento="2024-01-15" Monto="83144" Descripcion="ATM de Barva" Referencia="M3OU4" />
+			<Movimiento Nombre="Pago en ATM" TF="5525247354599728" FechaMovimiento="2024-01-15" Monto="85280" Descripcion="Sucursal en Turrialba" Referencia="UUGMI" />
+			<Movimiento Nombre="Retiro en Ventana" TF="8371868300839996" FechaMovimiento="2024-01-15" Monto="42397" Descripcion="ATM de Guápiles" Referencia="QUK2Q" />
+			<Movimiento Nombre="Retiro en Ventana" TF="4202962751833120" FechaMovimiento="2024-01-15" Monto="20412" Descripcion="Walmart en Escazú" Referencia="U4DZ0" />
+			<Movimiento Nombre="Pago en Linea" TF="6418223953029167" FechaMovimiento="2024-01-15" Monto="73614" Descripcion="Walmart en Grecia" Referencia="H59FK" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-01-18">
@@ -322,7 +391,7 @@
 			<NTH Nombre="Elisa Benítez" ValorDocIdentidad="9-6789-0123" FechaNacimiento="1960-12-01" NombreUsuario="ebenítez" Password="hola123" />
 			<NTH Nombre="Alfredo Carrillo" ValorDocIdentidad="1-7890-1234" FechaNacimiento="1961-09-05" NombreUsuario="acarrillo" Password="hola123" />
 			<NTH Nombre="Diana Murillo" ValorDocIdentidad="2-8901-2345" FechaNacimiento="1962-03-18" NombreUsuario="dmurillo" Password="hola123" />
-			<NTH Nombre="Rodrigo Mora" ValorDocIdentidad="3-9012-3456" FechaNacimiento="1963-11-14" NombreUsuario="rmora" Password="hola123" />
+			<NTH Nombre="Rodrigo Mora" ValorDocIdentidad="3-9012-3456" FechaNacimiento="1963-11-14" NombreUsuario="romora" Password="hola123" />
 		</NTH>
 		<NTCM>
 			<NTCM Codigo="34398" TipoTCM="Corporativo" LimiteCredito="10000000" TH="7-4567-8901" />
@@ -349,7 +418,6 @@
 			<Movimiento Nombre="Pago en Linea" TF="1694998673342057" FechaMovimiento="2024-01-18" Monto="56426" Descripcion="En Ciudad Quesada" Referencia="31G0E" />
 			<Movimiento Nombre="Renovacion de TF" TF="8537718971978825" FechaMovimiento="2024-01-18" Monto="23245" Descripcion="Sucursal en Cañas" Referencia="L7ZN3" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="3620383385494061" FechaMovimiento="2024-01-18" Monto="56429" Descripcion="Walmart en Orotina" Referencia="292BK" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="8603018352074994" FechaMovimiento="2024-01-18" Monto="72056" Descripcion="En San Rafael" Referencia="SYH0D" />
 			<Movimiento Nombre="Pago en Linea" TF="6582011518402719" FechaMovimiento="2024-01-18" Monto="25664" Descripcion="En Palmares" Referencia="34UXP" />
 			<Movimiento Nombre="Retiro en Ventana" TF="7400420298822588" FechaMovimiento="2024-01-18" Monto="75598" Descripcion="En Pococí" Referencia="DX7H6" />
 			<Movimiento Nombre="Retiro en ATM" TF="8215484693274147" FechaMovimiento="2024-01-18" Monto="95607" Descripcion="ATM de San José" Referencia="DNDWH" />
@@ -357,7 +425,18 @@
 			<Movimiento Nombre="Recuperacion por Robo" TF="1524776262565386" FechaMovimiento="2024-01-18" Monto="0" Descripcion="En San Rafael" Referencia="VGN2P" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="3549875182800350" FechaMovimiento="2024-01-18" Monto="0" Descripcion="Walmart en Cartago" Referencia="PQQ60" />
 			<Movimiento Nombre="Retiro en Ventana" TF="8371868300839996" FechaMovimiento="2024-01-18" Monto="95922" Descripcion="ATM de Moravia" Referencia="Q86XL" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="2855446415731838" FechaMovimiento="2024-01-18" Monto="84785" Descripcion="En Santo Tomás" Referencia="3BYHP" />
+			<Movimiento Nombre="Cargos por Servicio" TF="2337742938367048" FechaMovimiento="2024-01-18" Monto="10762" Descripcion="ATM de Grecia" Referencia="EIWX6" />
+			<Movimiento Nombre="Compra" TF="2337742938367048" FechaMovimiento="2024-01-18" Monto="27673" Descripcion="Sucursal en Montes de Oca" Referencia="EQXAS" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2197620817888201" FechaMovimiento="2024-01-18" Monto="88808" Descripcion="Walmart en Parrita" Referencia="A1F8O" />
+			<Movimiento Nombre="Pago en Linea" TF="1524776262565386" FechaMovimiento="2024-01-18" Monto="10685" Descripcion="ATM de Orotina" Referencia="0ILYT" />
+			<Movimiento Nombre="Pago en Linea" TF="3620383385494061" FechaMovimiento="2024-01-18" Monto="78601" Descripcion="En Alajuela" Referencia="KBXVB" />
+			<Movimiento Nombre="Renovacion de TF" TF="8978920513967653" FechaMovimiento="2024-01-18" Monto="69165" Descripcion="Walmart en Tres Ríos" Referencia="PKI8T" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2337742938367048" FechaMovimiento="2024-01-18" Monto="82269" Descripcion="Walmart en Guápiles" Referencia="GB21R" />
+			<Movimiento Nombre="Cargos por Servicio" TF="2197620817888201" FechaMovimiento="2024-01-18" Monto="50878" Descripcion="Sucursal en San Ramón" Referencia="2Z4MM" />
+			<Movimiento Nombre="Cargos por Servicio" TF="2855446415731838" FechaMovimiento="2024-01-18" Monto="30207" Descripcion="En Santo Tomás" Referencia="09275" />
+			<Movimiento Nombre="Compra" TF="2810488571833172" FechaMovimiento="2024-01-18" Monto="44508" Descripcion="En Naranjo" Referencia="AWRUT" />
+			<Movimiento Nombre="Renovacion de TF" TF="5538858134303627" FechaMovimiento="2024-01-18" Monto="9157" Descripcion="ATM de Desamparados" Referencia="FUPNS" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="3549875182800350" FechaMovimiento="2024-01-18" Monto="15297" Descripcion="Walmart en Heredia" Referencia="YKOTX" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-01-22">
@@ -393,7 +472,6 @@
 			<Movimiento Nombre="Retiro en Ventana" TF="2256488286809408" FechaMovimiento="2024-01-22" Monto="68074" Descripcion="En Tibás" Referencia="IJME6" />
 			<Movimiento Nombre="Retiro en ATM" TF="3620383385494061" FechaMovimiento="2024-01-22" Monto="78047" Descripcion="ATM de Palmares" Referencia="JQXP6" />
 			<Movimiento Nombre="Pago en Linea" TF="3549875182800350" FechaMovimiento="2024-01-22" Monto="59081" Descripcion="En Naranjo" Referencia="FLA89" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="2855446415731838" FechaMovimiento="2024-01-22" Monto="55778" Descripcion="Sucursal en Parrita" Referencia="AEGMM" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="5134942862922132" FechaMovimiento="2024-01-22" Monto="0" Descripcion="Walmart en San Carlos" Referencia="H9I2M" />
 			<Movimiento Nombre="Pago en Linea" TF="5134942862922132" FechaMovimiento="2024-01-22" Monto="69573" Descripcion="En San Carlos" Referencia="ADZV6" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="8965023215396559" FechaMovimiento="2024-01-22" Monto="0" Descripcion="En Alajuela" Referencia="IOOP2" />
@@ -401,8 +479,19 @@
 			<Movimiento Nombre="Retiro en Ventana" TF="2668231324191095" FechaMovimiento="2024-01-22" Monto="76579" Descripcion="En Santo Domingo" Referencia="C3Y4I" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5567712895594397" FechaMovimiento="2024-01-22" Monto="55207" Descripcion="ATM de Barva" Referencia="LROAI" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="1694998673342057" FechaMovimiento="2024-01-22" Monto="18171" Descripcion="ATM de Escazú" Referencia="6V92Z" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="4202962751833120" FechaMovimiento="2024-01-22" Monto="95210" Descripcion="ATM de Liberia" Referencia="GRVSG" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="1024221161988034" FechaMovimiento="2024-01-22" Monto="56440" Descripcion="Sucursal en Escazú" Referencia="H3NY5" />
+			<Movimiento Nombre="Retiro en ATM" TF="4366645788435358" FechaMovimiento="2024-01-22" Monto="86135" Descripcion="Sucursal en Coto Brus" Referencia="65GH0" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="1694998673342057" FechaMovimiento="2024-01-22" Monto="0" Descripcion="Walmart en Ciudad Colón" Referencia="EMVJY" />
+			<Movimiento Nombre="Retiro en Ventana" TF="5134942862922132" FechaMovimiento="2024-01-22" Monto="62538" Descripcion="Walmart en Parrita" Referencia="EIWX6" />
+			<Movimiento Nombre="Compra" TF="2994043263109333" FechaMovimiento="2024-01-22" Monto="84244" Descripcion="Sucursal en Nicoya" Referencia="0ILYT" />
+			<Movimiento Nombre="Retiro en ATM" TF="9585994043536904" FechaMovimiento="2024-01-22" Monto="91703" Descripcion="Walmart en San Carlos" Referencia="F7FV6" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="8348133262205011" FechaMovimiento="2024-01-22" Monto="60097" Descripcion="Walmart en Coronado" Referencia="D6Y73" />
+			<Movimiento Nombre="Retiro en ATM" TF="5538858134303627" FechaMovimiento="2024-01-22" Monto="75505" Descripcion="En Alajuela" Referencia="GB21R" />
+			<Movimiento Nombre="Retiro en Ventana" TF="7634009855741021" FechaMovimiento="2024-01-22" Monto="80158" Descripcion="En La Unión" Referencia="EMVJY" />
+			<Movimiento Nombre="Cargos por Servicio" TF="6582011518402719" FechaMovimiento="2024-01-22" Monto="70891" Descripcion="Sucursal en Liberia" Referencia="6QD5F" />
+			<Movimiento Nombre="Renovacion de TF" TF="8965023215396559" FechaMovimiento="2024-01-22" Monto="56820" Descripcion="Walmart en Ciudad Colón" Referencia="TE56D" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2994043263109333" FechaMovimiento="2024-01-22" Monto="96976" Descripcion="Sucursal en Santa Ana" Referencia="CPE35" />
+			<Movimiento Nombre="Retiro en ATM" TF="5508364630862234" FechaMovimiento="2024-01-22" Monto="11077" Descripcion="Sucursal en Quepos" Referencia="0ILYT" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5508364630862234" FechaMovimiento="2024-01-22" Monto="86829" Descripcion="En Belén" Referencia="BIEHA" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-01-25">
@@ -441,13 +530,23 @@
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="7634009855741021" FechaMovimiento="2024-01-25" Monto="63592" Descripcion="ATM de Grecia" Referencia="72GB4" />
 			<Movimiento Nombre="Pago en Linea" TF="7634009855741021" FechaMovimiento="2024-01-25" Monto="84465" Descripcion="ATM de Tibás" Referencia="HIWF5" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="8978920513967653" FechaMovimiento="2024-01-25" Monto="0" Descripcion="Walmart en Orotina" Referencia="L7ZN3" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="6842362296565369" FechaMovimiento="2024-01-25" Monto="12774" Descripcion="ATM de Alajuela" Referencia="XE6IP" />
 			<Movimiento Nombre="Renovacion de TF" TF="4942959873940953" FechaMovimiento="2024-01-25" Monto="56700" Descripcion="Walmart en Tres Ríos" Referencia="DX7H6" />
 			<Movimiento Nombre="Cargos por Servicio" TF="5134942862922132" FechaMovimiento="2024-01-25" Monto="87117" Descripcion="Sucursal en San Ramón" Referencia="LROAI" />
 			<Movimiento Nombre="Retiro en ATM" TF="1694998673342057" FechaMovimiento="2024-01-25" Monto="29714" Descripcion="En Pococí" Referencia="GAWBK" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="2794325256592805" FechaMovimiento="2024-01-25" Monto="0" Descripcion="ATM de Palmares" Referencia="0T56Q" />
 			<Movimiento Nombre="Retiro en Ventana" TF="7343138089572132" FechaMovimiento="2024-01-25" Monto="20224" Descripcion="ATM de San Ramón" Referencia="SYH0D" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5655636577940569" FechaMovimiento="2024-01-25" Monto="60088" Descripcion="En Corredores" Referencia="IOOP2" />
+			<Movimiento Nombre="Retiro en ATM" TF="7343138089572132" FechaMovimiento="2024-01-25" Monto="93551" Descripcion="ATM de Liberia" Referencia="GF5HZ" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5585087340448535" FechaMovimiento="2024-01-25" Monto="42309" Descripcion="ATM de Desamparados" Referencia="O4BBP" />
+			<Movimiento Nombre="Retiro en ATM" TF="6418223953029167" FechaMovimiento="2024-01-25" Monto="59311" Descripcion="En Alajuela" Referencia="8P489" />
+			<Movimiento Nombre="Compra" TF="5508364630862234" FechaMovimiento="2024-01-25" Monto="9171" Descripcion="Sucursal en Talamanca" Referencia="TDHAA" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="1694998673342057" FechaMovimiento="2024-01-25" Monto="13451" Descripcion="En Puntarenas" Referencia="DCKJ5" />
+			<Movimiento Nombre="Pago en Linea" TF="2256488286809408" FechaMovimiento="2024-01-25" Monto="76895" Descripcion="ATM de Orotina" Referencia="S47I9" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="9078479609413928" FechaMovimiento="2024-01-25" Monto="0" Descripcion="En Bagaces" Referencia="DT2QW" />
+			<Movimiento Nombre="Pago en Linea" TF="7137219698255989" FechaMovimiento="2024-01-25" Monto="85364" Descripcion="ATM de Liberia" Referencia="CJ7I7" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5525247354599728" FechaMovimiento="2024-01-25" Monto="65958" Descripcion="Sucursal en Nicoya" Referencia="E4Z6Q" />
+			<Movimiento Nombre="Compra" TF="8796152434508582" FechaMovimiento="2024-01-25" Monto="69374" Descripcion="Walmart en San Carlos" Referencia="6MWD9" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="4202962751833120" FechaMovimiento="2024-01-25" Monto="0" Descripcion="En Santo Tomás" Referencia="T5D9W" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2810488571833172" FechaMovimiento="2024-01-25" Monto="90381" Descripcion="ATM de Pococí" Referencia="UUGMI" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-01">
@@ -482,8 +581,6 @@
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5373571423133445" FechaMovimiento="2024-02-01" Monto="68546" Descripcion="ATM de San José" Referencia="GJT8M" />
 			<Movimiento Nombre="Retiro en Ventana" TF="5655636577940569" FechaMovimiento="2024-02-01" Monto="77123" Descripcion="ATM de Guápiles" Referencia="G143F" />
 			<Movimiento Nombre="Retiro en Ventana" TF="9585994043536904" FechaMovimiento="2024-02-01" Monto="97410" Descripcion="En Limón" Referencia="BGR78" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5525247354599728" FechaMovimiento="2024-02-01" Monto="77820" Descripcion="Walmart en Curridabat" Referencia="BCP3H" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="2256488286809408" FechaMovimiento="2024-02-01" Monto="69371" Descripcion="En Curridabat" Referencia="5OFX7" />
 			<Movimiento Nombre="Pago en ATM" TF="9585994043536904" FechaMovimiento="2024-02-01" Monto="86052" Descripcion="Sucursal en Coto Brus" Referencia="BGR78" />
 			<Movimiento Nombre="Retiro en ATM" TF="9585994043536904" FechaMovimiento="2024-02-01" Monto="35046" Descripcion="ATM de Guápiles" Referencia="ZHSBD" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="5655636577940569" FechaMovimiento="2024-02-01" Monto="0" Descripcion="Walmart en Goicoechea" Referencia="0W54R" />
@@ -493,6 +590,18 @@
 			<Movimiento Nombre="Compra" TF="5655636577940569" FechaMovimiento="2024-02-01" Monto="33724" Descripcion="Sucursal en Desamparados" Referencia="XGKFC" />
 			<Movimiento Nombre="Renovacion de TF" TF="5525247354599728" FechaMovimiento="2024-02-01" Monto="43776" Descripcion="En Palmares" Referencia="IO7FV" />
 			<Movimiento Nombre="Pago en ATM" TF="9585994043536904" FechaMovimiento="2024-02-01" Monto="44406" Descripcion="ATM de Liberia" Referencia="OT3C6" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2855446415731838" FechaMovimiento="2024-02-01" Monto="37846" Descripcion="ATM de Turrialba" Referencia="PP97C" />
+			<Movimiento Nombre="Retiro en ATM" TF="5655636577940569" FechaMovimiento="2024-02-01" Monto="19480" Descripcion="Sucursal en Palmares" Referencia="V7YKY" />
+			<Movimiento Nombre="Retiro en ATM" TF="5373571423133445" FechaMovimiento="2024-02-01" Monto="72223" Descripcion="Walmart en Santa Cruz" Referencia="GPTL2" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2855446415731838" FechaMovimiento="2024-02-01" Monto="0" Descripcion="Walmart en Santa Cruz" Referencia="T9BKX" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5373571423133445" FechaMovimiento="2024-02-01" Monto="44363" Descripcion="En Palmares" Referencia="YCQDU" />
+			<Movimiento Nombre="Renovacion de TF" TF="5373571423133445" FechaMovimiento="2024-02-01" Monto="22087" Descripcion="Walmart en Orotina" Referencia="VN389" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="5525247354599728" FechaMovimiento="2024-02-01" Monto="0" Descripcion="Sucursal en Montes de Oca" Referencia="GPTL2" />
+			<Movimiento Nombre="Pago en Linea" TF="5373571423133445" FechaMovimiento="2024-02-01" Monto="98602" Descripcion="Walmart en Liberia" Referencia="BCQ5X" />
+			<Movimiento Nombre="Retiro en Ventana" TF="5525247354599728" FechaMovimiento="2024-02-01" Monto="52166" Descripcion="Walmart en Moravia" Referencia="4PA65" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5373571423133445" FechaMovimiento="2024-02-01" Monto="46594" Descripcion="Sucursal en Cañas" Referencia="OV4P8" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5373571423133445" FechaMovimiento="2024-02-01" Monto="65997" Descripcion="Sucursal en Nicoya" Referencia="YEBPT" />
+			<Movimiento Nombre="Compra" TF="9585994043536904" FechaMovimiento="2024-02-01" Monto="18799" Descripcion="Walmart en San Carlos" Referencia="NFHP2" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-03">
@@ -524,25 +633,35 @@
 		</NTF>
 		<Movimiento>
 			<Movimiento Nombre="Recuperacion por Perdida" TF="2855446415731838" FechaMovimiento="2024-02-03" Monto="0" Descripcion="Sucursal en Cartago" Referencia="WPDWM" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2855446415731838" FechaMovimiento="2024-02-03" Monto="84799" Descripcion="En San Rafael" Referencia="EVHUL" />
 			<Movimiento Nombre="Pago en ATM" TF="1524776262565386" FechaMovimiento="2024-02-03" Monto="44264" Descripcion="En Alajuela" Referencia="9VO60" />
 			<Movimiento Nombre="Cargos por Servicio" TF="2256488286809408" FechaMovimiento="2024-02-03" Monto="90862" Descripcion="Sucursal en San Ramón" Referencia="9VO60" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="9585994043536904" FechaMovimiento="2024-02-03" Monto="56941" Descripcion="ATM de Orotina" Referencia="YS1GW" />
 			<Movimiento Nombre="Cargos por Servicio" TF="8978920513967653" FechaMovimiento="2024-02-03" Monto="79259" Descripcion="ATM de Cartago" Referencia="0HPU2" />
 			<Movimiento Nombre="Compra" TF="5134942862922132" FechaMovimiento="2024-02-03" Monto="64855" Descripcion="ATM de Pococí" Referencia="GJT8M" />
 			<Movimiento Nombre="Cargos por Servicio" TF="5525247354599728" FechaMovimiento="2024-02-03" Monto="71148" Descripcion="Sucursal en Liberia" Referencia="0YQ42" />
 			<Movimiento Nombre="Pago en Linea" TF="9585994043536904" FechaMovimiento="2024-02-03" Monto="44978" Descripcion="Sucursal en Cañas" Referencia="YRD7O" />
 			<Movimiento Nombre="Pago en Linea" TF="9585994043536904" FechaMovimiento="2024-02-03" Monto="80695" Descripcion="Sucursal en Atenas" Referencia="YEO8A" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5655636577940569" FechaMovimiento="2024-02-03" Monto="57850" Descripcion="En Curridabat" Referencia="0YQ42" />
 			<Movimiento Nombre="Compra" TF="5525247354599728" FechaMovimiento="2024-02-03" Monto="88732" Descripcion="Walmart en Grecia" Referencia="B8PP4" />
 			<Movimiento Nombre="Compra" TF="5655636577940569" FechaMovimiento="2024-02-03" Monto="77489" Descripcion="En Santo Tomás" Referencia="TUTQW" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5525247354599728" FechaMovimiento="2024-02-03" Monto="88169" Descripcion="Sucursal en San Rafael" Referencia="CCKN3" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="6582011518402719" FechaMovimiento="2024-02-03" Monto="0" Descripcion="Walmart en Santa Cruz" Referencia="19KQG" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="6582011518402719" FechaMovimiento="2024-02-03" Monto="0" Descripcion="ATM de Escazú" Referencia="C10E1" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5134942862922132" FechaMovimiento="2024-02-03" Monto="16104" Descripcion="ATM de Grecia" Referencia="AKJ6A" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5655636577940569" FechaMovimiento="2024-02-03" Monto="29180" Descripcion="Walmart en San Ramón" Referencia="XW88C" />
+			<Movimiento Nombre="Retiro en ATM" TF="9982757494520271" FechaMovimiento="2024-02-03" Monto="56689" Descripcion="Walmart en Goicoechea" Referencia="17DAJ" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2256488286809408" FechaMovimiento="2024-02-03" Monto="14802" Descripcion="Sucursal en Parrita" Referencia="WRXW8" />
+			<Movimiento Nombre="Renovacion de TF" TF="5134942862922132" FechaMovimiento="2024-02-03" Monto="35978" Descripcion="ATM de Grecia" Referencia="OYHJA" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="6582011518402719" FechaMovimiento="2024-02-03" Monto="0" Descripcion="Sucursal en Heredia" Referencia="T9BKX" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="8978920513967653" FechaMovimiento="2024-02-03" Monto="0" Descripcion="ATM de Desamparados" Referencia="LKK8E" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5373571423133445" FechaMovimiento="2024-02-03" Monto="59631" Descripcion="ATM de San Pablo" Referencia="V7YKY" />
+			<Movimiento Nombre="Retiro en ATM" TF="9982757494520271" FechaMovimiento="2024-02-03" Monto="39786" Descripcion="Sucursal en Atenas" Referencia="V7YKY" />
+			<Movimiento Nombre="Renovacion de TF" TF="9585994043536904" FechaMovimiento="2024-02-03" Monto="48369" Descripcion="Sucursal en Atenas" Referencia="0D2UF" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="1524776262565386" FechaMovimiento="2024-02-03" Monto="79184" Descripcion="Sucursal en Liberia" Referencia="C10E1" />
+			<Movimiento Nombre="Renovacion de TF" TF="5373571423133445" FechaMovimiento="2024-02-03" Monto="24679" Descripcion="ATM de Pococí" Referencia="N16YO" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-06">
 		<NTH>
-			<NTH Nombre="Andrés Gutiérrez" ValorDocIdentidad="8-3915-2693" FechaNacimiento="1985-06-11" NombreUsuario="agutiérrez" Password="hola123" />
+			<NTH Nombre="Andrés Gutiérrez" ValorDocIdentidad="8-3915-2693" FechaNacimiento="1985-06-11" NombreUsuario="angutiérrez" Password="hola123" />
 			<NTH Nombre="Claudia Pineda" ValorDocIdentidad="9-1482-6520" FechaNacimiento="1967-08-17" NombreUsuario="cpineda" Password="hola123" />
 			<NTH Nombre="Mario Castro" ValorDocIdentidad="2-5107-5108" FechaNacimiento="1970-07-25" NombreUsuario="mcastro" Password="hola123" />
 			<NTH Nombre="Sofía Morales" ValorDocIdentidad="3-7842-3735" FechaNacimiento="1967-03-15" NombreUsuario="smorales" Password="hola123" />
@@ -582,7 +701,17 @@
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="9982757494520271" FechaMovimiento="2024-02-06" Monto="40087" Descripcion="Walmart en Goicoechea" Referencia="YS1GW" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2256488286809408" FechaMovimiento="2024-02-06" Monto="89279" Descripcion="ATM de Orotina" Referencia="1647J" />
 			<Movimiento Nombre="Cargos por Servicio" TF="5525247354599728" FechaMovimiento="2024-02-06" Monto="75672" Descripcion="En San Carlos" Referencia="1647J" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2256488286809408" FechaMovimiento="2024-02-06" Monto="41753" Descripcion="Walmart en Curridabat" Referencia="BCP3H" />
+			<Movimiento Nombre="Pago en ATM" TF="6582011518402719" FechaMovimiento="2024-02-06" Monto="34133" Descripcion="Sucursal en Atenas" Referencia="LVG59" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2855446415731838" FechaMovimiento="2024-02-06" Monto="0" Descripcion="ATM de Escazú" Referencia="1GHDS" />
+			<Movimiento Nombre="Retiro en ATM" TF="1524776262565386" FechaMovimiento="2024-02-06" Monto="51909" Descripcion="Sucursal en Escazú" Referencia="SKYTQ" />
+			<Movimiento Nombre="Pago en ATM" TF="3488477239742811" FechaMovimiento="2024-02-06" Monto="92059" Descripcion="ATM de Orotina" Referencia="TZKBN" />
+			<Movimiento Nombre="Retiro en ATM" TF="5585087340448535" FechaMovimiento="2024-02-06" Monto="26188" Descripcion="ATM de Guápiles" Referencia="TZKBN" />
+			<Movimiento Nombre="Pago en Linea" TF="6582011518402719" FechaMovimiento="2024-02-06" Monto="65293" Descripcion="En Alajuela" Referencia="RW5DY" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2855446415731838" FechaMovimiento="2024-02-06" Monto="49052" Descripcion="ATM de San Pablo" Referencia="V6QSR" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="6582011518402719" FechaMovimiento="2024-02-06" Monto="0" Descripcion="Sucursal en Parrita" Referencia="VJ2NE" />
+			<Movimiento Nombre="Retiro en ATM" TF="5525247354599728" FechaMovimiento="2024-02-06" Monto="16356" Descripcion="Walmart en Limón" Referencia="JH0A3" />
+			<Movimiento Nombre="Pago en Linea" TF="5585087340448535" FechaMovimiento="2024-02-06" Monto="53159" Descripcion="Walmart en Goicoechea" Referencia="C10E1" />
+			<Movimiento Nombre="Pago en Linea" TF="2794325256592805" FechaMovimiento="2024-02-06" Monto="37707" Descripcion="ATM de Grecia" Referencia="AMCXN" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-09">
@@ -614,9 +743,6 @@
 		</NTF>
 		<Movimiento>
 			<Movimiento Nombre="Recuperacion por Robo" TF="9585994043536904" FechaMovimiento="2024-02-09" Monto="0" Descripcion="ATM de Grecia" Referencia="642L0" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2256488286809408" FechaMovimiento="2024-02-09" Monto="62519" Descripcion="En San Carlos" Referencia="0ZK71" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5134942862922132" FechaMovimiento="2024-02-09" Monto="70616" Descripcion="ATM de Desamparados" Referencia="9U8SZ" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5134942862922132" FechaMovimiento="2024-02-09" Monto="63353" Descripcion="Sucursal en Liberia" Referencia="KXKDD" />
 			<Movimiento Nombre="Retiro en ATM" TF="7400420298822588" FechaMovimiento="2024-02-09" Monto="12206" Descripcion="ATM de Pavas" Referencia="AT4DM" />
 			<Movimiento Nombre="Renovacion de TF" TF="8978920513967653" FechaMovimiento="2024-02-09" Monto="34240" Descripcion="En Curridabat" Referencia="UPPZS" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="6418223953029167" FechaMovimiento="2024-02-09" Monto="48630" Descripcion="En Santo Tomás" Referencia="B8PP4" />
@@ -628,6 +754,19 @@
 			<Movimiento Nombre="Recuperacion por Robo" TF="8978920513967653" FechaMovimiento="2024-02-09" Monto="0" Descripcion="En Santa Ana" Referencia="GJT8M" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="7400420298822588" FechaMovimiento="2024-02-09" Monto="53364" Descripcion="En Corredores" Referencia="1647J" />
 			<Movimiento Nombre="Pago en Linea" TF="4366645788435358" FechaMovimiento="2024-02-09" Monto="76223" Descripcion="Walmart en Ciudad Colón" Referencia="JY15X" />
+			<Movimiento Nombre="Renovacion de TF" TF="2256488286809408" FechaMovimiento="2024-02-09" Monto="61263" Descripcion="Walmart en Nicoya" Referencia="VJ2NE" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="6418223953029167" FechaMovimiento="2024-02-09" Monto="18680" Descripcion="Walmart en Curridabat" Referencia="GPTL2" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="7400420298822588" FechaMovimiento="2024-02-09" Monto="93089" Descripcion="En Curridabat" Referencia="5AT7W" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="9585994043536904" FechaMovimiento="2024-02-09" Monto="0" Descripcion="En Bagaces" Referencia="QYAYI" />
+			<Movimiento Nombre="Pago en Linea" TF="7400420298822588" FechaMovimiento="2024-02-09" Monto="57416" Descripcion="En Pococí" Referencia="EWYTA" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5373571423133445" FechaMovimiento="2024-02-09" Monto="83364" Descripcion="ATM de Ciudad Quesada" Referencia="17DAJ" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5525247354599728" FechaMovimiento="2024-02-09" Monto="20516" Descripcion="Walmart en Nicoya" Referencia="C10E1" />
+			<Movimiento Nombre="Retiro en ATM" TF="6418223953029167" FechaMovimiento="2024-02-09" Monto="13215" Descripcion="Sucursal en Escazú" Referencia="QNTMJ" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5585087340448535" FechaMovimiento="2024-02-09" Monto="54153" Descripcion="Sucursal en Puriscal" Referencia="CUYDN" />
+			<Movimiento Nombre="Pago en Linea" TF="5525247354599728" FechaMovimiento="2024-02-09" Monto="16019" Descripcion="ATM de San José" Referencia="1GHDS" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="8978920513967653" FechaMovimiento="2024-02-09" Monto="0" Descripcion="Walmart en Liberia" Referencia="K177K" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5525247354599728" FechaMovimiento="2024-02-09" Monto="92051" Descripcion="Sucursal en Parrita" Referencia="UHHQ5" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="8371868300839996" FechaMovimiento="2024-02-09" Monto="0" Descripcion="Walmart en Santo Domingo" Referencia="608IJ" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-12">
@@ -660,7 +799,6 @@
 		<Movimiento>
 			<Movimiento Nombre="Cargos por Servicio" TF="7400420298822588" FechaMovimiento="2024-02-12" Monto="99976" Descripcion="En Upala" Referencia="GZURT" />
 			<Movimiento Nombre="Retiro en ATM" TF="2668231324191095" FechaMovimiento="2024-02-12" Monto="64271" Descripcion="Walmart en Heredia" Referencia="J7N1D" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="4366645788435358" FechaMovimiento="2024-02-12" Monto="55315" Descripcion="En Palmares" Referencia="LOPOC" />
 			<Movimiento Nombre="Retiro en Ventana" TF="9585994043536904" FechaMovimiento="2024-02-12" Monto="72795" Descripcion="En Limón" Referencia="LX9TX" />
 			<Movimiento Nombre="Pago en ATM" TF="5373571423133445" FechaMovimiento="2024-02-12" Monto="78558" Descripcion="En Naranjo" Referencia="XGKFC" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="9585994043536904" FechaMovimiento="2024-02-12" Monto="76767" Descripcion="Sucursal en Santa Ana" Referencia="OXFL4" />
@@ -673,6 +811,17 @@
 			<Movimiento Nombre="Retiro en Ventana" TF="7137219698255989" FechaMovimiento="2024-02-12" Monto="53626" Descripcion="Sucursal en Montes de Oca" Referencia="OXFL4" />
 			<Movimiento Nombre="Compra" TF="5134942862922132" FechaMovimiento="2024-02-12" Monto="17198" Descripcion="ATM de Orotina" Referencia="EU7B1" />
 			<Movimiento Nombre="Retiro en ATM" TF="5134942862922132" FechaMovimiento="2024-02-12" Monto="45774" Descripcion="ATM de Pavas" Referencia="D6GGE" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2256488286809408" FechaMovimiento="2024-02-12" Monto="35876" Descripcion="En Santo Tomás" Referencia="2CXXB" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="1694998673342057" FechaMovimiento="2024-02-12" Monto="34265" Descripcion="Sucursal en San Pablo" Referencia="8FYNO" />
+			<Movimiento Nombre="Compra" TF="7407888157510632" FechaMovimiento="2024-02-12" Monto="30502" Descripcion="ATM de Guápiles" Referencia="MYP0N" />
+			<Movimiento Nombre="Pago en ATM" TF="4286961520207211" FechaMovimiento="2024-02-12" Monto="62347" Descripcion="ATM de Moravia" Referencia="OVBJP" />
+			<Movimiento Nombre="Retiro en ATM" TF="7400420298822588" FechaMovimiento="2024-02-12" Monto="32172" Descripcion="ATM de Liberia" Referencia="BM818" />
+			<Movimiento Nombre="Retiro en Ventana" TF="6582011518402719" FechaMovimiento="2024-02-12" Monto="72272" Descripcion="Walmart en Cartago" Referencia="3N957" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="5585087340448535" FechaMovimiento="2024-02-12" Monto="0" Descripcion="Walmart en Ciudad Colón" Referencia="C60RV" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="7137219698255989" FechaMovimiento="2024-02-12" Monto="33924" Descripcion="En Santo Domingo" Referencia="LWW5S" />
+			<Movimiento Nombre="Compra" TF="5373571423133445" FechaMovimiento="2024-02-12" Monto="36450" Descripcion="Walmart en Santa Cruz" Referencia="608IJ" />
+			<Movimiento Nombre="Retiro en ATM" TF="2855446415731838" FechaMovimiento="2024-02-12" Monto="50042" Descripcion="Sucursal en Cañas" Referencia="INBS6" />
+			<Movimiento Nombre="Pago en ATM" TF="2383056325654095" FechaMovimiento="2024-02-12" Monto="47956" Descripcion="Sucursal en Atenas" Referencia="IYX1F" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-15">
@@ -706,18 +855,28 @@
 			<Movimiento Nombre="Renovacion de TF" TF="3488477239742811" FechaMovimiento="2024-02-15" Monto="77012" Descripcion="Sucursal en Talamanca" Referencia="ZON99" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="2855446415731838" FechaMovimiento="2024-02-15" Monto="0" Descripcion="Walmart en Moravia" Referencia="BVTU7" />
 			<Movimiento Nombre="Cargos por Servicio" TF="2855446415731838" FechaMovimiento="2024-02-15" Monto="58783" Descripcion="ATM de Liberia" Referencia="U1CIO" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="1907420611820113" FechaMovimiento="2024-02-15" Monto="91325" Descripcion="ATM de Liberia" Referencia="GZURT" />
 			<Movimiento Nombre="Retiro en ATM" TF="2256488286809408" FechaMovimiento="2024-02-15" Monto="41014" Descripcion="ATM de Escazú" Referencia="7YGC1" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2855446415731838" FechaMovimiento="2024-02-15" Monto="21536" Descripcion="Sucursal en Montes de Oca" Referencia="ZHSBD" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="3488477239742811" FechaMovimiento="2024-02-15" Monto="72701" Descripcion="Sucursal en Nicoya" Referencia="U1CIO" />
 			<Movimiento Nombre="Renovacion de TF" TF="5655636577940569" FechaMovimiento="2024-02-15" Monto="76965" Descripcion="En Naranjo" Referencia="H2O07" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="3620383385494061" FechaMovimiento="2024-02-15" Monto="61382" Descripcion="Sucursal en Escazú" Referencia="GOM19" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="8371868300839996" FechaMovimiento="2024-02-15" Monto="70309" Descripcion="En Palmares" Referencia="FAHSG" />
 			<Movimiento Nombre="Pago en ATM" TF="5538858134303627" FechaMovimiento="2024-02-15" Monto="53582" Descripcion="Sucursal en Cartago" Referencia="5OFX7" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="6418223953029167" FechaMovimiento="2024-02-15" Monto="0" Descripcion="En Ciudad Colón" Referencia="18H06" />
 			<Movimiento Nombre="Retiro en Ventana" TF="8978920513967653" FechaMovimiento="2024-02-15" Monto="83414" Descripcion="ATM de Alajuela" Referencia="19KQG" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2315327303879021" FechaMovimiento="2024-02-15" Monto="45019" Descripcion="Sucursal en Cartago" Referencia="9VO60" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="1907420611820113" FechaMovimiento="2024-02-15" Monto="75208" Descripcion="Sucursal en Talamanca" Referencia="17LGE" />
+			<Movimiento Nombre="Retiro en ATM" TF="2383056325654095" FechaMovimiento="2024-02-15" Monto="12055" Descripcion="ATM de Puriscal" Referencia="OCXX8" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2855446415731838" FechaMovimiento="2024-02-15" Monto="0" Descripcion="Walmart en San Ramón" Referencia="F2OVZ" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2794325256592805" FechaMovimiento="2024-02-15" Monto="28740" Descripcion="Sucursal en San Pablo" Referencia="H0JBB" />
+			<Movimiento Nombre="Renovacion de TF" TF="2810488571833172" FechaMovimiento="2024-02-15" Monto="18762" Descripcion="Walmart en Heredia" Referencia="JH0A3" />
+			<Movimiento Nombre="Cargos por Servicio" TF="8603018352074994" FechaMovimiento="2024-02-15" Monto="62809" Descripcion="ATM de Puriscal" Referencia="K177K" />
+			<Movimiento Nombre="Pago en ATM" TF="2315327303879021" FechaMovimiento="2024-02-15" Monto="24857" Descripcion="En Belén" Referencia="W5NW7" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2256488286809408" FechaMovimiento="2024-02-15" Monto="0" Descripcion="Walmart en Coronado" Referencia="JDUMC" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="4286961520207211" FechaMovimiento="2024-02-15" Monto="0" Descripcion="Sucursal en Escazú" Referencia="F2OVZ" />
+			<Movimiento Nombre="Renovacion de TF" TF="5134942862922132" FechaMovimiento="2024-02-15" Monto="87670" Descripcion="Sucursal en Montes de Oca" Referencia="BIONQ" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="7400420298822588" FechaMovimiento="2024-02-15" Monto="0" Descripcion="Walmart en Guápiles" Referencia="1E4AA" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="5395554230644494" FechaMovimiento="2024-02-15" Monto="0" Descripcion="En San Rafael" Referencia="QCW32" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="7400420298822588" FechaMovimiento="2024-02-15" Monto="0" Descripcion="Sucursal en Palmares" Referencia="OX8AU" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="7407888157510632" FechaMovimiento="2024-02-15" Monto="0" Descripcion="En Alajuela" Referencia="MQFNF" />
+			<Movimiento Nombre="Compra" TF="2383056325654095" FechaMovimiento="2024-02-15" Monto="81429" Descripcion="En Bagaces" Referencia="PP97C" />
+			<Movimiento Nombre="Retiro en Ventana" TF="9426782141767763" FechaMovimiento="2024-02-15" Monto="92914" Descripcion="ATM de Puriscal" Referencia="LVG59" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-18">
@@ -752,17 +911,27 @@
 			<Movimiento Nombre="Pago en Linea" TF="3488477239742811" FechaMovimiento="2024-02-18" Monto="99796" Descripcion="En Belén" Referencia="9U8SZ" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="3549875182800350" FechaMovimiento="2024-02-18" Monto="0" Descripcion="Walmart en Escazú" Referencia="T6Q7G" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="9982757494520271" FechaMovimiento="2024-02-18" Monto="0" Descripcion="Walmart en Escazú" Referencia="O9D83" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="7400420298822588" FechaMovimiento="2024-02-18" Monto="29024" Descripcion="Walmart en Nicoya" Referencia="7U69K" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="2668231324191095" FechaMovimiento="2024-02-18" Monto="31148" Descripcion="Sucursal en Atenas" Referencia="NUUQW" />
 			<Movimiento Nombre="Retiro en Ventana" TF="5525247354599728" FechaMovimiento="2024-02-18" Monto="74949" Descripcion="ATM de Turrialba" Referencia="IRP27" />
 			<Movimiento Nombre="Cargos por Servicio" TF="2337742938367048" FechaMovimiento="2024-02-18" Monto="74254" Descripcion="En Bagaces" Referencia="BY72S" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="6582011518402719" FechaMovimiento="2024-02-18" Monto="77612" Descripcion="ATM de San Carlos" Referencia="VR08B" />
 			<Movimiento Nombre="Pago en ATM" TF="9982757494520271" FechaMovimiento="2024-02-18" Monto="94492" Descripcion="Walmart en Santo Domingo" Referencia="0W54R" />
 			<Movimiento Nombre="Pago en Linea" TF="9426782141767763" FechaMovimiento="2024-02-18" Monto="62505" Descripcion="En Ciudad Colón" Referencia="FE9XJ" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="4202962751833120" FechaMovimiento="2024-02-18" Monto="66662" Descripcion="En Bagaces" Referencia="BPPZY" />
 			<Movimiento Nombre="Retiro en ATM" TF="5538858134303627" FechaMovimiento="2024-02-18" Monto="19388" Descripcion="En Curridabat" Referencia="CU2ET" />
 			<Movimiento Nombre="Pago en Linea" TF="1907420611820113" FechaMovimiento="2024-02-18" Monto="63708" Descripcion="Sucursal en Atenas" Referencia="PN7NM" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="9426782141767763" FechaMovimiento="2024-02-18" Monto="21764" Descripcion="Sucursal en Santa Ana" Referencia="CCKN3" />
+			<Movimiento Nombre="Retiro en ATM" TF="5525247354599728" FechaMovimiento="2024-02-18" Monto="89554" Descripcion="ATM de Grecia" Referencia="PP97C" />
+			<Movimiento Nombre="Compra" TF="8348133262205011" FechaMovimiento="2024-02-18" Monto="46701" Descripcion="Walmart en Liberia" Referencia="V6QSR" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2197620817888201" FechaMovimiento="2024-02-18" Monto="66664" Descripcion="Walmart en Cartago" Referencia="PG7FJ" />
+			<Movimiento Nombre="Renovacion de TF" TF="5508364630862234" FechaMovimiento="2024-02-18" Monto="62925" Descripcion="Sucursal en Cañas" Referencia="17DAJ" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="9544162405780883" FechaMovimiento="2024-02-18" Monto="25576" Descripcion="Walmart en Heredia" Referencia="O271Z" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5585087340448535" FechaMovimiento="2024-02-18" Monto="66322" Descripcion="En Pococí" Referencia="2BRDZ" />
+			<Movimiento Nombre="Compra" TF="2668231324191095" FechaMovimiento="2024-02-18" Monto="79672" Descripcion="Sucursal en Coto Brus" Referencia="IWTLG" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2810488571833172" FechaMovimiento="2024-02-18" Monto="41192" Descripcion="ATM de Pococí" Referencia="ICLPN" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5525247354599728" FechaMovimiento="2024-02-18" Monto="85903" Descripcion="ATM de Alajuela" Referencia="AKJ6A" />
+			<Movimiento Nombre="Cargos por Servicio" TF="6418223953029167" FechaMovimiento="2024-02-18" Monto="53423" Descripcion="En La Unión" Referencia="KH9ES" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="7634009855741021" FechaMovimiento="2024-02-18" Monto="48305" Descripcion="Walmart en Grecia" Referencia="CC1I2" />
+			<Movimiento Nombre="Pago en ATM" TF="3488477239742811" FechaMovimiento="2024-02-18" Monto="12447" Descripcion="Sucursal en Escazú" Referencia="06FVB" />
+			<Movimiento Nombre="Compra" TF="2256488286809408" FechaMovimiento="2024-02-18" Monto="72976" Descripcion="Walmart en San Ramón" Referencia="307EL" />
+			<Movimiento Nombre="Pago en ATM" TF="7400420298822588" FechaMovimiento="2024-02-18" Monto="34418" Descripcion="En Corredores" Referencia="ZRZAS" />
+			<Movimiento Nombre="Retiro en Ventana" TF="8796152434508582" FechaMovimiento="2024-02-18" Monto="82510" Descripcion="Sucursal en Talamanca" Referencia="YCQDU" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-21">
@@ -770,7 +939,7 @@
 			<NTH Nombre="Raúl Montero" ValorDocIdentidad="7-5758-1827" FechaNacimiento="1986-01-29" NombreUsuario="rmontero" Password="hola123" />
 			<NTH Nombre="Verónica Ortega" ValorDocIdentidad="7-4352-8117" FechaNacimiento="1960-10-30" NombreUsuario="vortega" Password="hola123" />
 			<NTH Nombre="Gonzalo Varela" ValorDocIdentidad="5-5393-2220" FechaNacimiento="1984-02-12" NombreUsuario="gvarela" Password="hola123" />
-			<NTH Nombre="Melania Zúñiga" ValorDocIdentidad="6-6444-8550" FechaNacimiento="1989-07-21" NombreUsuario="mzúñiga" Password="hola123" />
+			<NTH Nombre="Melania Zúñiga" ValorDocIdentidad="6-6444-8550" FechaNacimiento="1989-07-21" NombreUsuario="mezúñiga" Password="hola123" />
 			<NTH Nombre="Alfredo Sandoval" ValorDocIdentidad="6-1198-5501" FechaNacimiento="1984-05-31" NombreUsuario="asandoval" Password="hola123" />
 			<NTH Nombre="Beatriz Chacón" ValorDocIdentidad="2-9920-3217" FechaNacimiento="1980-10-29" NombreUsuario="bchacón" Password="hola123" />
 		</NTH>
@@ -793,7 +962,6 @@
 			<NTF Codigo="3493211867850104" TCAsociada="59525" FechaVencimiento="12/2028" CCV="6242" />
 		</NTF>
 		<Movimiento>
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="2337742938367048" FechaMovimiento="2024-02-21" Monto="50646" Descripcion="ATM de Puriscal" Referencia="BCP3H" />
 			<Movimiento Nombre="Retiro en Ventana" TF="8537718971978825" FechaMovimiento="2024-02-21" Monto="48519" Descripcion="Walmart en Coronado" Referencia="WN70Z" />
 			<Movimiento Nombre="Retiro en ATM" TF="3620383385494061" FechaMovimiento="2024-02-21" Monto="8849" Descripcion="Walmart en Heredia" Referencia="OT3C6" />
 			<Movimiento Nombre="Pago en ATM" TF="2197620817888201" FechaMovimiento="2024-02-21" Monto="72766" Descripcion="En Upala" Referencia="0YQ42" />
@@ -802,12 +970,23 @@
 			<Movimiento Nombre="Pago en Linea" TF="4202962751833120" FechaMovimiento="2024-02-21" Monto="28629" Descripcion="En Belén" Referencia="09TZ0" />
 			<Movimiento Nombre="Compra" TF="6582011518402719" FechaMovimiento="2024-02-21" Monto="20530" Descripcion="En Esparza" Referencia="D6GGE" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="8215484693274147" FechaMovimiento="2024-02-21" Monto="64227" Descripcion="En Esparza" Referencia="LBBEL" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="9982757494520271" FechaMovimiento="2024-02-21" Monto="91165" Descripcion="En Pococí" Referencia="OVY0C" />
 			<Movimiento Nombre="Retiro en ATM" TF="9982757494520271" FechaMovimiento="2024-02-21" Monto="17182" Descripcion="ATM de San Pablo" Referencia="LBBEL" />
 			<Movimiento Nombre="Pago en Linea" TF="2337742938367048" FechaMovimiento="2024-02-21" Monto="27830" Descripcion="Walmart en Grecia" Referencia="FAHSG" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2383056325654095" FechaMovimiento="2024-02-21" Monto="43612" Descripcion="En Palmares" Referencia="Q7P68" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="8215484693274147" FechaMovimiento="2024-02-21" Monto="86843" Descripcion="ATM de Pococí" Referencia="7BLAA" />
 			<Movimiento Nombre="Retiro en ATM" TF="5585087340448535" FechaMovimiento="2024-02-21" Monto="81056" Descripcion="En Ciudad Colón" Referencia="UAJMP" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2256488286809408" FechaMovimiento="2024-02-21" Monto="13206" Descripcion="Walmart en San José" Referencia="CQ4CT" />
+			<Movimiento Nombre="Pago en ATM" TF="7407888157510632" FechaMovimiento="2024-02-21" Monto="22309" Descripcion="Sucursal en Escazú" Referencia="O271Z" />
+			<Movimiento Nombre="Pago en Linea" TF="8215484693274147" FechaMovimiento="2024-02-21" Monto="79591" Descripcion="Sucursal en Puntarenas" Referencia="UCK3U" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5508364630862234" FechaMovimiento="2024-02-21" Monto="14595" Descripcion="Walmart en Parrita" Referencia="UXCO1" />
+			<Movimiento Nombre="Retiro en Ventana" TF="4366645788435358" FechaMovimiento="2024-02-21" Monto="29529" Descripcion="Walmart en Cartago" Referencia="KP2ZU" />
+			<Movimiento Nombre="Cargos por Servicio" TF="3549875182800350" FechaMovimiento="2024-02-21" Monto="85008" Descripcion="Sucursal en San Ramón" Referencia="17DAJ" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="8978920513967653" FechaMovimiento="2024-02-21" Monto="31200" Descripcion="Walmart en Heredia" Referencia="LVG59" />
+			<Movimiento Nombre="Cargos por Servicio" TF="6582011518402719" FechaMovimiento="2024-02-21" Monto="70286" Descripcion="Sucursal en Quepos" Referencia="OAW6C" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2855446415731838" FechaMovimiento="2024-02-21" Monto="23090" Descripcion="Sucursal en Atenas" Referencia="VNEDB" />
+			<Movimiento Nombre="Compra" TF="5538858134303627" FechaMovimiento="2024-02-21" Monto="22043" Descripcion="ATM de Guápiles" Referencia="NFHP2" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5585087340448535" FechaMovimiento="2024-02-21" Monto="60076" Descripcion="Sucursal en San Rafael" Referencia="FQGD3" />
+			<Movimiento Nombre="Pago en Linea" TF="9982757494520271" FechaMovimiento="2024-02-21" Monto="59183" Descripcion="Walmart en Moravia" Referencia="JH0A3" />
+			<Movimiento Nombre="Pago en ATM" TF="4942959873940953" FechaMovimiento="2024-02-21" Monto="12673" Descripcion="En Belén" Referencia="LVG59" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="1694998673342057" FechaMovimiento="2024-02-21" Monto="0" Descripcion="ATM de Pococí" Referencia="UHHQ5" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-24">
@@ -842,7 +1021,6 @@
 			<Movimiento Nombre="Recuperacion por Perdida" TF="3620383385494061" FechaMovimiento="2024-02-24" Monto="0" Descripcion="ATM de Moravia" Referencia="ES7M1" />
 			<Movimiento Nombre="Pago en ATM" TF="9982757494520271" FechaMovimiento="2024-02-24" Monto="93597" Descripcion="En Curridabat" Referencia="E4B9L" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5525247354599728" FechaMovimiento="2024-02-24" Monto="11394" Descripcion="En Santo Domingo" Referencia="PRR4L" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="8965023215396559" FechaMovimiento="2024-02-24" Monto="86298" Descripcion="En Esparza" Referencia="BQ1FR" />
 			<Movimiento Nombre="Pago en Linea" TF="8796152434508582" FechaMovimiento="2024-02-24" Monto="92874" Descripcion="En Puntarenas" Referencia="NOZC7" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5655636577940569" FechaMovimiento="2024-02-24" Monto="23638" Descripcion="Sucursal en San Pablo" Referencia="FE9XJ" />
 			<Movimiento Nombre="Renovacion de TF" TF="8414782667197000" FechaMovimiento="2024-02-24" Monto="43250" Descripcion="ATM de Orotina" Referencia="LW6NL" />
@@ -852,12 +1030,23 @@
 			<Movimiento Nombre="Retiro en ATM" TF="8603018352074994" FechaMovimiento="2024-02-24" Monto="12577" Descripcion="ATM de Palmares" Referencia="UGRAY" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2994043263109333" FechaMovimiento="2024-02-24" Monto="26698" Descripcion="Walmart en San Rafael" Referencia="GZ7MY" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="2315327303879021" FechaMovimiento="2024-02-24" Monto="0" Descripcion="Sucursal en Turrialba" Referencia="ES7M1" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="8603018352074994" FechaMovimiento="2024-02-24" Monto="78912" Descripcion="Walmart en San Carlos" Referencia="1647J" />
+			<Movimiento Nombre="Pago en ATM" TF="5538858134303627" FechaMovimiento="2024-02-24" Monto="39589" Descripcion="Walmart en San José" Referencia="OYHJA" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="9078479609413928" FechaMovimiento="2024-02-24" Monto="0" Descripcion="ATM de Pavas" Referencia="LEAAA" />
+			<Movimiento Nombre="Retiro en ATM" TF="4202962751833120" FechaMovimiento="2024-02-24" Monto="17321" Descripcion="En Atenas" Referencia="VCQPV" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="8537718971978825" FechaMovimiento="2024-02-24" Monto="26200" Descripcion="Sucursal en Cartago" Referencia="UOXUF" />
+			<Movimiento Nombre="Retiro en ATM" TF="7137219698255989" FechaMovimiento="2024-02-24" Monto="30689" Descripcion="Walmart en Orotina" Referencia="KQM19" />
+			<Movimiento Nombre="Retiro en ATM" TF="8796152434508582" FechaMovimiento="2024-02-24" Monto="41657" Descripcion="Walmart en Nicoya" Referencia="ICD21" />
+			<Movimiento Nombre="Pago en ATM" TF="2810488571833172" FechaMovimiento="2024-02-24" Monto="56132" Descripcion="Walmart en Moravia" Referencia="OAW6C" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="3488477239742811" FechaMovimiento="2024-02-24" Monto="97844" Descripcion="ATM de Ciudad Quesada" Referencia="TJVCY" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="8371868300839996" FechaMovimiento="2024-02-24" Monto="0" Descripcion="Walmart en Escazú" Referencia="W5NW7" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="5373571423133445" FechaMovimiento="2024-02-24" Monto="0" Descripcion="Sucursal en Palmares" Referencia="W5NW7" />
+			<Movimiento Nombre="Renovacion de TF" TF="4921641842263358" FechaMovimiento="2024-02-24" Monto="94930" Descripcion="En Tibás" Referencia="EY69G" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5525247354599728" FechaMovimiento="2024-02-24" Monto="89019" Descripcion="ATM de Ciudad Quesada" Referencia="PP97C" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-02-27">
 		<NTH>
-			<NTH Nombre="Rubén Martínez" ValorDocIdentidad="4-3123-5851" FechaNacimiento="1967-08-13" NombreUsuario="rmartínez" Password="hola123" />
+			<NTH Nombre="Rubén Martínez" ValorDocIdentidad="4-3123-5851" FechaNacimiento="1967-08-13" NombreUsuario="rumartínez" Password="hola123" />
 			<NTH Nombre="Julia Madrigal" ValorDocIdentidad="6-6744-2990" FechaNacimiento="1994-12-06" NombreUsuario="jmadrigal" Password="hola123" />
 			<NTH Nombre="Ricardo Zamora" ValorDocIdentidad="3-9145-8584" FechaNacimiento="1960-12-28" NombreUsuario="rzamora" Password="hola123" />
 			<NTH Nombre="Rosaura Carvajal" ValorDocIdentidad="1-3457-7743" FechaNacimiento="1977-04-26" NombreUsuario="rcarvajal" Password="hola123" />
@@ -883,21 +1072,31 @@
 			<NTF Codigo="1632774368241075" TCAsociada="30853" FechaVencimiento="06/2027" CCV="6538" />
 		</NTF>
 		<Movimiento>
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="8978920513967653" FechaMovimiento="2024-02-27" Monto="83442" Descripcion="Sucursal en Quepos" Referencia="VSZGO" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="6418223953029167" FechaMovimiento="2024-02-27" Monto="68084" Descripcion="Walmart en San José" Referencia="NKUT2" />
 			<Movimiento Nombre="Retiro en Ventana" TF="5585087340448535" FechaMovimiento="2024-02-27" Monto="23770" Descripcion="Walmart en San Ramón" Referencia="PN7NM" />
 			<Movimiento Nombre="Pago en ATM" TF="8603018352074994" FechaMovimiento="2024-02-27" Monto="51497" Descripcion="En Atenas" Referencia="G143F" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="7875286369977780" FechaMovimiento="2024-02-27" Monto="0" Descripcion="ATM de Grecia" Referencia="AYPUH" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="4366645788435358" FechaMovimiento="2024-02-27" Monto="14484" Descripcion="En Palmares" Referencia="N8KAQ" />
 			<Movimiento Nombre="Retiro en Ventana" TF="3488477239742811" FechaMovimiento="2024-02-27" Monto="85448" Descripcion="En Limón" Referencia="W6Z68" />
 			<Movimiento Nombre="Compra" TF="3488477239742811" FechaMovimiento="2024-02-27" Monto="66902" Descripcion="ATM de Desamparados" Referencia="42AX5" />
 			<Movimiento Nombre="Compra" TF="1694998673342057" FechaMovimiento="2024-02-27" Monto="65067" Descripcion="Walmart en Santa Cruz" Referencia="GJT8M" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="7400420298822588" FechaMovimiento="2024-02-27" Monto="35640" Descripcion="ATM de Grecia" Referencia="ATB6P" />
 			<Movimiento Nombre="Pago en Linea" TF="5525247354599728" FechaMovimiento="2024-02-27" Monto="78726" Descripcion="Sucursal en Puriscal" Referencia="0HPU2" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2315327303879021" FechaMovimiento="2024-02-27" Monto="30132" Descripcion="ATM de Grecia" Referencia="5OFX7" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="6839292845612518" FechaMovimiento="2024-02-27" Monto="40283" Descripcion="Walmart en Santa Cruz" Referencia="0W54R" />
 			<Movimiento Nombre="Retiro en ATM" TF="3488477239742811" FechaMovimiento="2024-02-27" Monto="74428" Descripcion="ATM de Desamparados" Referencia="LZCJP" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="8978920513967653" FechaMovimiento="2024-02-27" Monto="90705" Descripcion="Walmart en San Isidro" Referencia="0HPU2" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="8414782667197000" FechaMovimiento="2024-02-27" Monto="84749" Descripcion="Sucursal en Liberia" Referencia="LVG59" />
+			<Movimiento Nombre="Compra" TF="5585087340448535" FechaMovimiento="2024-02-27" Monto="44997" Descripcion="Walmart en Nicoya" Referencia="F2OVZ" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2197620817888201" FechaMovimiento="2024-02-27" Monto="8492" Descripcion="En Ciudad Colón" Referencia="V6QSR" />
+			<Movimiento Nombre="Renovacion de TF" TF="3620383385494061" FechaMovimiento="2024-02-27" Monto="14854" Descripcion="Sucursal en Cañas" Referencia="JH0A3" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="7343138089572132" FechaMovimiento="2024-02-27" Monto="17591" Descripcion="Walmart en Nicoya" Referencia="V7YKY" />
+			<Movimiento Nombre="Cargos por Servicio" TF="2810488571833172" FechaMovimiento="2024-02-27" Monto="14338" Descripcion="Sucursal en Liberia" Referencia="INBS6" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="8414782667197000" FechaMovimiento="2024-02-27" Monto="0" Descripcion="En Bagaces" Referencia="BCQ5X" />
+			<Movimiento Nombre="Renovacion de TF" TF="1024221161988034" FechaMovimiento="2024-02-27" Monto="68318" Descripcion="En Belén" Referencia="H0JBB" />
+			<Movimiento Nombre="Compra" TF="9426782141767763" FechaMovimiento="2024-02-27" Monto="23887" Descripcion="Sucursal en Golfito" Referencia="IWH0K" />
+			<Movimiento Nombre="Retiro en Ventana" TF="7407888157510632" FechaMovimiento="2024-02-27" Monto="96226" Descripcion="ATM de San Carlos" Referencia="LBVSX" />
+			<Movimiento Nombre="Pago en ATM" TF="8215484693274147" FechaMovimiento="2024-02-27" Monto="86367" Descripcion="Walmart en Escazú" Referencia="UHHQ5" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2197620817888201" FechaMovimiento="2024-02-27" Monto="37427" Descripcion="En Palmares" Referencia="5P5R6" />
+			<Movimiento Nombre="Renovacion de TF" TF="8796152434508582" FechaMovimiento="2024-02-27" Monto="83699" Descripcion="En San Carlos" Referencia="YEBPT" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="4202962751833120" FechaMovimiento="2024-02-27" Monto="0" Descripcion="En Alajuela" Referencia="2DCC5" />
+			<Movimiento Nombre="Cargos por Servicio" TF="8215484693274147" FechaMovimiento="2024-02-27" Monto="41497" Descripcion="Walmart en San Isidro" Referencia="8FYNO" />
 		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-01">
@@ -927,11 +1126,10 @@
 			<NTF Codigo="9725724243560452" TCAsociada="17655" FechaVencimiento="11/2028" CCV="6181" />
 			<NTF Codigo="7084208694684957" TCAsociada="25433" FechaVencimiento="12/2027" CCV="3491" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Retiro en Ventana" TF="9585994043536904" FechaMovimiento="2024-03-01" Monto="26975" Descripcion="ATM de San Ramón" Referencia="EVLKD" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="2855446415731838" FechaMovimiento="2024-03-01" Monto="0" Descripcion="Walmart en Moravia" Referencia="W5BH1" />
 			<Movimiento Nombre="Cargos por Servicio" TF="2855446415731838" FechaMovimiento="2024-03-01" Monto="86904" Descripcion="ATM de Pérez Zeledón" Referencia="K6XCX" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2855446415731838" FechaMovimiento="2024-03-01" Monto="61433" Descripcion="En Bagaces" Referencia="C1V3D" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="5525247354599728" FechaMovimiento="2024-03-01" Monto="0" Descripcion="Walmart en Parrita" Referencia="3G5N0" />
 			<Movimiento Nombre="Cargos por Servicio" TF="9585994043536904" FechaMovimiento="2024-03-01" Monto="30724" Descripcion="ATM de Pavas" Referencia="9MWJI" />
 			<Movimiento Nombre="Pago en ATM" TF="2855446415731838" FechaMovimiento="2024-03-01" Monto="13645" Descripcion="En Belén" Referencia="Z8HSI" />
@@ -943,7 +1141,18 @@
 			<Movimiento Nombre="Retiro en Ventana" TF="5655636577940569" FechaMovimiento="2024-03-01" Monto="69188" Descripcion="En Belén" Referencia="TSW6P" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2256488286809408" FechaMovimiento="2024-03-01" Monto="49418" Descripcion="En Upala" Referencia="99YBN" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="9585994043536904" FechaMovimiento="2024-03-01" Monto="0" Descripcion="Sucursal en Nicoya" Referencia="HDK1L" />
-		</Movimientos>
+			<Movimiento Nombre="Pago en ATM" TF="5655636577940569" FechaMovimiento="2024-03-01" Monto="81868" Descripcion="Sucursal en Cartago" Referencia="JNZG0" />
+			<Movimiento Nombre="Retiro en Ventana" TF="5373571423133445" FechaMovimiento="2024-03-01" Monto="57620" Descripcion="En Puntarenas" Referencia="ZVBK9" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2256488286809408" FechaMovimiento="2024-03-01" Monto="0" Descripcion="Walmart en Parrita" Referencia="PEHN1" />
+			<Movimiento Nombre="Retiro en ATM" TF="5655636577940569" FechaMovimiento="2024-03-01" Monto="75155" Descripcion="En Tibás" Referencia="NEZGS" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5525247354599728" FechaMovimiento="2024-03-01" Monto="78045" Descripcion="ATM de San Carlos" Referencia="PVZ7O" />
+			<Movimiento Nombre="Pago en Linea" TF="2256488286809408" FechaMovimiento="2024-03-01" Monto="15346" Descripcion="En Santo Tomás" Referencia="Q8W3N" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="9585994043536904" FechaMovimiento="2024-03-01" Monto="40927" Descripcion="Walmart en Goicoechea" Referencia="DQ4GG" />
+			<Movimiento Nombre="Retiro en ATM" TF="5525247354599728" FechaMovimiento="2024-03-01" Monto="33290" Descripcion="Walmart en Orotina" Referencia="IYN6K" />
+			<Movimiento Nombre="Cargos por Servicio" TF="2855446415731838" FechaMovimiento="2024-03-01" Monto="61033" Descripcion="En Bagaces" Referencia="Q8W3N" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5373571423133445" FechaMovimiento="2024-03-01" Monto="14423" Descripcion="ATM de Desamparados" Referencia="1I9AB" />
+			<Movimiento Nombre="Renovacion de TF" TF="9585994043536904" FechaMovimiento="2024-03-01" Monto="14162" Descripcion="Walmart en San Isidro" Referencia="I5QB6" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-04">
 		<NTH>
@@ -972,12 +1181,11 @@
 			<NTF Codigo="5554632709279792" TCAsociada="74741" FechaVencimiento="04/2028" CCV="7617" />
 			<NTF Codigo="2780431019869671" TCAsociada="62997" FechaVencimiento="12/2028" CCV="8313" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Cargos por Servicio" TF="1524776262565386" FechaMovimiento="2024-03-04" Monto="23990" Descripcion="ATM de Desamparados" Referencia="JKNXD" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="6582011518402719" FechaMovimiento="2024-03-04" Monto="0" Descripcion="ATM de Liberia" Referencia="HZ16F" />
 			<Movimiento Nombre="Pago en ATM" TF="5134942862922132" FechaMovimiento="2024-03-04" Monto="92522" Descripcion="Sucursal en Atenas" Referencia="R8YIR" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2855446415731838" FechaMovimiento="2024-03-04" Monto="13774" Descripcion="Sucursal en Cartago" Referencia="Y3DYT" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="8978920513967653" FechaMovimiento="2024-03-04" Monto="23937" Descripcion="Walmart en San Isidro" Referencia="N9MGI" />
 			<Movimiento Nombre="Retiro en Ventana" TF="1524776262565386" FechaMovimiento="2024-03-04" Monto="82798" Descripcion="ATM de Puriscal" Referencia="A0DO2" />
 			<Movimiento Nombre="Pago en Linea" TF="5134942862922132" FechaMovimiento="2024-03-04" Monto="99757" Descripcion="ATM de Liberia" Referencia="J6JEO" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5134942862922132" FechaMovimiento="2024-03-04" Monto="94737" Descripcion="Sucursal en Atenas" Referencia="281XY" />
@@ -988,7 +1196,18 @@
 			<Movimiento Nombre="Retiro en Ventana" TF="5134942862922132" FechaMovimiento="2024-03-04" Monto="48865" Descripcion="Sucursal en San Pablo" Referencia="5B8OH" />
 			<Movimiento Nombre="Retiro en ATM" TF="2256488286809408" FechaMovimiento="2024-03-04" Monto="42501" Descripcion="En Corredores" Referencia="9MWJI" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2855446415731838" FechaMovimiento="2024-03-04" Monto="26713" Descripcion="Sucursal en Heredia" Referencia="N9MGI" />
-		</Movimientos>
+			<Movimiento Nombre="Compra" TF="2855446415731838" FechaMovimiento="2024-03-04" Monto="38173" Descripcion="Sucursal en Palmares" Referencia="ICEHY" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="1524776262565386" FechaMovimiento="2024-03-04" Monto="0" Descripcion="Walmart en Ciudad Colón" Referencia="URN08" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="9585994043536904" FechaMovimiento="2024-03-04" Monto="0" Descripcion="En San Rafael" Referencia="3U5DC" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2855446415731838" FechaMovimiento="2024-03-04" Monto="96116" Descripcion="ATM de Guápiles" Referencia="NEZGS" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="5373571423133445" FechaMovimiento="2024-03-04" Monto="0" Descripcion="ATM de Pococí" Referencia="K513D" />
+			<Movimiento Nombre="Compra" TF="5134942862922132" FechaMovimiento="2024-03-04" Monto="76411" Descripcion="Sucursal en Nicoya" Referencia="ICEHY" />
+			<Movimiento Nombre="Retiro en ATM" TF="2256488286809408" FechaMovimiento="2024-03-04" Monto="13268" Descripcion="Walmart en Ciudad Colón" Referencia="OFFYH" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2855446415731838" FechaMovimiento="2024-03-04" Monto="0" Descripcion="ATM de Liberia" Referencia="GXYQS" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2855446415731838" FechaMovimiento="2024-03-04" Monto="0" Descripcion="ATM de Guápiles" Referencia="RY2D3" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="9585994043536904" FechaMovimiento="2024-03-04" Monto="0" Descripcion="Walmart en Grecia" Referencia="4LLPY" />
+			<Movimiento Nombre="Pago en Linea" TF="2256488286809408" FechaMovimiento="2024-03-04" Monto="73312" Descripcion="En Santo Tomás" Referencia="URN08" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-07">
 		<NTH>
@@ -996,7 +1215,7 @@
 			<NTH Nombre="Gina Pacheco" ValorDocIdentidad="9-7032-1539" FechaNacimiento="1996-01-28" NombreUsuario="gpacheco" Password="hola123" />
 			<NTH Nombre="Marcelo Delgado" ValorDocIdentidad="3-4229-6341" FechaNacimiento="2002-04-02" NombreUsuario="mdelgado" Password="hola123" />
 			<NTH Nombre="Rebeca Ruiz" ValorDocIdentidad="2-4271-1533" FechaNacimiento="1996-07-24" NombreUsuario="rruiz" Password="hola123" />
-			<NTH Nombre="Adrián Quesada" ValorDocIdentidad="2-9901-3269" FechaNacimiento="1960-05-28" NombreUsuario="aquesada" Password="hola123" />
+			<NTH Nombre="Adrián Quesada" ValorDocIdentidad="2-9901-3269" FechaNacimiento="1960-05-28" NombreUsuario="adquesada" Password="hola123" />
 			<NTH Nombre="Belén Morales" ValorDocIdentidad="7-1787-1908" FechaNacimiento="1991-04-08" NombreUsuario="bmorales" Password="hola123" />
 		</NTH>
 		<NTCM>
@@ -1017,23 +1236,33 @@
 			<NTF Codigo="6743054565618482" TCAsociada="65558" FechaVencimiento="02/2027" CCV="6232" />
 			<NTF Codigo="6981805159035220" TCAsociada="45608" FechaVencimiento="02/2028" CCV="3978" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Pago en ATM" TF="6582011518402719" FechaMovimiento="2024-03-07" Monto="86369" Descripcion="En Santo Domingo" Referencia="3D1F2" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="7407888157510632" FechaMovimiento="2024-03-07" Monto="77429" Descripcion="En Bagaces" Referencia="1XJLK" />
 			<Movimiento Nombre="Cargos por Servicio" TF="5373571423133445" FechaMovimiento="2024-03-07" Monto="19885" Descripcion="En Limón" Referencia="R6876" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5585087340448535" FechaMovimiento="2024-03-07" Monto="93190" Descripcion="Walmart en Coronado" Referencia="NJC16" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5395554230644494" FechaMovimiento="2024-03-07" Monto="90235" Descripcion="Sucursal en San Ramón" Referencia="2LK4F" />
 			<Movimiento Nombre="Pago en Linea" TF="6582011518402719" FechaMovimiento="2024-03-07" Monto="73471" Descripcion="ATM de San Carlos" Referencia="GUUTV" />
 			<Movimiento Nombre="Pago en ATM" TF="8978920513967653" FechaMovimiento="2024-03-07" Monto="89340" Descripcion="Walmart en Curridabat" Referencia="7GUQ8" />
 			<Movimiento Nombre="Retiro en ATM" TF="5395554230644494" FechaMovimiento="2024-03-07" Monto="66093" Descripcion="Sucursal en Puriscal" Referencia="TF17U" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2256488286809408" FechaMovimiento="2024-03-07" Monto="99463" Descripcion="Walmart en Goicoechea" Referencia="QMCHH" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="8978920513967653" FechaMovimiento="2024-03-07" Monto="82332" Descripcion="Walmart en Curridabat" Referencia="YWFMZ" />
 			<Movimiento Nombre="Compra" TF="1524776262565386" FechaMovimiento="2024-03-07" Monto="74605" Descripcion="Sucursal en San Rafael" Referencia="C1V3D" />
 			<Movimiento Nombre="Pago en ATM" TF="2256488286809408" FechaMovimiento="2024-03-07" Monto="15916" Descripcion="Sucursal en Montes de Oca" Referencia="TF17U" />
 			<Movimiento Nombre="Compra" TF="5395554230644494" FechaMovimiento="2024-03-07" Monto="24691" Descripcion="Sucursal en Talamanca" Referencia="197D4" />
 			<Movimiento Nombre="Retiro en ATM" TF="3488477239742811" FechaMovimiento="2024-03-07" Monto="18260" Descripcion="Walmart en San José" Referencia="XO6S4" />
 			<Movimiento Nombre="Renovacion de TF" TF="5134942862922132" FechaMovimiento="2024-03-07" Monto="51722" Descripcion="En Curridabat" Referencia="2EK7K" />
-		</Movimientos>
+			<Movimiento Nombre="Retiro en ATM" TF="5395554230644494" FechaMovimiento="2024-03-07" Monto="65426" Descripcion="Walmart en Nicoya" Referencia="44VTN" />
+			<Movimiento Nombre="Compra" TF="6582011518402719" FechaMovimiento="2024-03-07" Monto="76964" Descripcion="ATM de Puriscal" Referencia="U4F3T" />
+			<Movimiento Nombre="Renovacion de TF" TF="2256488286809408" FechaMovimiento="2024-03-07" Monto="18044" Descripcion="En Upala" Referencia="ELXTV" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="5134942862922132" FechaMovimiento="2024-03-07" Monto="0" Descripcion="En Santo Tomás" Referencia="1J49M" />
+			<Movimiento Nombre="Retiro en Ventana" TF="5395554230644494" FechaMovimiento="2024-03-07" Monto="92504" Descripcion="En Bagaces" Referencia="91W48" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5395554230644494" FechaMovimiento="2024-03-07" Monto="79358" Descripcion="En Santo Domingo" Referencia="XA7E4" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5525247354599728" FechaMovimiento="2024-03-07" Monto="76143" Descripcion="ATM de Pococí" Referencia="4Q8OO" />
+			<Movimiento Nombre="Retiro en ATM" TF="2794325256592805" FechaMovimiento="2024-03-07" Monto="55907" Descripcion="ATM de Barva" Referencia="6VWI6" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5655636577940569" FechaMovimiento="2024-03-07" Monto="60239" Descripcion="Walmart en Orotina" Referencia="ANEIL" />
+			<Movimiento Nombre="Pago en ATM" TF="5585087340448535" FechaMovimiento="2024-03-07" Monto="36145" Descripcion="ATM de Liberia" Referencia="PEHN1" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2855446415731838" FechaMovimiento="2024-03-07" Monto="83097" Descripcion="En Pococí" Referencia="TC57S" />
+			<Movimiento Nombre="Retiro en ATM" TF="6582011518402719" FechaMovimiento="2024-03-07" Monto="63530" Descripcion="Sucursal en Desamparados" Referencia="KOQ2T" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5395554230644494" FechaMovimiento="2024-03-07" Monto="35029" Descripcion="Sucursal en Parrita" Referencia="I4RTX" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-10">
 		<NTH>
@@ -1062,13 +1291,12 @@
 			<NTF Codigo="4287882342356129" TCAsociada="19348" FechaVencimiento="02/2028" CCV="5813" />
 			<NTF Codigo="7315769238290076" TCAsociada="92938" FechaVencimiento="02/2027" CCV="2361" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Compra" TF="2810488571833172" FechaMovimiento="2024-03-10" Monto="48438" Descripcion="ATM de Pavas" Referencia="AGNJS" />
 			<Movimiento Nombre="Pago en ATM" TF="5525247354599728" FechaMovimiento="2024-03-10" Monto="79713" Descripcion="Sucursal en Montes de Oca" Referencia="07KX3" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="9982757494520271" FechaMovimiento="2024-03-10" Monto="0" Descripcion="ATM de San Ramón" Referencia="ZV68O" />
 			<Movimiento Nombre="Cargos por Servicio" TF="2668231324191095" FechaMovimiento="2024-03-10" Monto="76359" Descripcion="En Goicoechea" Referencia="W5BH1" />
 			<Movimiento Nombre="Compra" TF="8978920513967653" FechaMovimiento="2024-03-10" Monto="75301" Descripcion="ATM de Grecia" Referencia="V78OB" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="8371868300839996" FechaMovimiento="2024-03-10" Monto="79220" Descripcion="Sucursal en Nicoya" Referencia="UIS22" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="5655636577940569" FechaMovimiento="2024-03-10" Monto="0" Descripcion="Walmart en Pavas" Referencia="YGQW9" />
 			<Movimiento Nombre="Pago en ATM" TF="6418223953029167" FechaMovimiento="2024-03-10" Monto="28571" Descripcion="ATM de Puriscal" Referencia="AAB2F" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5373571423133445" FechaMovimiento="2024-03-10" Monto="16798" Descripcion="Walmart en San Rafael" Referencia="ABOOC" />
@@ -1078,14 +1306,25 @@
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2855446415731838" FechaMovimiento="2024-03-10" Monto="38854" Descripcion="ATM de Tibás" Referencia="JKNXD" />
 			<Movimiento Nombre="Renovacion de TF" TF="7407888157510632" FechaMovimiento="2024-03-10" Monto="16432" Descripcion="ATM de Puriscal" Referencia="JHBBK" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="5655636577940569" FechaMovimiento="2024-03-10" Monto="0" Descripcion="En Alajuela" Referencia="C1V3D" />
-		</Movimientos>
+			<Movimiento Nombre="Pago en ATM" TF="3488477239742811" FechaMovimiento="2024-03-10" Monto="61851" Descripcion="Walmart en Quepos" Referencia="GKHY9" />
+			<Movimiento Nombre="Pago en Linea" TF="8978920513967653" FechaMovimiento="2024-03-10" Monto="53130" Descripcion="Sucursal en Turrialba" Referencia="AYJ4J" />
+			<Movimiento Nombre="Renovacion de TF" TF="5585087340448535" FechaMovimiento="2024-03-10" Monto="56408" Descripcion="ATM de Palmares" Referencia="2CF2H" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5134942862922132" FechaMovimiento="2024-03-10" Monto="54366" Descripcion="En Corredores" Referencia="ZQPUN" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2794325256592805" FechaMovimiento="2024-03-10" Monto="24372" Descripcion="Sucursal en Nicoya" Referencia="PYVL8" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="5585087340448535" FechaMovimiento="2024-03-10" Monto="0" Descripcion="Sucursal en Escazú" Referencia="BIUPC" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="5395554230644494" FechaMovimiento="2024-03-10" Monto="0" Descripcion="En Puntarenas" Referencia="ZGPY3" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="5134942862922132" FechaMovimiento="2024-03-10" Monto="0" Descripcion="ATM de Grecia" Referencia="UZ152" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2668231324191095" FechaMovimiento="2024-03-10" Monto="54199" Descripcion="En Upala" Referencia="EL46H" />
+			<Movimiento Nombre="Renovacion de TF" TF="6582011518402719" FechaMovimiento="2024-03-10" Monto="30171" Descripcion="Walmart en Liberia" Referencia="URN08" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5134942862922132" FechaMovimiento="2024-03-10" Monto="26440" Descripcion="Sucursal en Puntarenas" Referencia="ZJDIV" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-13">
 		<NTH>
 			<NTH Nombre="Damián Barrantes" ValorDocIdentidad="9-6109-5246" FechaNacimiento="1999-07-20" NombreUsuario="dbarrantes" Password="hola123" />
 			<NTH Nombre="Sonia Aguilar" ValorDocIdentidad="3-4986-3413" FechaNacimiento="2004-01-08" NombreUsuario="saguilar" Password="hola123" />
 			<NTH Nombre="Julián Segura" ValorDocIdentidad="9-6862-4184" FechaNacimiento="1966-03-24" NombreUsuario="jsegura" Password="hola123" />
-			<NTH Nombre="Diana Herrera" ValorDocIdentidad="4-9883-6368" FechaNacimiento="1977-01-01" NombreUsuario="dherrera" Password="hola123" />
+			<NTH Nombre="Diana Herrera" ValorDocIdentidad="4-9883-6368" FechaNacimiento="1977-01-01" NombreUsuario="diherrera" Password="hola123" />
 			<NTH Nombre="Ramón Camacho" ValorDocIdentidad="8-6095-3215" FechaNacimiento="1985-02-19" NombreUsuario="rcamacho" Password="hola123" />
 			<NTH Nombre="Gladys Obando" ValorDocIdentidad="6-5104-2302" FechaNacimiento="1977-09-05" NombreUsuario="gobando" Password="hola123" />
 		</NTH>
@@ -1107,23 +1346,33 @@
 			<NTF Codigo="7592425967239182" TCAsociada="11923" FechaVencimiento="03/2028" CCV="2531" />
 			<NTF Codigo="6890775548991579" TCAsociada="51287" FechaVencimiento="05/2026" CCV="5136" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Compra" TF="5373571423133445" FechaMovimiento="2024-03-13" Monto="63562" Descripcion="Walmart en Nicoya" Referencia="OG2GN" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="1524776262565386" FechaMovimiento="2024-03-13" Monto="9283" Descripcion="En Alajuela" Referencia="AYYL0" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5655636577940569" FechaMovimiento="2024-03-13" Monto="24425" Descripcion="Walmart en Goicoechea" Referencia="XFO4A" />
 			<Movimiento Nombre="Retiro en ATM" TF="1524776262565386" FechaMovimiento="2024-03-13" Monto="83206" Descripcion="En Naranjo" Referencia="5N7MA" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="8978920513967653" FechaMovimiento="2024-03-13" Monto="0" Descripcion="Sucursal en Atenas" Referencia="NZUGQ" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="9982757494520271" FechaMovimiento="2024-03-13" Monto="39743" Descripcion="Walmart en Liberia" Referencia="J6JEO" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5538858134303627" FechaMovimiento="2024-03-13" Monto="86305" Descripcion="ATM de Pococí" Referencia="9NGZV" />
 			<Movimiento Nombre="Retiro en ATM" TF="4366645788435358" FechaMovimiento="2024-03-13" Monto="11680" Descripcion="Sucursal en Nicoya" Referencia="9MWJI" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5134942862922132" FechaMovimiento="2024-03-13" Monto="48779" Descripcion="ATM de Moravia" Referencia="22UP1" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="8371868300839996" FechaMovimiento="2024-03-13" Monto="59523" Descripcion="En Corredores" Referencia="J5WX4" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2315327303879021" FechaMovimiento="2024-03-13" Monto="46520" Descripcion="Walmart en San Rafael" Referencia="QD46Z" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="9426782141767763" FechaMovimiento="2024-03-13" Monto="0" Descripcion="Walmart en San Ramón" Referencia="KTABM" />
 			<Movimiento Nombre="Renovacion de TF" TF="2668231324191095" FechaMovimiento="2024-03-13" Monto="90030" Descripcion="Sucursal en Escazú" Referencia="Q4IRL" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5373571423133445" FechaMovimiento="2024-03-13" Monto="49472" Descripcion="Sucursal en Montes de Oca" Referencia="BERIT" />
 			<Movimiento Nombre="Compra" TF="5373571423133445" FechaMovimiento="2024-03-13" Monto="61232" Descripcion="ATM de Barva" Referencia="99YBN" />
-		</Movimientos>
+			<Movimiento Nombre="Retiro en ATM" TF="4366645788435358" FechaMovimiento="2024-03-13" Monto="13590" Descripcion="ATM de Palmares" Referencia="GV28S" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="4286961520207211" FechaMovimiento="2024-03-13" Monto="0" Descripcion="Sucursal en Montes de Oca" Referencia="I0GOX" />
+			<Movimiento Nombre="Retiro en ATM" TF="8978920513967653" FechaMovimiento="2024-03-13" Monto="86523" Descripcion="Sucursal en Cañas" Referencia="6C73O" />
+			<Movimiento Nombre="Pago en Linea" TF="2256488286809408" FechaMovimiento="2024-03-13" Monto="19654" Descripcion="Walmart en Cartago" Referencia="PE1O9" />
+			<Movimiento Nombre="Renovacion de TF" TF="6582011518402719" FechaMovimiento="2024-03-13" Monto="60447" Descripcion="Walmart en Grecia" Referencia="8Z20H" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="7407888157510632" FechaMovimiento="2024-03-13" Monto="0" Descripcion="ATM de San Pablo" Referencia="AYJ4J" />
+			<Movimiento Nombre="Pago en Linea" TF="5585087340448535" FechaMovimiento="2024-03-13" Monto="28096" Descripcion="Sucursal en Coto Brus" Referencia="IX3WB" />
+			<Movimiento Nombre="Pago en ATM" TF="9585994043536904" FechaMovimiento="2024-03-13" Monto="96951" Descripcion="ATM de Puriscal" Referencia="3U5DC" />
+			<Movimiento Nombre="Pago en Linea" TF="4366645788435358" FechaMovimiento="2024-03-13" Monto="63346" Descripcion="Sucursal en Nicoya" Referencia="U4F3T" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2810488571833172" FechaMovimiento="2024-03-13" Monto="0" Descripcion="Sucursal en Heredia" Referencia="STWGQ" />
+			<Movimiento Nombre="Retiro en ATM" TF="9982757494520271" FechaMovimiento="2024-03-13" Monto="26288" Descripcion="Walmart en Limón" Referencia="PEHN1" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2315327303879021" FechaMovimiento="2024-03-13" Monto="36657" Descripcion="ATM de Pérez Zeledón" Referencia="OFFYH" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="1694998673342057" FechaMovimiento="2024-03-13" Monto="0" Descripcion="Sucursal en Parrita" Referencia="UY29B" />
+			<Movimiento Nombre="Retiro en Ventana" TF="5538858134303627" FechaMovimiento="2024-03-13" Monto="47392" Descripcion="En Palmares" Referencia="MJ9N7" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-16">
 		<NTH>
@@ -1152,12 +1401,10 @@
 			<NTF Codigo="9356151264099897" TCAsociada="40152" FechaVencimiento="07/2027" CCV="9082" />
 			<NTF Codigo="1417071049976150" TCAsociada="71888" FechaVencimiento="09/2026" CCV="8727" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Recuperacion por Robo" TF="5585087340448535" FechaMovimiento="2024-03-16" Monto="0" Descripcion="Walmart en San Rafael" Referencia="YWFMZ" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2794325256592805" FechaMovimiento="2024-03-16" Monto="42616" Descripcion="ATM de San José" Referencia="X414R" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="7634009855741021" FechaMovimiento="2024-03-16" Monto="13009" Descripcion="Walmart en Guápiles" Referencia="THCJL" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="2383056325654095" FechaMovimiento="2024-03-16" Monto="19664" Descripcion="Sucursal en Turrialba" Referencia="3G5N0" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5585087340448535" FechaMovimiento="2024-03-16" Monto="90243" Descripcion="En Santo Domingo" Referencia="Z3NMM" />
 			<Movimiento Nombre="Cargos por Servicio" TF="5395554230644494" FechaMovimiento="2024-03-16" Monto="20392" Descripcion="Sucursal en Escazú" Referencia="HDK1L" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="5585087340448535" FechaMovimiento="2024-03-16" Monto="0" Descripcion="ATM de Grecia" Referencia="SRHLY" />
 			<Movimiento Nombre="Pago en Linea" TF="8796152434508582" FechaMovimiento="2024-03-16" Monto="76770" Descripcion="Walmart en Liberia" Referencia="D8WEX" />
@@ -1168,7 +1415,19 @@
 			<Movimiento Nombre="Recuperacion por Perdida" TF="4286961520207211" FechaMovimiento="2024-03-16" Monto="0" Descripcion="En Bagaces" Referencia="F06F1" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="8978920513967653" FechaMovimiento="2024-03-16" Monto="55283" Descripcion="ATM de Turrialba" Referencia="ND6C4" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="9982757494520271" FechaMovimiento="2024-03-16" Monto="94918" Descripcion="Walmart en Parrita" Referencia="ECDEO" />
-		</Movimientos>
+			<Movimiento Nombre="Pago en ATM" TF="8371868300839996" FechaMovimiento="2024-03-16" Monto="76276" Descripcion="Walmart en Limón" Referencia="8Z20H" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="5585087340448535" FechaMovimiento="2024-03-16" Monto="0" Descripcion="ATM de Escazú" Referencia="VLSOU" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2855446415731838" FechaMovimiento="2024-03-16" Monto="13517" Descripcion="Sucursal en Turrialba" Referencia="VW8YQ" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2315327303879021" FechaMovimiento="2024-03-16" Monto="0" Descripcion="Walmart en Limón" Referencia="3U5DC" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="7634009855741021" FechaMovimiento="2024-03-16" Monto="48218" Descripcion="ATM de Palmares" Referencia="B4B6O" />
+			<Movimiento Nombre="Compra" TF="2256488286809408" FechaMovimiento="2024-03-16" Monto="28871" Descripcion="Sucursal en Talamanca" Referencia="W7MUA" />
+			<Movimiento Nombre="Pago en Linea" TF="2794325256592805" FechaMovimiento="2024-03-16" Monto="95119" Descripcion="En San Carlos" Referencia="K0ENG" />
+			<Movimiento Nombre="Pago en ATM" TF="1524776262565386" FechaMovimiento="2024-03-16" Monto="12635" Descripcion="Sucursal en San Rafael" Referencia="PEHN1" />
+			<Movimiento Nombre="Pago en Linea" TF="8978920513967653" FechaMovimiento="2024-03-16" Monto="17086" Descripcion="Sucursal en Escazú" Referencia="5KAK3" />
+			<Movimiento Nombre="Pago en Linea" TF="5134942862922132" FechaMovimiento="2024-03-16" Monto="35627" Descripcion="ATM de Cartago" Referencia="SB6AL" />
+			<Movimiento Nombre="Pago en Linea" TF="2855446415731838" FechaMovimiento="2024-03-16" Monto="61577" Descripcion="ATM de Pavas" Referencia="O454O" />
+			<Movimiento Nombre="Cargos por Servicio" TF="8796152434508582" FechaMovimiento="2024-03-16" Monto="48369" Descripcion="Sucursal en Puriscal" Referencia="ANEIL" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-19">
 		<NTH>
@@ -1197,7 +1456,7 @@
 			<NTF Codigo="9195832881599514" TCAsociada="87536" FechaVencimiento="02/2026" CCV="5857" />
 			<NTF Codigo="6465754583046922" TCAsociada="37525" FechaVencimiento="06/2028" CCV="9124" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="1694998673342057" FechaMovimiento="2024-03-19" Monto="8261" Descripcion="En Curridabat" Referencia="Y0XSK" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="1694998673342057" FechaMovimiento="2024-03-19" Monto="0" Descripcion="Walmart en Ciudad Colón" Referencia="DZS8D" />
 			<Movimiento Nombre="Renovacion de TF" TF="5395554230644494" FechaMovimiento="2024-03-19" Monto="36187" Descripcion="Walmart en Escazú" Referencia="R8EJ9" />
@@ -1212,8 +1471,18 @@
 			<Movimiento Nombre="Retiro en ATM" TF="6418223953029167" FechaMovimiento="2024-03-19" Monto="74983" Descripcion="Sucursal en Quepos" Referencia="WA914" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5395554230644494" FechaMovimiento="2024-03-19" Monto="8166" Descripcion="En Santa Ana" Referencia="M9IL6" />
 			<Movimiento Nombre="Pago en Linea" TF="2315327303879021" FechaMovimiento="2024-03-19" Monto="62650" Descripcion="Sucursal en Escazú" Referencia="CSYQ4" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="8603018352074994" FechaMovimiento="2024-03-19" Monto="59402" Descripcion="En Ciudad Colón" Referencia="SAVNA" />
-		</Movimientos>
+			<Movimiento Nombre="Cargos por Servicio" TF="6582011518402719" FechaMovimiento="2024-03-19" Monto="73368" Descripcion="En La Unión" Referencia="VLLFD" />
+			<Movimiento Nombre="Pago en ATM" TF="3488477239742811" FechaMovimiento="2024-03-19" Monto="85470" Descripcion="Walmart en Parrita" Referencia="XA7E4" />
+			<Movimiento Nombre="Retiro en ATM" TF="4202962751833120" FechaMovimiento="2024-03-19" Monto="16094" Descripcion="ATM de Orotina" Referencia="TJIG7" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="3549875182800350" FechaMovimiento="2024-03-19" Monto="20804" Descripcion="ATM de Ciudad Quesada" Referencia="BIUPC" />
+			<Movimiento Nombre="Retiro en Ventana" TF="7343138089572132" FechaMovimiento="2024-03-19" Monto="63167" Descripcion="En Santa Ana" Referencia="Q8W3N" />
+			<Movimiento Nombre="Renovacion de TF" TF="2810488571833172" FechaMovimiento="2024-03-19" Monto="37951" Descripcion="Sucursal en Montes de Oca" Referencia="GRVZU" />
+			<Movimiento Nombre="Compra" TF="3488477239742811" FechaMovimiento="2024-03-19" Monto="8741" Descripcion="En La Unión" Referencia="RY2D3" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="9426782141767763" FechaMovimiento="2024-03-19" Monto="0" Descripcion="Walmart en Pavas" Referencia="010LT" />
+			<Movimiento Nombre="Cargos por Servicio" TF="7137219698255989" FechaMovimiento="2024-03-19" Monto="99924" Descripcion="En Goicoechea" Referencia="U4F3T" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="1694998673342057" FechaMovimiento="2024-03-19" Monto="0" Descripcion="Sucursal en San Pablo" Referencia="MJ9N7" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2855446415731838" FechaMovimiento="2024-03-19" Monto="81413" Descripcion="En Santo Tomás" Referencia="JNZG0" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-22">
 		<NTH>
@@ -1242,8 +1511,7 @@
 			<NTF Codigo="8292126347459236" TCAsociada="39593" FechaVencimiento="05/2026" CCV="9369" />
 			<NTF Codigo="1718800117527120" TCAsociada="29337" FechaVencimiento="09/2028" CCV="4597" />
 		</NTF>
-		<Movimientos>
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="1694998673342057" FechaMovimiento="2024-03-22" Monto="83513" Descripcion="En Upala" Referencia="62QUL" />
+		<Movimiento>
 			<Movimiento Nombre="Retiro en ATM" TF="4286961520207211" FechaMovimiento="2024-03-22" Monto="25625" Descripcion="Sucursal en Quepos" Referencia="JKNXD" />
 			<Movimiento Nombre="Pago en ATM" TF="5395554230644494" FechaMovimiento="2024-03-22" Monto="27345" Descripcion="Walmart en Moravia" Referencia="KTABM" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="9982757494520271" FechaMovimiento="2024-03-22" Monto="9172" Descripcion="Sucursal en Liberia" Referencia="UDPQ9" />
@@ -1252,13 +1520,24 @@
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="9585994043536904" FechaMovimiento="2024-03-22" Monto="54450" Descripcion="Walmart en Guápiles" Referencia="T8KN7" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="4942959873940953" FechaMovimiento="2024-03-22" Monto="26960" Descripcion="Walmart en San Carlos" Referencia="3D1F2" />
 			<Movimiento Nombre="Cargos por Servicio" TF="7343138089572132" FechaMovimiento="2024-03-22" Monto="44019" Descripcion="ATM de Orotina" Referencia="QD46Z" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5525247354599728" FechaMovimiento="2024-03-22" Monto="11176" Descripcion="ATM de Pavas" Referencia="ZV68O" />
 			<Movimiento Nombre="Renovacion de TF" TF="5395554230644494" FechaMovimiento="2024-03-22" Monto="8760" Descripcion="Walmart en Santo Domingo" Referencia="OG2GN" />
 			<Movimiento Nombre="Pago en Linea" TF="9544162405780883" FechaMovimiento="2024-03-22" Monto="12583" Descripcion="Sucursal en Cartago" Referencia="W1CRR" />
 			<Movimiento Nombre="Cargos por Servicio" TF="8978920513967653" FechaMovimiento="2024-03-22" Monto="41480" Descripcion="Walmart en San Rafael" Referencia="2EK7K" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="8603018352074994" FechaMovimiento="2024-03-22" Monto="67561" Descripcion="En Upala" Referencia="0POK2" />
 			<Movimiento Nombre="Cargos por Servicio" TF="4942959873940953" FechaMovimiento="2024-03-22" Monto="45484" Descripcion="Walmart en Coronado" Referencia="4PVOR" />
-		</Movimientos>
+			<Movimiento Nombre="Compra" TF="7407888157510632" FechaMovimiento="2024-03-22" Monto="60352" Descripcion="ATM de Moravia" Referencia="TJIG7" />
+			<Movimiento Nombre="Pago en Linea" TF="2810488571833172" FechaMovimiento="2024-03-22" Monto="69805" Descripcion="ATM de Orotina" Referencia="RL095" />
+			<Movimiento Nombre="Cargos por Servicio" TF="9426782141767763" FechaMovimiento="2024-03-22" Monto="47843" Descripcion="Sucursal en Escazú" Referencia="91W48" />
+			<Movimiento Nombre="Compra" TF="5655636577940569" FechaMovimiento="2024-03-22" Monto="84960" Descripcion="ATM de Puriscal" Referencia="84CO0" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5373571423133445" FechaMovimiento="2024-03-22" Monto="21759" Descripcion="En Limón" Referencia="SB6AL" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="8537718971978825" FechaMovimiento="2024-03-22" Monto="66987" Descripcion="ATM de Puriscal" Referencia="IDKQI" />
+			<Movimiento Nombre="Retiro en ATM" TF="7137219698255989" FechaMovimiento="2024-03-22" Monto="90449" Descripcion="Sucursal en Liberia" Referencia="58CVM" />
+			<Movimiento Nombre="Retiro en ATM" TF="3549875182800350" FechaMovimiento="2024-03-22" Monto="14754" Descripcion="Sucursal en Cañas" Referencia="UY29B" />
+			<Movimiento Nombre="Renovacion de TF" TF="4942959873940953" FechaMovimiento="2024-03-22" Monto="65979" Descripcion="En Bagaces" Referencia="H039V" />
+			<Movimiento Nombre="Pago en ATM" TF="5373571423133445" FechaMovimiento="2024-03-22" Monto="32163" Descripcion="Sucursal en Liberia" Referencia="1J49M" />
+			<Movimiento Nombre="Retiro en Ventana" TF="5134942862922132" FechaMovimiento="2024-03-22" Monto="37425" Descripcion="ATM de Ciudad Quesada" Referencia="GKHY9" />
+			<Movimiento Nombre="Retiro en Ventana" TF="7634009855741021" FechaMovimiento="2024-03-22" Monto="68370" Descripcion="Walmart en Orotina" Referencia="B4B6O" />
+			<Movimiento Nombre="Cargos por Servicio" TF="8965023215396559" FechaMovimiento="2024-03-22" Monto="45957" Descripcion="ATM de Ciudad Quesada" Referencia="ELXTV" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-25">
 		<NTH>
@@ -1287,11 +1566,10 @@
 			<NTF Codigo="7553096916005915" TCAsociada="39493" FechaVencimiento="09/2027" CCV="7361" />
 			<NTF Codigo="1414200123206117" TCAsociada="34834" FechaVencimiento="06/2028" CCV="1731" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Retiro en Ventana" TF="6582011518402719" FechaMovimiento="2024-03-25" Monto="27391" Descripcion="ATM de Liberia" Referencia="22UP1" />
 			<Movimiento Nombre="Renovacion de TF" TF="8603018352074994" FechaMovimiento="2024-03-25" Monto="9313" Descripcion="ATM de Ciudad Quesada" Referencia="NZUGQ" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="8537718971978825" FechaMovimiento="2024-03-25" Monto="0" Descripcion="ATM de Escazú" Referencia="NJC16" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="1907420611820113" FechaMovimiento="2024-03-25" Monto="56475" Descripcion="ATM de Pococí" Referencia="ND6C4" />
 			<Movimiento Nombre="Cargos por Servicio" TF="4366645788435358" FechaMovimiento="2024-03-25" Monto="80779" Descripcion="En Corredores" Referencia="HDK1L" />
 			<Movimiento Nombre="Pago en ATM" TF="8537718971978825" FechaMovimiento="2024-03-25" Monto="94744" Descripcion="Sucursal en Santa Ana" Referencia="WA914" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="5538858134303627" FechaMovimiento="2024-03-25" Monto="0" Descripcion="Sucursal en Coto Brus" Referencia="F2O3K" />
@@ -1303,12 +1581,23 @@
 			<Movimiento Nombre="Pago en Linea" TF="3620383385494061" FechaMovimiento="2024-03-25" Monto="87195" Descripcion="Sucursal en Puntarenas" Referencia="OG2GN" />
 			<Movimiento Nombre="Cargos por Servicio" TF="5395554230644494" FechaMovimiento="2024-03-25" Monto="99695" Descripcion="En Palmares" Referencia="XFO4A" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2315327303879021" FechaMovimiento="2024-03-25" Monto="16112" Descripcion="ATM de Pococí" Referencia="A9WIX" />
-		</Movimientos>
+			<Movimiento Nombre="Renovacion de TF" TF="5373571423133445" FechaMovimiento="2024-03-25" Monto="89651" Descripcion="Sucursal en Turrialba" Referencia="NEZGS" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="1694998673342057" FechaMovimiento="2024-03-25" Monto="53507" Descripcion="En Pococí" Referencia="9XX0L" />
+			<Movimiento Nombre="Renovacion de TF" TF="7407888157510632" FechaMovimiento="2024-03-25" Monto="86168" Descripcion="Sucursal en San Rafael" Referencia="URN08" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="9585994043536904" FechaMovimiento="2024-03-25" Monto="56817" Descripcion="ATM de Grecia" Referencia="PYVL8" />
+			<Movimiento Nombre="Retiro en ATM" TF="5134942862922132" FechaMovimiento="2024-03-25" Monto="94347" Descripcion="Walmart en Heredia" Referencia="LFO0U" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="8796152434508582" FechaMovimiento="2024-03-25" Monto="69758" Descripcion="En Belén" Referencia="B4B6O" />
+			<Movimiento Nombre="Compra" TF="8348133262205011" FechaMovimiento="2024-03-25" Monto="71898" Descripcion="Walmart en Guápiles" Referencia="A1S6B" />
+			<Movimiento Nombre="Compra" TF="2315327303879021" FechaMovimiento="2024-03-25" Monto="10222" Descripcion="Sucursal en Heredia" Referencia="DG9JJ" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="7634009855741021" FechaMovimiento="2024-03-25" Monto="0" Descripcion="Sucursal en Pérez Zeledón" Referencia="J7EFF" />
+			<Movimiento Nombre="Renovacion de TF" TF="2994043263109333" FechaMovimiento="2024-03-25" Monto="91102" Descripcion="En Pococí" Referencia="KOQ2T" />
+			<Movimiento Nombre="Renovacion de TF" TF="2315327303879021" FechaMovimiento="2024-03-25" Monto="22097" Descripcion="Sucursal en Pérez Zeledón" Referencia="HBP6C" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-03-28">
 		<NTH>
 			<NTH Nombre="Manuel Rivera" ValorDocIdentidad="1-4088-6188" FechaNacimiento="1972-12-31" NombreUsuario="mrivera" Password="hola123" />
-			<NTH Nombre="Melania Navarro" ValorDocIdentidad="2-8616-3629" FechaNacimiento="2005-01-07" NombreUsuario="mnavarro" Password="hola123" />
+			<NTH Nombre="Melania Navarro" ValorDocIdentidad="2-8616-3629" FechaNacimiento="2005-01-07" NombreUsuario="menavarro" Password="hola123" />
 			<NTH Nombre="Gerardo Vásquez" ValorDocIdentidad="6-3186-6880" FechaNacimiento="1977-11-10" NombreUsuario="gvásquez" Password="hola123" />
 			<NTH Nombre="Cecilia Morales" ValorDocIdentidad="8-6303-8187" FechaNacimiento="1982-10-16" NombreUsuario="cmorales" Password="hola123" />
 			<NTH Nombre="Carlos Ortiz" ValorDocIdentidad="6-5113-1882" FechaNacimiento="2001-01-03" NombreUsuario="cortiz" Password="hola123" />
@@ -1332,7 +1621,7 @@
 			<NTF Codigo="6897740828949604" TCAsociada="41370" FechaVencimiento="12/2027" CCV="9246" />
 			<NTF Codigo="6741049758027841" TCAsociada="65288" FechaVencimiento="03/2028" CCV="5278" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="4921641842263358" FechaMovimiento="2024-03-28" Monto="83106" Descripcion="ATM de San Pablo" Referencia="20G8M" />
 			<Movimiento Nombre="Retiro en Ventana" TF="2256488286809408" FechaMovimiento="2024-03-28" Monto="53716" Descripcion="Sucursal en Golfito" Referencia="4PVOR" />
 			<Movimiento Nombre="Pago en ATM" TF="2315327303879021" FechaMovimiento="2024-03-28" Monto="29944" Descripcion="ATM de Palmares" Referencia="4FNMK" />
@@ -1344,11 +1633,21 @@
 			<Movimiento Nombre="Recuperacion por Perdida" TF="4942959873940953" FechaMovimiento="2024-03-28" Monto="0" Descripcion="ATM de Grecia" Referencia="F0YGZ" />
 			<Movimiento Nombre="Cargos por Servicio" TF="2337742938367048" FechaMovimiento="2024-03-28" Monto="94540" Descripcion="Sucursal en Palmares" Referencia="TXHCM" />
 			<Movimiento Nombre="Cargos por Servicio" TF="5134942862922132" FechaMovimiento="2024-03-28" Monto="34146" Descripcion="Sucursal en Montes de Oca" Referencia="JKNXD" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="9585994043536904" FechaMovimiento="2024-03-28" Monto="33446" Descripcion="Walmart en San José" Referencia="78L46" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5508364630862234" FechaMovimiento="2024-03-28" Monto="36576" Descripcion="Walmart en Limón" Referencia="AAB2F" />
 			<Movimiento Nombre="Pago en Linea" TF="9426782141767763" FechaMovimiento="2024-03-28" Monto="80412" Descripcion="Sucursal en Puriscal" Referencia="HZ16F" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="5525247354599728" FechaMovimiento="2024-03-28" Monto="0" Descripcion="Sucursal en San Pablo" Referencia="62QUL" />
-		</Movimientos>
+			<Movimiento Nombre="Cargos por Servicio" TF="2197620817888201" FechaMovimiento="2024-03-28" Monto="79063" Descripcion="Walmart en Liberia" Referencia="6VWI6" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="8623830344665929" FechaMovimiento="2024-03-28" Monto="0" Descripcion="Sucursal en Cartago" Referencia="7PHW6" />
+			<Movimiento Nombre="Compra" TF="5373571423133445" FechaMovimiento="2024-03-28" Monto="68407" Descripcion="ATM de San Ramón" Referencia="PL4P8" />
+			<Movimiento Nombre="Cargos por Servicio" TF="1524776262565386" FechaMovimiento="2024-03-28" Monto="81372" Descripcion="ATM de Moravia" Referencia="R3HW3" />
+			<Movimiento Nombre="Renovacion de TF" TF="8978920513967653" FechaMovimiento="2024-03-28" Monto="54747" Descripcion="ATM de Palmares" Referencia="8Z20H" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="9078479609413928" FechaMovimiento="2024-03-28" Monto="63645" Descripcion="ATM de Orotina" Referencia="IYN6K" />
+			<Movimiento Nombre="Renovacion de TF" TF="3549875182800350" FechaMovimiento="2024-03-28" Monto="65984" Descripcion="ATM de San Carlos" Referencia="6CBSC" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="5538858134303627" FechaMovimiento="2024-03-28" Monto="0" Descripcion="Walmart en Orotina" Referencia="010LT" />
+			<Movimiento Nombre="Renovacion de TF" TF="8623830344665929" FechaMovimiento="2024-03-28" Monto="62648" Descripcion="En Goicoechea" Referencia="GXYQS" />
+			<Movimiento Nombre="Cargos por Servicio" TF="7400420298822588" FechaMovimiento="2024-03-28" Monto="23372" Descripcion="En Ciudad Colón" Referencia="1I9AB" />
+			<Movimiento Nombre="Retiro en ATM" TF="9078479609413928" FechaMovimiento="2024-03-28" Monto="27034" Descripcion="Walmart en Cartago" Referencia="Z8CJO" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-01">
 		<NTH>
@@ -1377,7 +1676,7 @@
 			<NTF Codigo="3780555828234399" TCAsociada="25195" FechaVencimiento="10/2027" CCV="6925" />
 			<NTF Codigo="6625664634627600" TCAsociada="71121" FechaVencimiento="06/2027" CCV="2120" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Retiro en Ventana" TF="9585994043536904" FechaMovimiento="2024-04-01" Monto="17414" Descripcion="Walmart en Guápiles" Referencia="GXQQ9" />
 			<Movimiento Nombre="Pago en ATM" TF="9585994043536904" FechaMovimiento="2024-04-01" Monto="37035" Descripcion="ATM de Puriscal" Referencia="QSRSO" />
 			<Movimiento Nombre="Retiro en Ventana" TF="5655636577940569" FechaMovimiento="2024-04-01" Monto="85090" Descripcion="Walmart en Orotina" Referencia="2TIUK" />
@@ -1393,7 +1692,17 @@
 			<Movimiento Nombre="Retiro en ATM" TF="5525247354599728" FechaMovimiento="2024-04-01" Monto="9312" Descripcion="ATM de Grecia" Referencia="52J01" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="5655636577940569" FechaMovimiento="2024-04-01" Monto="0" Descripcion="ATM de Barva" Referencia="J6FPD" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="5655636577940569" FechaMovimiento="2024-04-01" Monto="0" Descripcion="En Santo Tomás" Referencia="JN9OA" />
-		</Movimientos>
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="9585994043536904" FechaMovimiento="2024-04-01" Monto="95717" Descripcion="Sucursal en Turrialba" Referencia="16SNP" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="5373571423133445" FechaMovimiento="2024-04-01" Monto="0" Descripcion="Sucursal en Nicoya" Referencia="C9MMA" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2855446415731838" FechaMovimiento="2024-04-01" Monto="0" Descripcion="Walmart en Goicoechea" Referencia="1TCA1" />
+			<Movimiento Nombre="Renovacion de TF" TF="2855446415731838" FechaMovimiento="2024-04-01" Monto="41842" Descripcion="ATM de Escazú" Referencia="JLRLJ" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2855446415731838" FechaMovimiento="2024-04-01" Monto="71495" Descripcion="En Santo Tomás" Referencia="OEDB4" />
+			<Movimiento Nombre="Compra" TF="9585994043536904" FechaMovimiento="2024-04-01" Monto="95121" Descripcion="Walmart en Grecia" Referencia="R8B1J" />
+			<Movimiento Nombre="Retiro en Ventana" TF="2256488286809408" FechaMovimiento="2024-04-01" Monto="57707" Descripcion="Walmart en Grecia" Referencia="SAFNJ" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2256488286809408" FechaMovimiento="2024-04-01" Monto="0" Descripcion="Walmart en Curridabat" Referencia="QFLDC" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5655636577940569" FechaMovimiento="2024-04-01" Monto="23428" Descripcion="Sucursal en San Pablo" Referencia="DCDOH" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5525247354599728" FechaMovimiento="2024-04-01" Monto="56214" Descripcion="ATM de San Ramón" Referencia="LX5I5" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-04">
 		<NTH>
@@ -1422,28 +1731,38 @@
 			<NTF Codigo="2170285393170022" TCAsociada="73704" FechaVencimiento="10/2026" CCV="9070" />
 			<NTF Codigo="6486157470208165" TCAsociada="97361" FechaVencimiento="08/2026" CCV="1582" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Retiro en Ventana" TF="1524776262565386" FechaMovimiento="2024-04-04" Monto="42321" Descripcion="ATM de Orotina" Referencia="R0USH" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="2256488286809408" FechaMovimiento="2024-04-04" Monto="0" Descripcion="Sucursal en Palmares" Referencia="UGX4K" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="9982757494520271" FechaMovimiento="2024-04-04" Monto="0" Descripcion="ATM de Grecia" Referencia="WKK3L" />
 			<Movimiento Nombre="Retiro en Ventana" TF="5655636577940569" FechaMovimiento="2024-04-04" Monto="32671" Descripcion="Sucursal en Atenas" Referencia="1PKVZ" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="8978920513967653" FechaMovimiento="2024-04-04" Monto="37152" Descripcion="En Limón" Referencia="IGPQX" />
 			<Movimiento Nombre="Renovacion de TF" TF="5525247354599728" FechaMovimiento="2024-04-04" Monto="82372" Descripcion="En Palmares" Referencia="BQQ6T" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="1524776262565386" FechaMovimiento="2024-04-04" Monto="0" Descripcion="En Goicoechea" Referencia="ZFFQQ" />
 			<Movimiento Nombre="Retiro en ATM" TF="5655636577940569" FechaMovimiento="2024-04-04" Monto="50538" Descripcion="ATM de Escazú" Referencia="BNLDM" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5525247354599728" FechaMovimiento="2024-04-04" Monto="16604" Descripcion="En Goicoechea" Referencia="URVXV" />
 			<Movimiento Nombre="Retiro en Ventana" TF="9982757494520271" FechaMovimiento="2024-04-04" Monto="78425" Descripcion="ATM de Pococí" Referencia="42OJ0" />
 			<Movimiento Nombre="Retiro en Ventana" TF="5525247354599728" FechaMovimiento="2024-04-04" Monto="14364" Descripcion="Walmart en Goicoechea" Referencia="2Z7YQ" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5134942862922132" FechaMovimiento="2024-04-04" Monto="19193" Descripcion="Sucursal en Desamparados" Referencia="J6FPD" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5134942862922132" FechaMovimiento="2024-04-04" Monto="81070" Descripcion="ATM de Puriscal" Referencia="ZQFOA" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="5134942862922132" FechaMovimiento="2024-04-04" Monto="0" Descripcion="ATM de Ciudad Quesada" Referencia="1PKVZ" />
 			<Movimiento Nombre="Pago en Linea" TF="5655636577940569" FechaMovimiento="2024-04-04" Monto="40650" Descripcion="Sucursal en Cañas" Referencia="T4UD0" />
-		</Movimientos>
+			<Movimiento Nombre="Pago en Linea" TF="5373571423133445" FechaMovimiento="2024-04-04" Monto="33979" Descripcion="Walmart en Orotina" Referencia="8T7BC" />
+			<Movimiento Nombre="Pago en Linea" TF="8978920513967653" FechaMovimiento="2024-04-04" Monto="82341" Descripcion="Walmart en Escazú" Referencia="BHT0U" />
+			<Movimiento Nombre="Pago en ATM" TF="2855446415731838" FechaMovimiento="2024-04-04" Monto="69405" Descripcion="En San Carlos" Referencia="RG4V2" />
+			<Movimiento Nombre="Retiro en ATM" TF="5134942862922132" FechaMovimiento="2024-04-04" Monto="44252" Descripcion="Walmart en San Rafael" Referencia="VL0M6" />
+			<Movimiento Nombre="Pago en ATM" TF="9585994043536904" FechaMovimiento="2024-04-04" Monto="78739" Descripcion="Sucursal en Nicoya" Referencia="YY7AJ" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="5134942862922132" FechaMovimiento="2024-04-04" Monto="0" Descripcion="Sucursal en Pérez Zeledón" Referencia="5A4S1" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5525247354599728" FechaMovimiento="2024-04-04" Monto="53048" Descripcion="ATM de Moravia" Referencia="YDYCO" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5373571423133445" FechaMovimiento="2024-04-04" Monto="92533" Descripcion="Walmart en Escazú" Referencia="HTWGC" />
+			<Movimiento Nombre="Pago en ATM" TF="7407888157510632" FechaMovimiento="2024-04-04" Monto="86188" Descripcion="ATM de Puriscal" Referencia="RG4V2" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="6582011518402719" FechaMovimiento="2024-04-04" Monto="0" Descripcion="ATM de Grecia" Referencia="ZFCZA" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="5525247354599728" FechaMovimiento="2024-04-04" Monto="0" Descripcion="Sucursal en Atenas" Referencia="OWOHU" />
+			<Movimiento Nombre="Retiro en Ventana" TF="1524776262565386" FechaMovimiento="2024-04-04" Monto="24435" Descripcion="En Tibás" Referencia="YY7AJ" />
+			<Movimiento Nombre="Pago en ATM" TF="9585994043536904" FechaMovimiento="2024-04-04" Monto="15342" Descripcion="Walmart en Quepos" Referencia="ZWUTC" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-07">
 		<NTH>
 			<NTH Nombre="Arturo Blanco" ValorDocIdentidad="5-9485-4768" FechaNacimiento="1965-11-27" NombreUsuario="ablanco" Password="hola123" />
-			<NTH Nombre="Rebeca Solís" ValorDocIdentidad="1-3859-7532" FechaNacimiento="1998-05-17" NombreUsuario="rsolís" Password="hola123" />
+			<NTH Nombre="Rebeca Solís" ValorDocIdentidad="1-3859-7532" FechaNacimiento="1998-05-17" NombreUsuario="resolís" Password="hola123" />
 			<NTH Nombre="Héctor Gamboa" ValorDocIdentidad="3-7832-9912" FechaNacimiento="1983-06-01" NombreUsuario="hgamboa" Password="hola123" />
 			<NTH Nombre="Laura Aguilar" ValorDocIdentidad="4-1343-4831" FechaNacimiento="1996-09-10" NombreUsuario="laguilar" Password="hola123" />
 			<NTH Nombre="Alberto Quesada" ValorDocIdentidad="8-6744-5314" FechaNacimiento="1988-07-12" NombreUsuario="aquesada" Password="hola123" />
@@ -1467,27 +1786,37 @@
 			<NTF Codigo="4430478229753758" TCAsociada="85037" FechaVencimiento="06/2027" CCV="4232" />
 			<NTF Codigo="1853233769030144" TCAsociada="32451" FechaVencimiento="09/2026" CCV="2900" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Cargos por Servicio" TF="6582011518402719" FechaMovimiento="2024-04-07" Monto="83379" Descripcion="Walmart en Tres Ríos" Referencia="QK29E" />
 			<Movimiento Nombre="Pago en Linea" TF="5655636577940569" FechaMovimiento="2024-04-07" Monto="19015" Descripcion="Sucursal en San Rafael" Referencia="QSRSO" />
 			<Movimiento Nombre="Compra" TF="5395554230644494" FechaMovimiento="2024-04-07" Monto="56539" Descripcion="Walmart en Escazú" Referencia="JN9OA" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="9585994043536904" FechaMovimiento="2024-04-07" Monto="54162" Descripcion="ATM de Tibás" Referencia="F3KR8" />
 			<Movimiento Nombre="Retiro en ATM" TF="5373571423133445" FechaMovimiento="2024-04-07" Monto="27408" Descripcion="Walmart en Pavas" Referencia="GP3JC" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="4286961520207211" FechaMovimiento="2024-04-07" Monto="0" Descripcion="ATM de San Ramón" Referencia="9CTW4" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5525247354599728" FechaMovimiento="2024-04-07" Monto="49683" Descripcion="Sucursal en Talamanca" Referencia="7UP6Z" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="9982757494520271" FechaMovimiento="2024-04-07" Monto="62134" Descripcion="Sucursal en Cartago" Referencia="4RX41" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5585087340448535" FechaMovimiento="2024-04-07" Monto="31870" Descripcion="En San Rafael" Referencia="O3AF2" />
 			<Movimiento Nombre="Pago en Linea" TF="5373571423133445" FechaMovimiento="2024-04-07" Monto="66423" Descripcion="Sucursal en Turrialba" Referencia="MQXLU" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="2794325256592805" FechaMovimiento="2024-04-07" Monto="0" Descripcion="ATM de Desamparados" Referencia="QK29E" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="5525247354599728" FechaMovimiento="2024-04-07" Monto="0" Descripcion="En Tibás" Referencia="VF02F" />
 			<Movimiento Nombre="Compra" TF="7407888157510632" FechaMovimiento="2024-04-07" Monto="70242" Descripcion="En Ciudad Colón" Referencia="YROYB" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="8978920513967653" FechaMovimiento="2024-04-07" Monto="49972" Descripcion="Sucursal en Quepos" Referencia="PK35C" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2855446415731838" FechaMovimiento="2024-04-07" Monto="93292" Descripcion="En Limón" Referencia="UCPQA" />
-		</Movimientos>
+			<Movimiento Nombre="Retiro en Ventana" TF="5525247354599728" FechaMovimiento="2024-04-07" Monto="50764" Descripcion="Sucursal en Atenas" Referencia="GSJZ8" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="1524776262565386" FechaMovimiento="2024-04-07" Monto="0" Descripcion="En Corredores" Referencia="CWZVI" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="4286961520207211" FechaMovimiento="2024-04-07" Monto="8458" Descripcion="Sucursal en Parrita" Referencia="B2W66" />
+			<Movimiento Nombre="Cargos por Servicio" TF="5395554230644494" FechaMovimiento="2024-04-07" Monto="26376" Descripcion="Walmart en Liberia" Referencia="V49CG" />
+			<Movimiento Nombre="Pago en Linea" TF="5525247354599728" FechaMovimiento="2024-04-07" Monto="64160" Descripcion="En Belén" Referencia="8T7BC" />
+			<Movimiento Nombre="Pago en ATM" TF="2794325256592805" FechaMovimiento="2024-04-07" Monto="13029" Descripcion="Walmart en San Ramón" Referencia="2JMRC" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2256488286809408" FechaMovimiento="2024-04-07" Monto="0" Descripcion="Walmart en San Carlos" Referencia="WHIR5" />
+			<Movimiento Nombre="Retiro en Ventana" TF="4286961520207211" FechaMovimiento="2024-04-07" Monto="89557" Descripcion="Sucursal en Pérez Zeledón" Referencia="FBO4C" />
+			<Movimiento Nombre="Pago en Linea" TF="5134942862922132" FechaMovimiento="2024-04-07" Monto="45890" Descripcion="En Palmares" Referencia="8T7BC" />
+			<Movimiento Nombre="Pago en ATM" TF="5655636577940569" FechaMovimiento="2024-04-07" Monto="42346" Descripcion="Walmart en Escazú" Referencia="Y1FSK" />
+			<Movimiento Nombre="Compra" TF="5395554230644494" FechaMovimiento="2024-04-07" Monto="9204" Descripcion="ATM de Moravia" Referencia="VL0M6" />
+			<Movimiento Nombre="Retiro en ATM" TF="2256488286809408" FechaMovimiento="2024-04-07" Monto="99871" Descripcion="ATM de Palmares" Referencia="M459T" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5525247354599728" FechaMovimiento="2024-04-07" Monto="76050" Descripcion="En Curridabat" Referencia="717ZW" />
+			<Movimiento Nombre="Pago en Linea" TF="2256488286809408" FechaMovimiento="2024-04-07" Monto="77935" Descripcion="En Puntarenas" Referencia="1QJK1" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="6582011518402719" FechaMovimiento="2024-04-07" Monto="40899" Descripcion="Walmart en Quepos" Referencia="8PM64" />
+			<Movimiento Nombre="Retiro en ATM" TF="9585994043536904" FechaMovimiento="2024-04-07" Monto="95703" Descripcion="Sucursal en Cañas" Referencia="9ZB2X" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-10">
 		<NTH>
-			<NTH Nombre="José Zúñiga" ValorDocIdentidad="1-1105-2801" FechaNacimiento="1992-09-13" NombreUsuario="jzúñiga" Password="hola123" />
+			<NTH Nombre="José Zúñiga" ValorDocIdentidad="1-1105-2801" FechaNacimiento="1992-09-13" NombreUsuario="jozúñiga" Password="hola123" />
 			<NTH Nombre="Sara Jiménez" ValorDocIdentidad="8-8732-7439" FechaNacimiento="1979-05-03" NombreUsuario="sjiménez" Password="hola123" />
 			<NTH Nombre="Mauricio Villalobos" ValorDocIdentidad="4-1543-6392" FechaNacimiento="2002-09-05" NombreUsuario="mvillalobos" Password="hola123" />
 			<NTH Nombre="Gloria Miranda" ValorDocIdentidad="3-5958-1043" FechaNacimiento="1984-08-01" NombreUsuario="gmiranda" Password="hola123" />
@@ -1512,7 +1841,7 @@
 			<NTF Codigo="9633262661851385" TCAsociada="50143" FechaVencimiento="06/2026" CCV="4728" />
 			<NTF Codigo="4579329774482695" TCAsociada="64634" FechaVencimiento="05/2028" CCV="3136" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2794325256592805" FechaMovimiento="2024-04-10" Monto="25552" Descripcion="Walmart en Guápiles" Referencia="JRBV1" />
 			<Movimiento Nombre="Retiro en Ventana" TF="2668231324191095" FechaMovimiento="2024-04-10" Monto="98100" Descripcion="ATM de Cartago" Referencia="MMH6C" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="9585994043536904" FechaMovimiento="2024-04-10" Monto="0" Descripcion="En Palmares" Referencia="JN9OA" />
@@ -1525,10 +1854,20 @@
 			<Movimiento Nombre="Renovacion de TF" TF="2794325256592805" FechaMovimiento="2024-04-10" Monto="34861" Descripcion="Walmart en San José" Referencia="2QV7C" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="4286961520207211" FechaMovimiento="2024-04-10" Monto="0" Descripcion="Walmart en Grecia" Referencia="3OIZL" />
 			<Movimiento Nombre="Pago en ATM" TF="3488477239742811" FechaMovimiento="2024-04-10" Monto="11622" Descripcion="En Pococí" Referencia="IUOT6" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="5655636577940569" FechaMovimiento="2024-04-10" Monto="9409" Descripcion="Walmart en San Rafael" Referencia="3S5DH" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="7400420298822588" FechaMovimiento="2024-04-10" Monto="0" Descripcion="ATM de Palmares" Referencia="EIZ1Z" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="8371868300839996" FechaMovimiento="2024-04-10" Monto="0" Descripcion="ATM de Moravia" Referencia="EB4VE" />
-		</Movimientos>
+			<Movimiento Nombre="Pago en Linea" TF="2668231324191095" FechaMovimiento="2024-04-10" Monto="81765" Descripcion="Sucursal en Turrialba" Referencia="92R7H" />
+			<Movimiento Nombre="Pago en ATM" TF="5525247354599728" FechaMovimiento="2024-04-10" Monto="53509" Descripcion="Sucursal en Liberia" Referencia="GSJZ8" />
+			<Movimiento Nombre="Renovacion de TF" TF="4286961520207211" FechaMovimiento="2024-04-10" Monto="23618" Descripcion="Sucursal en Nicoya" Referencia="N24O0" />
+			<Movimiento Nombre="Pago en Linea" TF="5525247354599728" FechaMovimiento="2024-04-10" Monto="88268" Descripcion="Sucursal en Turrialba" Referencia="CWZVI" />
+			<Movimiento Nombre="Pago en ATM" TF="1524776262565386" FechaMovimiento="2024-04-10" Monto="21260" Descripcion="Sucursal en Coto Brus" Referencia="CT00C" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2668231324191095" FechaMovimiento="2024-04-10" Monto="0" Descripcion="En Naranjo" Referencia="9ZB2X" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="5655636577940569" FechaMovimiento="2024-04-10" Monto="0" Descripcion="En Belén" Referencia="KDNG0" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2668231324191095" FechaMovimiento="2024-04-10" Monto="76338" Descripcion="Sucursal en Montes de Oca" Referencia="X4VYS" />
+			<Movimiento Nombre="Pago en Linea" TF="5525247354599728" FechaMovimiento="2024-04-10" Monto="92056" Descripcion="ATM de Ciudad Quesada" Referencia="LX5I5" />
+			<Movimiento Nombre="Retiro en ATM" TF="1524776262565386" FechaMovimiento="2024-04-10" Monto="35347" Descripcion="Sucursal en Escazú" Referencia="3YOWQ" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2668231324191095" FechaMovimiento="2024-04-10" Monto="0" Descripcion="Sucursal en Puriscal" Referencia="URB6U" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-13">
 		<NTH>
@@ -1557,7 +1896,7 @@
 			<NTF Codigo="5649362208492728" TCAsociada="25048" FechaVencimiento="11/2026" CCV="4650" />
 			<NTF Codigo="1445071324089200" TCAsociada="97756" FechaVencimiento="04/2026" CCV="4759" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="3488477239742811" FechaMovimiento="2024-04-13" Monto="57471" Descripcion="Sucursal en San Pablo" Referencia="OF5IT" />
 			<Movimiento Nombre="Renovacion de TF" TF="4366645788435358" FechaMovimiento="2024-04-13" Monto="30664" Descripcion="ATM de Pérez Zeledón" Referencia="0GDEL" />
 			<Movimiento Nombre="Renovacion de TF" TF="5525247354599728" FechaMovimiento="2024-04-13" Monto="37583" Descripcion="ATM de Moravia" Referencia="M5PGC" />
@@ -1571,16 +1910,26 @@
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="2383056325654095" FechaMovimiento="2024-04-13" Monto="59992" Descripcion="En Esparza" Referencia="O3AF2" />
 			<Movimiento Nombre="Retiro en ATM" TF="7137219698255989" FechaMovimiento="2024-04-13" Monto="42419" Descripcion="En Palmares" Referencia="COWA9" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="1694998673342057" FechaMovimiento="2024-04-13" Monto="0" Descripcion="Walmart en Cartago" Referencia="P241K" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="2383056325654095" FechaMovimiento="2024-04-13" Monto="18502" Descripcion="En Santo Domingo" Referencia="UGX4K" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2383056325654095" FechaMovimiento="2024-04-13" Monto="42833" Descripcion="ATM de Escazú" Referencia="QTLWF" />
-		</Movimientos>
+			<Movimiento Nombre="Pago en Linea" TF="2256488286809408" FechaMovimiento="2024-04-13" Monto="65447" Descripcion="En Atenas" Referencia="16JS3" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2315327303879021" FechaMovimiento="2024-04-13" Monto="0" Descripcion="ATM de Desamparados" Referencia="B8H77" />
+			<Movimiento Nombre="Compra" TF="2383056325654095" FechaMovimiento="2024-04-13" Monto="65119" Descripcion="En Pococí" Referencia="U4GXP" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="6582011518402719" FechaMovimiento="2024-04-13" Monto="0" Descripcion="Sucursal en San Ramón" Referencia="OWOHU" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2855446415731838" FechaMovimiento="2024-04-13" Monto="9708" Descripcion="Sucursal en Quepos" Referencia="Y1FSK" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="9982757494520271" FechaMovimiento="2024-04-13" Monto="25297" Descripcion="Sucursal en Montes de Oca" Referencia="HB3VJ" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="1694998673342057" FechaMovimiento="2024-04-13" Monto="13764" Descripcion="ATM de Turrialba" Referencia="6G3WX" />
+			<Movimiento Nombre="Renovacion de TF" TF="5525247354599728" FechaMovimiento="2024-04-13" Monto="94553" Descripcion="ATM de Grecia" Referencia="3YOWQ" />
+			<Movimiento Nombre="Pago en Linea" TF="2855446415731838" FechaMovimiento="2024-04-13" Monto="60101" Descripcion="Sucursal en Quepos" Referencia="V03U1" />
+			<Movimiento Nombre="Pago en ATM" TF="1694998673342057" FechaMovimiento="2024-04-13" Monto="78688" Descripcion="ATM de Pococí" Referencia="27F1T" />
+			<Movimiento Nombre="Pago en Linea" TF="5585087340448535" FechaMovimiento="2024-04-13" Monto="37347" Descripcion="ATM de Palmares" Referencia="QFLDC" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-16">
 		<NTH>
 			<NTH Nombre="Antonio Pérez" ValorDocIdentidad="4-7935-9193" FechaNacimiento="1965-05-09" NombreUsuario="apérez" Password="hola123" />
 			<NTH Nombre="Mireya Méndez" ValorDocIdentidad="4-4630-2792" FechaNacimiento="1970-11-25" NombreUsuario="mméndez" Password="hola123" />
 			<NTH Nombre="Andrés Navarro" ValorDocIdentidad="2-4720-5245" FechaNacimiento="1969-12-07" NombreUsuario="anavarro" Password="hola123" />
-			<NTH Nombre="Alba Carrillo" ValorDocIdentidad="8-6554-5075" FechaNacimiento="1999-05-04" NombreUsuario="acarrillo" Password="hola123" />
+			<NTH Nombre="Alba Carrillo" ValorDocIdentidad="8-6554-5075" FechaNacimiento="1999-05-04" NombreUsuario="alcarrillo" Password="hola123" />
 			<NTH Nombre="Víctor Reyes" ValorDocIdentidad="5-7631-4630" FechaNacimiento="1969-10-18" NombreUsuario="vreyes" Password="hola123" />
 			<NTH Nombre="Ángela Varela" ValorDocIdentidad="7-8020-4825" FechaNacimiento="1961-10-09" NombreUsuario="ávarela" Password="hola123" />
 		</NTH>
@@ -1602,7 +1951,7 @@
 			<NTF Codigo="6781532130234421" TCAsociada="51516" FechaVencimiento="10/2027" CCV="8002" />
 			<NTF Codigo="7127257251299426" TCAsociada="93507" FechaVencimiento="09/2026" CCV="8269" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Renovacion de TF" TF="8348133262205011" FechaMovimiento="2024-04-16" Monto="8940" Descripcion="En Santo Tomás" Referencia="4LNWZ" />
 			<Movimiento Nombre="Pago en ATM" TF="6418223953029167" FechaMovimiento="2024-04-16" Monto="87568" Descripcion="Sucursal en Turrialba" Referencia="9VKOD" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="5585087340448535" FechaMovimiento="2024-04-16" Monto="68269" Descripcion="En Goicoechea" Referencia="YDH8M" />
@@ -1613,17 +1962,27 @@
 			<Movimiento Nombre="Recuperacion por Perdida" TF="7407888157510632" FechaMovimiento="2024-04-16" Monto="0" Descripcion="ATM de Escazú" Referencia="58LMW" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="5395554230644494" FechaMovimiento="2024-04-16" Monto="0" Descripcion="En Limón" Referencia="84WM9" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="7400420298822588" FechaMovimiento="2024-04-16" Monto="26086" Descripcion="ATM de San Ramón" Referencia="YATIE" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="6582011518402719" FechaMovimiento="2024-04-16" Monto="77440" Descripcion="ATM de Grecia" Referencia="2Z7YQ" />
 			<Movimiento Nombre="Pago en ATM" TF="8371868300839996" FechaMovimiento="2024-04-16" Monto="35801" Descripcion="Sucursal en Atenas" Referencia="D57FO" />
 			<Movimiento Nombre="Retiro en Ventana" TF="2855446415731838" FechaMovimiento="2024-04-16" Monto="55393" Descripcion="Sucursal en San Pablo" Referencia="BRLJ3" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="2855446415731838" FechaMovimiento="2024-04-16" Monto="0" Descripcion="Sucursal en San Rafael" Referencia="CYMHB" />
 			<Movimiento Nombre="Pago en ATM" TF="6582011518402719" FechaMovimiento="2024-04-16" Monto="73023" Descripcion="ATM de San Ramón" Referencia="GB6VB" />
-		</Movimientos>
+			<Movimiento Nombre="Recuperacion por Perdida" TF="5373571423133445" FechaMovimiento="2024-04-16" Monto="0" Descripcion="Walmart en Pavas" Referencia="JLRLJ" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2668231324191095" FechaMovimiento="2024-04-16" Monto="0" Descripcion="Sucursal en Golfito" Referencia="DDC3M" />
+			<Movimiento Nombre="Renovacion de TF" TF="7137219698255989" FechaMovimiento="2024-04-16" Monto="94131" Descripcion="Walmart en Quepos" Referencia="V49CG" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="7137219698255989" FechaMovimiento="2024-04-16" Monto="0" Descripcion="ATM de Tibás" Referencia="V49CG" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="9585994043536904" FechaMovimiento="2024-04-16" Monto="0" Descripcion="Sucursal en Desamparados" Referencia="FBO4C" />
+			<Movimiento Nombre="Compra" TF="8603018352074994" FechaMovimiento="2024-04-16" Monto="43201" Descripcion="ATM de Turrialba" Referencia="ZWUTC" />
+			<Movimiento Nombre="Retiro en ATM" TF="8978920513967653" FechaMovimiento="2024-04-16" Monto="46426" Descripcion="En San Carlos" Referencia="K4M6W" />
+			<Movimiento Nombre="Retiro en Ventana" TF="8796152434508582" FechaMovimiento="2024-04-16" Monto="75940" Descripcion="En Santa Ana" Referencia="7WIV4" />
+			<Movimiento Nombre="Pago en Linea" TF="7400420298822588" FechaMovimiento="2024-04-16" Monto="46718" Descripcion="Sucursal en Golfito" Referencia="FBO4C" />
+			<Movimiento Nombre="Renovacion de TF" TF="5525247354599728" FechaMovimiento="2024-04-16" Monto="17538" Descripcion="Sucursal en Quepos" Referencia="LX5I5" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2197620817888201" FechaMovimiento="2024-04-16" Monto="0" Descripcion="En Limón" Referencia="X2BY3" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-19">
 		<NTH>
 			<NTH Nombre="Iván Vargas" ValorDocIdentidad="1-1173-3241" FechaNacimiento="1999-05-07" NombreUsuario="ivargas" Password="hola123" />
-			<NTH Nombre="Lorena Rojas" ValorDocIdentidad="7-9930-9298" FechaNacimiento="1978-05-09" NombreUsuario="lrojas" Password="hola123" />
+			<NTH Nombre="Lorena Rojas" ValorDocIdentidad="7-9930-9298" FechaNacimiento="1978-05-09" NombreUsuario="lorojas" Password="hola123" />
 			<NTH Nombre="Raúl Herrera" ValorDocIdentidad="4-1003-9092" FechaNacimiento="1964-12-03" NombreUsuario="rherrera" Password="hola123" />
 			<NTH Nombre="Miriam Quesada" ValorDocIdentidad="3-7392-2359" FechaNacimiento="1962-09-22" NombreUsuario="mquesada" Password="hola123" />
 			<NTH Nombre="Gerardo González" ValorDocIdentidad="1-5612-6427" FechaNacimiento="1978-08-23" NombreUsuario="ggonzález" Password="hola123" />
@@ -1647,23 +2006,33 @@
 			<NTF Codigo="8004134061882638" TCAsociada="19633" FechaVencimiento="04/2028" CCV="1900" />
 			<NTF Codigo="4757025971943916" TCAsociada="22148" FechaVencimiento="12/2028" CCV="8979" />
 		</NTF>
-		<Movimientos>
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="7407888157510632" FechaMovimiento="2024-04-19" Monto="57428" Descripcion="En Bagaces" Referencia="LD787" />
+		<Movimiento>
 			<Movimiento Nombre="Renovacion de TF" TF="5655636577940569" FechaMovimiento="2024-04-19" Monto="12083" Descripcion="Sucursal en Montes de Oca" Referencia="P241K" />
 			<Movimiento Nombre="Compra" TF="8371868300839996" FechaMovimiento="2024-04-19" Monto="66051" Descripcion="Walmart en Tres Ríos" Referencia="BRLJ3" />
 			<Movimiento Nombre="Renovacion de TF" TF="6418223953029167" FechaMovimiento="2024-04-19" Monto="57379" Descripcion="ATM de San José" Referencia="XIMX3" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="8796152434508582" FechaMovimiento="2024-04-19" Monto="51773" Descripcion="ATM de Pavas" Referencia="9VKOD" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="3620383385494061" FechaMovimiento="2024-04-19" Monto="28138" Descripcion="Sucursal en Nicoya" Referencia="3S5DH" />
 			<Movimiento Nombre="Pago en Linea" TF="9544162405780883" FechaMovimiento="2024-04-19" Monto="43261" Descripcion="Walmart en Coronado" Referencia="21QGU" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="8348133262205011" FechaMovimiento="2024-04-19" Monto="0" Descripcion="Walmart en Orotina" Referencia="OF5RS" />
 			<Movimiento Nombre="Cargos por Servicio" TF="5395554230644494" FechaMovimiento="2024-04-19" Monto="36497" Descripcion="En Santa Ana" Referencia="OF5IT" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="5508364630862234" FechaMovimiento="2024-04-19" Monto="88374" Descripcion="Walmart en Cartago" Referencia="YOHWF" />
 			<Movimiento Nombre="Retiro en ATM" TF="5508364630862234" FechaMovimiento="2024-04-19" Monto="98455" Descripcion="Walmart en Orotina" Referencia="OF5IT" />
 			<Movimiento Nombre="Renovacion de TF" TF="9982757494520271" FechaMovimiento="2024-04-19" Monto="50761" Descripcion="ATM de Tibás" Referencia="EIZ1Z" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="8603018352074994" FechaMovimiento="2024-04-19" Monto="13995" Descripcion="Walmart en Cartago" Referencia="CWFVJ" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="5508364630862234" FechaMovimiento="2024-04-19" Monto="94014" Descripcion="ATM de Desamparados" Referencia="QRXCY" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="2810488571833172" FechaMovimiento="2024-04-19" Monto="39073" Descripcion="ATM de Cartago" Referencia="CQ10S" />
-		</Movimientos>
+			<Movimiento Nombre="Recuperacion por Robo" TF="7137219698255989" FechaMovimiento="2024-04-19" Monto="0" Descripcion="Sucursal en Nicoya" Referencia="0IL9J" />
+			<Movimiento Nombre="Retiro en Ventana" TF="6418223953029167" FechaMovimiento="2024-04-19" Monto="25408" Descripcion="Sucursal en Parrita" Referencia="EEYB0" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="4286961520207211" FechaMovimiento="2024-04-19" Monto="59385" Descripcion="Sucursal en Talamanca" Referencia="GCMBJ" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="1694998673342057" FechaMovimiento="2024-04-19" Monto="0" Descripcion="En Ciudad Quesada" Referencia="KDNG0" />
+			<Movimiento Nombre="Cargos por Servicio" TF="3549875182800350" FechaMovimiento="2024-04-19" Monto="47426" Descripcion="En Ciudad Colón" Referencia="QAX8O" />
+			<Movimiento Nombre="Pago en Linea" TF="2810488571833172" FechaMovimiento="2024-04-19" Monto="94404" Descripcion="Walmart en Goicoechea" Referencia="WKQVR" />
+			<Movimiento Nombre="Pago en Linea" TF="8978920513967653" FechaMovimiento="2024-04-19" Monto="60616" Descripcion="Walmart en San Rafael" Referencia="YY7AJ" />
+			<Movimiento Nombre="Cargos por Servicio" TF="8603018352074994" FechaMovimiento="2024-04-19" Monto="62882" Descripcion="Walmart en Moravia" Referencia="B8H77" />
+			<Movimiento Nombre="Pago en Linea" TF="8348133262205011" FechaMovimiento="2024-04-19" Monto="26280" Descripcion="Sucursal en Coto Brus" Referencia="LX5I5" />
+			<Movimiento Nombre="Retiro en ATM" TF="2855446415731838" FechaMovimiento="2024-04-19" Monto="16187" Descripcion="En Pococí" Referencia="AU1QD" />
+			<Movimiento Nombre="Renovacion de TF" TF="9585994043536904" FechaMovimiento="2024-04-19" Monto="59187" Descripcion="Sucursal en Puntarenas" Referencia="4PVAZ" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2315327303879021" FechaMovimiento="2024-04-19" Monto="0" Descripcion="Walmart en Escazú" Referencia="N7G6M" />
+			<Movimiento Nombre="Compra" TF="4286961520207211" FechaMovimiento="2024-04-19" Monto="11245" Descripcion="ATM de Pococí" Referencia="PD2J4" />
+			<Movimiento Nombre="Retiro en ATM" TF="5538858134303627" FechaMovimiento="2024-04-19" Monto="68980" Descripcion="Walmart en Pavas" Referencia="X213E" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-22">
 		<NTH>
@@ -1692,13 +2061,10 @@
 			<NTF Codigo="1679726382242790" TCAsociada="97234" FechaVencimiento="04/2028" CCV="8756" />
 			<NTF Codigo="7914681338273889" TCAsociada="80589" FechaVencimiento="10/2028" CCV="6227" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2337742938367048" FechaMovimiento="2024-04-22" Monto="59114" Descripcion="ATM de Tibás" Referencia="94ZI8" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2810488571833172" FechaMovimiento="2024-04-22" Monto="78976" Descripcion="Sucursal en San Rafael" Referencia="PMX49" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="4366645788435358" FechaMovimiento="2024-04-22" Monto="46821" Descripcion="ATM de Guápiles" Referencia="DX40Q" />
 			<Movimiento Nombre="Renovacion de TF" TF="7343138089572132" FechaMovimiento="2024-04-22" Monto="61893" Descripcion="En San Rafael" Referencia="PK35C" />
-			<Movimiento Nombre="Intereses Moratorios Pago no Realizado" TF="2668231324191095" FechaMovimiento="2024-04-22" Monto="63035" Descripcion="Walmart en Coronado" Referencia="J6FPD" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="4202962751833120" FechaMovimiento="2024-04-22" Monto="93354" Descripcion="Walmart en Heredia" Referencia="JOM36" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="4366645788435358" FechaMovimiento="2024-04-22" Monto="0" Descripcion="En Santo Domingo" Referencia="4D14Z" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="4942959873940953" FechaMovimiento="2024-04-22" Monto="0" Descripcion="Walmart en San Carlos" Referencia="0B4GA" />
 			<Movimiento Nombre="Retiro en ATM" TF="7137219698255989" FechaMovimiento="2024-04-22" Monto="10100" Descripcion="ATM de Escazú" Referencia="YOHWF" />
@@ -1706,9 +2072,22 @@
 			<Movimiento Nombre="Recuperacion por Perdida" TF="8215484693274147" FechaMovimiento="2024-04-22" Monto="0" Descripcion="En Pococí" Referencia="38FVQ" />
 			<Movimiento Nombre="Retiro en ATM" TF="4286961520207211" FechaMovimiento="2024-04-22" Monto="84074" Descripcion="Sucursal en Desamparados" Referencia="L46Q4" />
 			<Movimiento Nombre="Retiro en Ventana" TF="8965023215396559" FechaMovimiento="2024-04-22" Monto="14864" Descripcion="Sucursal en Cartago" Referencia="Y5P7B" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="7634009855741021" FechaMovimiento="2024-04-22" Monto="25259" Descripcion="Sucursal en Quepos" Referencia="I4WNX" />
 			<Movimiento Nombre="Pago en Linea" TF="9585994043536904" FechaMovimiento="2024-04-22" Monto="20422" Descripcion="Walmart en Cartago" Referencia="MWFPR" />
-		</Movimientos>
+			<Movimiento Nombre="Cargos por Servicio" TF="4286961520207211" FechaMovimiento="2024-04-22" Monto="53043" Descripcion="ATM de Pavas" Referencia="TJN95" />
+			<Movimiento Nombre="Renovacion de TF" TF="5655636577940569" FechaMovimiento="2024-04-22" Monto="55170" Descripcion="ATM de Turrialba" Referencia="9ZB2X" />
+			<Movimiento Nombre="Pago en Linea" TF="5567712895594397" FechaMovimiento="2024-04-22" Monto="74650" Descripcion="Sucursal en Atenas" Referencia="DDC3M" />
+			<Movimiento Nombre="Renovacion de TF" TF="5525247354599728" FechaMovimiento="2024-04-22" Monto="80678" Descripcion="En Puntarenas" Referencia="57FO1" />
+			<Movimiento Nombre="Retiro en Ventana" TF="4366645788435358" FechaMovimiento="2024-04-22" Monto="89418" Descripcion="ATM de Moravia" Referencia="5XILD" />
+			<Movimiento Nombre="Retiro en ATM" TF="5508364630862234" FechaMovimiento="2024-04-22" Monto="85825" Descripcion="Walmart en Parrita" Referencia="URB6U" />
+			<Movimiento Nombre="Compra" TF="5567712895594397" FechaMovimiento="2024-04-22" Monto="18720" Descripcion="En Palmares" Referencia="9WIRT" />
+			<Movimiento Nombre="Pago en ATM" TF="2256488286809408" FechaMovimiento="2024-04-22" Monto="58767" Descripcion="Walmart en Moravia" Referencia="U4GXP" />
+			<Movimiento Nombre="Pago en ATM" TF="3549875182800350" FechaMovimiento="2024-04-22" Monto="44966" Descripcion="Walmart en Cartago" Referencia="B2W66" />
+			<Movimiento Nombre="Renovacion de TF" TF="5508364630862234" FechaMovimiento="2024-04-22" Monto="79901" Descripcion="Sucursal en Golfito" Referencia="TJPS2" />
+			<Movimiento Nombre="Compra" TF="8603018352074994" FechaMovimiento="2024-04-22" Monto="17987" Descripcion="Walmart en Guápiles" Referencia="O3D1B" />
+			<Movimiento Nombre="Pago en ATM" TF="5585087340448535" FechaMovimiento="2024-04-22" Monto="61300" Descripcion="En Atenas" Referencia="K0OVV" />
+			<Movimiento Nombre="Retiro en Ventana" TF="5655636577940569" FechaMovimiento="2024-04-22" Monto="62804" Descripcion="En Esparza" Referencia="V49CG" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="1694998673342057" FechaMovimiento="2024-04-22" Monto="0" Descripcion="Walmart en Quepos" Referencia="5XILD" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-25">
 		<NTH>
@@ -1737,7 +2116,7 @@
 			<NTF Codigo="9434330390042636" TCAsociada="52865" FechaVencimiento="03/2028" CCV="4442" />
 			<NTF Codigo="2781240656175133" TCAsociada="68953" FechaVencimiento="09/2027" CCV="4894" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Recuperacion por Robo" TF="8603018352074994" FechaMovimiento="2024-04-25" Monto="0" Descripcion="ATM de Ciudad Quesada" Referencia="U3B0N" />
 			<Movimiento Nombre="Recuperacion por Robo" TF="1907420611820113" FechaMovimiento="2024-04-25" Monto="0" Descripcion="ATM de San Carlos" Referencia="38FVQ" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2337742938367048" FechaMovimiento="2024-04-25" Monto="96752" Descripcion="ATM de San Ramón" Referencia="QK29E" />
@@ -1753,11 +2132,21 @@
 			<Movimiento Nombre="Pago en Linea" TF="2668231324191095" FechaMovimiento="2024-04-25" Monto="44595" Descripcion="ATM de Barva" Referencia="N9YRU" />
 			<Movimiento Nombre="Compra" TF="3620383385494061" FechaMovimiento="2024-04-25" Monto="16948" Descripcion="Sucursal en Heredia" Referencia="BRLJ3" />
 			<Movimiento Nombre="Pago en ATM" TF="2315327303879021" FechaMovimiento="2024-04-25" Monto="71825" Descripcion="Sucursal en Pérez Zeledón" Referencia="GIZS3" />
-		</Movimientos>
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="9426782141767763" FechaMovimiento="2024-04-25" Monto="95826" Descripcion="En Naranjo" Referencia="NEUBF" />
+			<Movimiento Nombre="Pago en Linea" TF="3488477239742811" FechaMovimiento="2024-04-25" Monto="54272" Descripcion="Sucursal en Coto Brus" Referencia="CT00C" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="2794325256592805" FechaMovimiento="2024-04-25" Monto="0" Descripcion="Sucursal en Cañas" Referencia="3YOWQ" />
+			<Movimiento Nombre="Pago en ATM" TF="8965023215396559" FechaMovimiento="2024-04-25" Monto="31796" Descripcion="En Puntarenas" Referencia="VILF0" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2383056325654095" FechaMovimiento="2024-04-25" Monto="68788" Descripcion="En Santo Domingo" Referencia="ZFCZA" />
+			<Movimiento Nombre="Compra" TF="5525247354599728" FechaMovimiento="2024-04-25" Monto="49246" Descripcion="ATM de Cartago" Referencia="DFEYU" />
+			<Movimiento Nombre="Cargos por Servicio" TF="2337742938367048" FechaMovimiento="2024-04-25" Monto="47995" Descripcion="Walmart en Escazú" Referencia="PAYRD" />
+			<Movimiento Nombre="Renovacion de TF" TF="2383056325654095" FechaMovimiento="2024-04-25" Monto="17970" Descripcion="ATM de Grecia" Referencia="K0OVV" />
+			<Movimiento Nombre="Compra" TF="2794325256592805" FechaMovimiento="2024-04-25" Monto="17761" Descripcion="En Santa Ana" Referencia="FKQHL" />
+			<Movimiento Nombre="Compra" TF="2810488571833172" FechaMovimiento="2024-04-25" Monto="50748" Descripcion="Sucursal en Quepos" Referencia="YY7AJ" />
+		</Movimiento>
 	</fechaOperacion>
 	<fechaOperacion Fecha="2024-04-28">
 		<NTH>
-			<NTH Nombre="Julián Segura" ValorDocIdentidad="1-6018-7036" FechaNacimiento="1963-09-25" NombreUsuario="jsegura" Password="hola123" />
+			<NTH Nombre="Julián Segura" ValorDocIdentidad="1-6018-7036" FechaNacimiento="1963-09-25" NombreUsuario="jusegura" Password="hola123" />
 			<NTH Nombre="Beatriz Gómez" ValorDocIdentidad="9-1317-5304" FechaNacimiento="2003-03-27" NombreUsuario="bgómez" Password="hola123" />
 			<NTH Nombre="Luis Obando" ValorDocIdentidad="3-4759-6166" FechaNacimiento="1998-06-22" NombreUsuario="lobando" Password="hola123" />
 			<NTH Nombre="Sofía Mendoza" ValorDocIdentidad="8-7899-3127" FechaNacimiento="1969-04-03" NombreUsuario="smendoza" Password="hola123" />
@@ -1782,7 +2171,7 @@
 			<NTF Codigo="1764248486060269" TCAsociada="76940" FechaVencimiento="06/2026" CCV="4927" />
 			<NTF Codigo="8771352618930903" TCAsociada="66946" FechaVencimiento="12/2027" CCV="4480" />
 		</NTF>
-		<Movimientos>
+		<Movimiento>
 			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="1172092706246620" FechaMovimiento="2024-04-28" Monto="85272" Descripcion="Walmart en Escazú" Referencia="1WCVS" />
 			<Movimiento Nombre="Retiro en Ventana" TF="7407888157510632" FechaMovimiento="2024-04-28" Monto="93975" Descripcion="En Palmares" Referencia="KYTCD" />
 			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="1907420611820113" FechaMovimiento="2024-04-28" Monto="36910" Descripcion="ATM de Moravia" Referencia="2YKLS" />
@@ -1797,7 +2186,17 @@
 			<Movimiento Nombre="Renovacion de TF" TF="7407888157510632" FechaMovimiento="2024-04-28" Monto="33264" Descripcion="ATM de Escazú" Referencia="WJ4F8" />
 			<Movimiento Nombre="Renovacion de TF" TF="5508364630862234" FechaMovimiento="2024-04-28" Monto="15363" Descripcion="En Bagaces" Referencia="KONKN" />
 			<Movimiento Nombre="Recuperacion por Perdida" TF="4202962751833120" FechaMovimiento="2024-04-28" Monto="0" Descripcion="Walmart en Nicoya" Referencia="PURNX" />
-			<Movimiento Nombre="Intereses Corrientes sobre Saldo" TF="8603018352074994" FechaMovimiento="2024-04-28" Monto="28752" Descripcion="ATM de Palmares" Referencia="Y5P7B" />
-		</Movimientos>
+			<Movimiento Nombre="Cargos por Servicio" TF="6842362296565369" FechaMovimiento="2024-04-28" Monto="42389" Descripcion="Sucursal en Santa Ana" Referencia="8CD1N" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="8414782667197000" FechaMovimiento="2024-04-28" Monto="43741" Descripcion="Walmart en Escazú" Referencia="8G74O" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="3549875182800350" FechaMovimiento="2024-04-28" Monto="0" Descripcion="Sucursal en Parrita" Referencia="0B1OQ" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso ATM" TF="8414782667197000" FechaMovimiento="2024-04-28" Monto="83398" Descripcion="En La Unión" Referencia="38DUN" />
+			<Movimiento Nombre="Retiro en ATM" TF="4921641842263358" FechaMovimiento="2024-04-28" Monto="69208" Descripcion="Sucursal en Palmares" Referencia="8QCO9" />
+			<Movimiento Nombre="Retiro en Ventana" TF="4921641842263358" FechaMovimiento="2024-04-28" Monto="37617" Descripcion="En Santo Domingo" Referencia="0B1OQ" />
+			<Movimiento Nombre="Renovacion de TF" TF="2994043263109333" FechaMovimiento="2024-04-28" Monto="61994" Descripcion="Sucursal en Puriscal" Referencia="SAFNJ" />
+			<Movimiento Nombre="Pago en ATM" TF="8348133262205011" FechaMovimiento="2024-04-28" Monto="14806" Descripcion="Walmart en Curridabat" Referencia="PZL1T" />
+			<Movimiento Nombre="Cargos por Multa Exceso Uso Ventana" TF="2794325256592805" FechaMovimiento="2024-04-28" Monto="78661" Descripcion="En Bagaces" Referencia="7WIV4" />
+			<Movimiento Nombre="Recuperacion por Robo" TF="2794325256592805" FechaMovimiento="2024-04-28" Monto="0" Descripcion="Sucursal en Cañas" Referencia="Q4X8U" />
+			<Movimiento Nombre="Recuperacion por Perdida" TF="8537718971978825" FechaMovimiento="2024-04-28" Monto="0" Descripcion="Sucursal en San Pablo" Referencia="AU1QD" />
+		</Movimiento>
 	</fechaOperacion>
 </root>
