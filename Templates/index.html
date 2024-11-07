@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Tarjetahabientes</title>
+    <style>
+        /* Diseño sencillo para la tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Inicio</h1>
+    <h1>Tarjetahabientes</h1>
+    <table id="tarjetahabientesTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Documento Identidad</th>
+                <th>Nombre Usuario</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Script para obtener y mostrar los datos, y manejar las acciones -->
+    <script>
+        // Obtener tarjetahabientes y mostrar en la tabla
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/tarjetahabientes')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.querySelector('#tarjetahabientesTable tbody');
+                    tableBody.innerHTML = '';
+                    data.forEach(t => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${t.id}</td>
+                            <td>${t.nombre}</td>
+                            <td>${t.documento_identidad}</td>
+                            <td>${t.nombre_usuario}</td>
+                            <td>
+                                <button onclick="realizarAccion('Ver', ${t.id})">Ver</button>
+                                <button onclick="realizarAccion('Eliminar', ${t.id})">Eliminar</button>
+                                <button onclick="realizarAccion('Actualizar', ${t.id})">Actualizar</button>
+                            </td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error al obtener tarjetahabientes:', error));
+        });
+
+        // Función para manejar la acción seleccionada
+        function realizarAccion(accion, id) {
+            fetch('/accion', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ accion, id })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (accion === 'Eliminar') location.reload(); // Recargar la página si se elimina
+            })
+            .catch(error => console.error('Error al realizar la acción:', error));
+        }
+    </script>
 </body>
 </html>
