@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ver movimientos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .scrollable-table {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .input {
+            width: 75%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            grid-column: 1;
+        }
+        .filaSeleccion{
+            background-color: #ffffff;
+        }
+        .boton {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+        .enlace {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="usuario">Usuario: {{username}}</h2>
+    <h2 id="informacion">Lista de Movimientos de Documento: {{documento}}</h2>
+    <form id="formulario-movimiento" action="/movimientos/{{documento}}" method="post">
+        <div class="scrollable-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre Empleado</th>
+                        <th>Tipo Movimiento</th>
+                        <th>Fecha del movimiento</th>
+                        <th>Monto</th>
+                        <th>Nuevo Saldo</th>
+                        <th>Usuario</th>
+                        <th>IP</th>
+                        <th>Hora del movimiento</th>
+                    </tr>
+                </thead>
+                <tbody id="movimientosLista">
+                    
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <script>
+        const url = 'http://localhost:5000/getMovimientos?documento={{documento}}';
+        fetch(url)
+            .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al obtener el archivo JSON');
+            }
+
+            return response.json();
+            })
+            .then(data => {
+                cargarMovimientos(data);
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        function cargarMovimientos(data) {
+        const movimientosLista = document.getElementById('movimientosLista');
+        movimientosLista.innerHTML = ''; 
+            
+            data.forEach(movimiento => {
+                const fila = document.createElement('tr');
+                const celNombre = document.createElement('td');
+                celNombre.textContent = movimiento.Nombre;
+                fila.appendChild(celNombre);
+                const tipoMovimiento = document.createElement('td');
+                tipoMovimiento.textContent = movimiento.Tipo;
+                fila.appendChild(tipoMovimiento);
+                const fechaMovimiento = document.createElement('td');
+                fechaMovimiento.textContent = (movimiento.Fecha);
+                fila.appendChild(fechaMovimiento);
+                const monto = document.createElement('td');
+                monto.textContent = movimiento.Monto;
+                fila.appendChild(monto);
+                const nuevoSaldo = document.createElement('td');
+                nuevoSaldo.textContent = movimiento.NuevoSaldo;
+                fila.appendChild(nuevoSaldo);
+                const idPostByUser = document.createElement('td');
+                idPostByUser.textContent = movimiento.Username;
+                fila.appendChild(idPostByUser);
+                const postInIP = document.createElement('td');
+                postInIP.textContent = movimiento.PostInIP;
+                fila.appendChild(postInIP);
+                const postTime = document.createElement('td');
+                postTime.textContent = (movimiento.PostTime);
+                fila.appendChild(postTime);
+                movimientosLista.appendChild(fila);
+            });
+        }
+    </script>
+    <br><br>
+    <a href="/pagina_principal/{{username}}", class="boton">Regresar</a>
+</body>
+</html>

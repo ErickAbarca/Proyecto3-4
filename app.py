@@ -104,5 +104,15 @@ def accion():
     
     return jsonify({'message': f'Acción {accion} realizada en tarjetahabiente {id_tarjetahabiente}'})
 
+
+@app.route('/cuentasTH', methods=['GET'])
+def abrir_movimiento_empleado():
+    username = request.args.get('username')
+    documento = request.args.get('documento')
+    return render_template('movimientos.html', username=username, documento=documento)
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)

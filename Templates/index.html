@@ -56,7 +56,7 @@
                             <td>${t.documento_identidad}</td>
                             <td>${t.nombre}</td>
                             <td>
-                                <button onclick="realizarAccion('Ver', ${t.id})">Ver</button>
+                                <button onclick="realizarAccion('Ver', ${t.documento_identidad})">Ver</button>
                             </td>
                         `;
                         tableBody.appendChild(row);
@@ -81,6 +81,13 @@
             })
             .catch(error => console.error('Error al realizar la acción:', error));
         }
+
+        document.getElementById('movimientos').addEventListener('click', function() {
+            const seleccion = document.getElementById('seleccion');
+            const documento = seleccion.querySelector('td:nth-child(1)').textContent;
+            const username = document.getElementById('bienvenida').textContent.split(' ')[1];
+            window.location.href = `/movimientoemp?documento=${documento}&username=${username}`;
+        });
     </script>
 </body>
 </html>
