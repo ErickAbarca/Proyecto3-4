@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_ReporteCuentasActivasPorTipo]
+CREATE PROCEDURE [dbo].[SP_ReporteCuentasActivasPorTipo]
     @OutResulTCode INT OUTPUT
 AS
 BEGIN

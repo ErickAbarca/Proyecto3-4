@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_AsignarNuevaTarjetaFisica]
+CREATE PROCEDURE [dbo].[SP_AsignarNuevaTarjetaFisica]
     @id_cuenta INT,  -- ID de la cuenta (puede ser TCA o TCM)
     @tipo_cuenta CHAR(3),  -- 'TCM' o 'TCA'
     @numero_tarjeta VARCHAR(16),

@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_RegistrarPago]
+CREATE PROCEDURE [dbo].[SP_RegistrarPago]
     @id_tcm INT,  -- ID de la cuenta maestra
     @monto DECIMAL(18,2),
     @descripcion VARCHAR(256),

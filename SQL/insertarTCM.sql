@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_CrearCuentaTarjetaMaestra]
+CREATE PROCEDURE [dbo].[SP_CrearCuentaTarjetaMaestra]
     @codigo_tcm VARCHAR(32),
     @tipo_tcm INT,  -- Referencia a TipoCuentaMaestra
     @limite_credito DECIMAL(18,2),

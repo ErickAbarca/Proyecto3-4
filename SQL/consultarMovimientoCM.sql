@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_ConsultarMovimientosPorCuentaMaestra]
+CREATE PROCEDURE [dbo].[SP_ConsultarMovimientosPorCuentaMaestra]
     @id_tcm INT,
     @fecha_inicio DATETIME,
     @fecha_fin DATETIME,

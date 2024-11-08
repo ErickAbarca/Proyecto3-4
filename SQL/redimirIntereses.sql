@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_RedimirIntereses]
+CREATE PROCEDURE [dbo].[SP_RedimirIntereses]
     @id_tcm INT,  -- ID de la cuenta maestra
     @OutResulTCode INT OUTPUT
 AS

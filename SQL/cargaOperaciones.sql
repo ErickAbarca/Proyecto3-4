@@ -1,4 +1,4 @@
-ALTER PROCEDURE CargarDatosDesdeXML
+CREATE PROCEDURE CargarDatosDesdeXML
     @xmlData XML
 AS
 BEGIN
@@ -113,13 +113,28 @@ BEGIN
         WHERE TF.id IS NULL OR TM.id IS NULL;
 
         -- Verificar contenido en #TempMovimiento y #ErroresMovimiento antes de la inserción final
+        SELECT * FROM #TempTarjetahabiente;
+        SELECT * FROM #TempCuentaTarjetaMaestra;
+        SELECT * FROM #TempTarjetaFisica;
         SELECT * FROM #TempMovimiento;
         SELECT * FROM #ErroresMovimiento;
+
+
+        -- Insertar datos en CuentaTarjetaMaestra
+        INSERT INTO CuentaTarjetaMaestra (codigo_tcm, tipo_tcm, limite_credito, saldo_actual, id_th, fecha_creacion)
+        SELECT codigo_tcm, tipo_tcm, limite_credito, saldo_actual, id_th, fecha_creacion
+        FROM #TempCuentaTarjetaMaestra;
+
+        -- Insertar datos en TarjetaFisica
+        INSERT INTO TarjetaFisica (numero_tarjeta, cvv, fecha_vencimiento, id_tcm, id_tca, estado)
+        SELECT numero_tarjeta, cvv, fecha_vencimiento, id_tcm, id_tca, estado
+        FROM #TempTarjetaFisica;
 
         -- Insertar datos en Movimiento
         INSERT INTO Movimiento (id_tf, fecha_movimiento, tipo_movimiento, monto, descripcion, referencia)
         SELECT id_tf, fecha_movimiento, tipo_movimiento, monto, descripcion, referencia
         FROM #TempMovimiento;
+
 
         -- Limpieza de tablas temporales
         DROP TABLE #TempTarjetahabiente;

@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_CrearTarjetahabiente]
+CREATE PROCEDURE [dbo].[SP_CrearTarjetahabiente]
     @nombre VARCHAR(128),
     @id_tipo_documento INT,
     @documento_identidad VARCHAR(32),

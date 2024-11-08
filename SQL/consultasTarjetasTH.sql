@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_ConsultarTarjetasPorTarjetahabiente]
+CREATE PROCEDURE [dbo].[SP_ConsultarTarjetasPorTarjetahabiente]
     @id_th INT,
     @OutResulTCode INT OUTPUT
 AS

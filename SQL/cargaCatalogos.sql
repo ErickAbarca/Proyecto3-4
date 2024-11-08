@@ -1,4 +1,4 @@
-ALTER PROCEDURE CargarCatalogosDesdeXML
+CREATE PROCEDURE CargarCatalogosDesdeXML
     @xmlData XML
 AS
 BEGIN

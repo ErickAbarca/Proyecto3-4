@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_ConsultaMovimientosPorTarjeta]
+CREATE PROCEDURE [dbo].[SP_ConsultaMovimientosPorTarjeta]
     @id_tf INT,
     @fecha_inicio DATETIME,
     @fecha_fin DATETIME,

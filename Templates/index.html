@@ -7,8 +7,9 @@
     <style>
         /* Diseño sencillo para la tabla */
         table {
-            width: 100%;
+            width: 80%;
             border-collapse: collapse;
+            margin: 20px auto;
         }
         th, td {
             padding: 8px;
@@ -29,11 +30,9 @@
     <h1>Tarjetahabientes</h1>
     <table id="tarjetahabientesTable">
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
+            <tr>               
                 <th>Documento Identidad</th>
-                <th>Nombre Usuario</th>
+                <th>Nombre</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -47,19 +46,17 @@
             fetch('/tarjetahabientes')
                 .then(response => response.json())
                 .then(data => {
+                    console.log(data);
+                
                     const tableBody = document.querySelector('#tarjetahabientesTable tbody');
                     tableBody.innerHTML = '';
                     data.forEach(t => {
                         const row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td>${t.id}</td>
-                            <td>${t.nombre}</td>
+                        row.innerHTML = `                            
                             <td>${t.documento_identidad}</td>
-                            <td>${t.nombre_usuario}</td>
+                            <td>${t.nombre}</td>
                             <td>
                                 <button onclick="realizarAccion('Ver', ${t.id})">Ver</button>
-                                <button onclick="realizarAccion('Eliminar', ${t.id})">Eliminar</button>
-                                <button onclick="realizarAccion('Actualizar', ${t.id})">Actualizar</button>
                             </td>
                         `;
                         tableBody.appendChild(row);

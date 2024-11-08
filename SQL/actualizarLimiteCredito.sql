@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_ActualizarLimiteCredito]
+CREATE PROCEDURE [dbo].[SP_ActualizarLimiteCredito]
     @id_tcm INT,
     @nuevo_limite DECIMAL(18,2),
     @OutResulTCode INT OUTPUT

@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_CrearCuentaTarjetaAdicional]
+CREATE PROCEDURE [dbo].[SP_CrearCuentaTarjetaAdicional]
     @codigo_tca VARCHAR(32),
     @id_tcm INT,  -- ID de la cuenta maestra asociada
     @id_th INT,   -- ID del tarjetahabiente que usará la cuenta adicional

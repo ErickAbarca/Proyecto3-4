@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_RegistrarUsuarioAdministrador]
+CREATE PROCEDURE [dbo].[SP_RegistrarUsuarioAdministrador]
     @nombre_usuario VARCHAR(64),
     @password VARCHAR(128),
     @OutResulTCode INT OUTPUT

@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_InactivarTarjetaFisica]
+CREATE PROCEDURE [dbo].[SP_InactivarTarjetaFisica]
     @id_tf INT,  -- ID de la tarjeta física
     @motivo_invalidacion INT,  -- Motivo de invalidación (e.g., robo, pérdida)
     @OutResulTCode INT OUTPUT

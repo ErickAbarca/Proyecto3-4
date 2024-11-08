@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_ReporteMorosidadPorCuenta]
+CREATE PROCEDURE [dbo].[SP_ReporteMorosidadPorCuenta]
     @OutResulTCode INT OUTPUT
 AS
 BEGIN

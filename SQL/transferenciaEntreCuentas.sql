@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_TransferenciaEntreCuentas]
+CREATE PROCEDURE [dbo].[SP_TransferenciaEntreCuentas]
     @id_cuenta_origen INT,
     @id_cuenta_destino INT,
     @monto DECIMAL(18,2),

@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_AplicarInteresMoratorio]
+CREATE PROCEDURE [dbo].[SP_AplicarInteresMoratorio]
     @id_tcm INT,
     @OutResulTCode INT OUTPUT
 AS

@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_GenerarEstadoCuenta]
+CREATE PROCEDURE [dbo].[SP_GenerarEstadoCuenta]
     @id_tcm INT,  -- ID de la cuenta maestra
     @OutResulTCode INT OUTPUT
 AS

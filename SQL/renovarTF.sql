@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_RenovarTarjetaFisica]
+CREATE PROCEDURE [dbo].[SP_RenovarTarjetaFisica]
     @id_tf INT,  -- ID de la tarjeta física
     @OutResulTCode INT OUTPUT
 AS

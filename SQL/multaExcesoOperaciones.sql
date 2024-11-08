@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_GenerarMultaExcesoOperaciones]
+CREATE PROCEDURE [dbo].[SP_GenerarMultaExcesoOperaciones]
     @id_tcm INT,
     @OutResulTCode INT OUTPUT
 AS

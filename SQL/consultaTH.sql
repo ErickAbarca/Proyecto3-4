@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_ConsultaTarjetahabientes]
+CREATE PROCEDURE [dbo].[SP_ConsultaTarjetahabientes]
     @OutResulTCode INT OUTPUT
 AS
 BEGIN

@@ -1,19 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio de Sesión</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  #mensaje {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 1000;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+
+
+  div {
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .inicio {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+</style>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="/login" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
-    </form>
-    <a href="/register">Register</a>
+
+
+<div id="container">
+  <h1>Iniciar sesión</h1>
+
+<form id="login-form">
+  <div>
+    <label for="username">Nombre de usuario:</label>
+    <input type="text" id="username" name="username" required>
+  </div>
+  <div>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button type="submit" class="inicio">Iniciar sesión</button>
+
+  <div id="mensaje">
+    <h2>Error</h2>
+    <p>Usuario o contraseña incorrectos</p>
+    <button type="button" id="cerrar">Cerrar</button>
+  </div> 
+</form>
+</div>
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+      const url = `http://127.0.0.1:5000/login?usuario=${formData.get('username')}&contrasena=${formData.get('password')}`;
+      fetch(url)
+        .then(response => {
+          if (response.redirected) {
+            console.log('Redirecting to', response.url);
+            window.location.href = response.url;
+          } else {
+            document.getElementById('mensaje').style.display = 'block';
+            return response.json(); 
+          }
+        })
+        .then(data => {
+          console.log(data);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    });
+    document.getElementById('cerrar').addEventListener('click', function() {
+      location.reload();
+    });
+
+    </script>
+    
+
 </body>
 </html>

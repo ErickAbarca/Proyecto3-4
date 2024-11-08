@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_RegistrarMovimiento]
+CREATE PROCEDURE [dbo].[SP_RegistrarMovimiento]
     @id_tf INT,  -- ID de la tarjeta física
     @tipo_movimiento INT,  -- Referencia al tipo de movimiento
     @monto DECIMAL(18,2),

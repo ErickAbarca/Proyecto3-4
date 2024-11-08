@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_AplicarInteresCorriente]
+CREATE PROCEDURE [dbo].[SP_AplicarInteresCorriente]
     @id_tcm INT,
     @OutResulTCode INT OUTPUT
 AS
