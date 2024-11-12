@@ -38,7 +38,7 @@ CREATE TABLE Tarjetahabiente (
     id INT PRIMARY KEY IDENTITY(1,1),
     nombre VARCHAR(128) NOT NULL,
     id_tipo_documento INT,
-    x VARCHAR(32) NOT NULL UNIQUE,
+    documento_identidad VARCHAR(32) NOT NULL UNIQUE,
     nombre_usuario VARCHAR(64) NOT NULL,
     password VARCHAR(128) NOT NULL,
     FOREIGN KEY (id_tipo_documento) REFERENCES TipoDocumento(id)
@@ -138,7 +138,7 @@ CREATE TABLE [dbo].[DBErrors](
 	[Severity] [int] NULL,
 	[Line] [int] NULL,
 	[Procedure] [varchar](64) NULL,
-	[Message] [varchar](128) NULL,
+	[Message] [varchar](512) NULL,
 	[DateTime] [datetime] NULL
 );
 

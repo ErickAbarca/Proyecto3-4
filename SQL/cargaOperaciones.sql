@@ -119,7 +119,14 @@ FROM CuentaTarjetaMaestra CTM
 INNER JOIN CuentaTarjetaAdicional CTA ON CTA.id_tcm = CTM.id
 INNER JOIN Movimiento M ON M.id_tf = CTA.id
 WHERE M.tipo_movimiento = 1  -- O el tipo de movimiento que sea adecuado, por ejemplo, un depósito
-  AND M.fecha_movimiento BETWEEN '2024-01-01' AND '2024-12-31';  -- Rango de fechas según necesites
+  AND M.fecha_movimiento BETWEEN '1900-01-01' AND '9999-12-31';  -- Rango de fechas según necesites
+
+UPDATE CTM
+SET saldo_actual = saldo_actual + M.monto  -- Ajustar el saldo según el tipo de movimiento
+FROM CuentaTarjetaMaestra CTM
+INNER JOIN Movimiento M ON M.id_tf = CTM.id
+WHERE M.tipo_movimiento = 1  -- Supón que '1' es para movimientos de crédito, ajusta según sea necesario
+  AND M.fecha_movimiento BETWEEN '1900-01-01' AND '9999-12-31';  -- Rango de fechas o condición que necesites
 
 
 -- Cargar renovaciones por robo o pérdida

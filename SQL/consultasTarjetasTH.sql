@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[SP_ConsultarTarjetasPorTarjetahabiente]
+CREATE PROCEDURE [dbo].[SP_ConsultarTarjetasPorTarjetahabiente]
     @documentoIdentidad NVARCHAR(20),
     @OutResulTCode INT OUTPUT
 AS
@@ -17,7 +17,7 @@ BEGIN
         FROM TarjetaFisica tf
         LEFT JOIN CuentaTarjetaMaestra ctm ON tf.id_tcm = ctm.id
         LEFT JOIN CuentaTarjetaAdicional tca ON tf.id_tca = tca.id
-        WHERE (ctm.id_th = @id_th OR tca.id_th = @id_th);
+        WHERE (ctm.id_th = @idTarjetahabiente OR tca.id_th = @idTarjetahabiente);
 
     END TRY
     BEGIN CATCH
