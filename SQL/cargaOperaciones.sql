@@ -1,4 +1,4 @@
-CREATE PROCEDURE CargarDatosDesdeXML
+ALTER PROCEDURE [dbo].[CargarDatosDesdeXML]
     @xmlData XML
 AS
 BEGIN
@@ -21,6 +21,12 @@ BEGIN
             fecha_creacion DATE
         );
 
+        CREATE TABLE #TempCuentaTarjetaAdicional (
+            codigo_tca VARCHAR(32) NOT NULL,
+            id_tcm INT,
+            id_th INT
+        );
+
         CREATE TABLE #TempTarjetaFisica (
             numero_tarjeta VARCHAR(16) NOT NULL,
             cvv VARCHAR(4),
@@ -39,13 +45,6 @@ BEGIN
             referencia VARCHAR(64)
         );
 
-        -- Tabla de errores de relación para movimientos
-        CREATE TABLE #ErroresMovimiento (
-            numero_tarjeta VARCHAR(16),
-            tipo_movimiento_nombre VARCHAR(64),
-            error_mensaje VARCHAR(256)
-        );
-
         -- Cargar datos en tablas temporales
         INSERT INTO #TempTarjetahabiente (nombre, id_tipo_documento, documento_identidad, nombre_usuario, password)
         SELECT DISTINCT 
@@ -58,94 +57,112 @@ BEGIN
         WHERE NTH.value('@ValorDocIdentidad', 'VARCHAR(32)') IS NOT NULL;
 
         INSERT INTO #TempCuentaTarjetaMaestra (codigo_tcm, tipo_tcm, limite_credito, saldo_actual, id_th, fecha_creacion)
-        SELECT DISTINCT 
-            NTCM.value('@Codigo', 'VARCHAR(32)'),
-            CASE 
-                WHEN NTCM.value('@TipoTCM', 'VARCHAR(16)') = 'Oro' THEN 1
-                WHEN NTCM.value('@TipoTCM', 'VARCHAR(16)') = 'Platino' THEN 2
-                WHEN NTCM.value('@TipoTCM', 'VARCHAR(16)') = 'Corporativo' THEN 3
-            END,
-            NTCM.value('@LimiteCredito', 'DECIMAL(18,2)'),
-            0,
-            (SELECT id FROM Tarjetahabiente WHERE documento_identidad = NTCM.value('@TH', 'VARCHAR(32)')),
-            GETDATE()
-        FROM @xmlData.nodes('/root/fechaOperacion/NTCM/NTCM') AS T(NTCM)
-        WHERE NTCM.value('@Codigo', 'VARCHAR(32)') IS NOT NULL;
+SELECT DISTINCT 
+    NTCM.value('@Codigo', 'VARCHAR(32)'),
+    CASE 
+        WHEN NTCM.value('@TipoTCM', 'VARCHAR(16)') = 'Oro' THEN 1
+        WHEN NTCM.value('@TipoTCM', 'VARCHAR(16)') = 'Platino' THEN 2
+        WHEN NTCM.value('@TipoTCM', 'VARCHAR(16)') = 'Corporativo' THEN 3
+    END,
+    NTCM.value('@LimiteCredito', 'DECIMAL(18,2)'),
+    0,
+    (SELECT id FROM Tarjetahabiente WHERE documento_identidad = NTCM.value('@TH', 'VARCHAR(32)')),
+    ISNULL(NTCM.value('(../@Fecha)[1]', 'DATE'), GETDATE())  -- Usar GETDATE() si falta la fecha
+FROM @xmlData.nodes('/root/fechaOperacion/NTCM/NTCM') AS T(NTCM)
+WHERE NTCM.value('@Codigo', 'VARCHAR(32)') IS NOT NULL
+  AND (SELECT id FROM Tarjetahabiente WHERE documento_identidad = NTCM.value('@TH', 'VARCHAR(32)')) IS NOT NULL;
+
+
+        -- Cargar datos en la tabla temporal de cuentas adicionales
+        INSERT INTO #TempCuentaTarjetaAdicional (codigo_tca, id_tcm, id_th)
+        SELECT DISTINCT
+            NTCA.value('@CodigoTCA', 'VARCHAR(32)'),
+            (SELECT id FROM CuentaTarjetaMaestra WHERE codigo_tcm = NTCA.value('@CodigoTCM', 'VARCHAR(32)')),
+            (SELECT id FROM Tarjetahabiente WHERE documento_identidad = NTCA.value('@TH', 'VARCHAR(32)'))
+        FROM @xmlData.nodes('/root/fechaOperacion/NTCA/NTCA') AS T(NTCA)
+        WHERE NTCA.value('@CodigoTCA', 'VARCHAR(32)') IS NOT NULL;
 
         INSERT INTO #TempTarjetaFisica (numero_tarjeta, cvv, fecha_vencimiento, id_tcm, id_tca, estado)
-        SELECT DISTINCT
-            NTF.value('@Codigo', 'VARCHAR(16)'),
-            NTF.value('@CCV', 'VARCHAR(4)'),
-            ISNULL(TRY_CONVERT(DATE, NTF.value('@FechaVencimiento', 'VARCHAR(10)'), 103), '9999-12-31'),  -- Fecha por defecto
-            (SELECT TOP 1 id FROM CuentaTarjetaMaestra WHERE codigo_tcm = NTF.value('@TCAsociada', 'VARCHAR(32)')),
-            NULL,
-            'Activa'
-        FROM @xmlData.nodes('/root/fechaOperacion/NTF/NTF') AS T(NTF)
-        WHERE NTF.value('@Codigo', 'VARCHAR(16)') IS NOT NULL;
+SELECT DISTINCT
+    NTF.value('@Codigo', 'VARCHAR(16)'),
+    NTF.value('@CCV', 'VARCHAR(4)'),
+    ISNULL(TRY_CONVERT(DATE, NTF.value('@FechaVencimiento', 'VARCHAR(10)'), 103), '9999-12-31'),  -- Usar fecha por defecto si es NULL
+    (SELECT TOP 1 id FROM CuentaTarjetaMaestra WHERE codigo_tcm = NTF.value('@TCAsociada', 'VARCHAR(32)')),
+    (SELECT TOP 1 id FROM CuentaTarjetaAdicional WHERE codigo_tca = NTF.value('@TCAsociada', 'VARCHAR(32)')),
+    'Activa'
+FROM @xmlData.nodes('/root/fechaOperacion/NTF/NTF') AS T(NTF)
+WHERE NTF.value('@Codigo', 'VARCHAR(16)') IS NOT NULL;
 
-        -- Insertar movimientos en la tabla temporal y registrar errores
+
         INSERT INTO #TempMovimiento (id_tf, fecha_movimiento, tipo_movimiento, monto, descripcion, referencia)
-        SELECT 
-            TF.id AS id_tf,
-            ISNULL(TRY_CONVERT(DATETIME, Movimiento.value('@FechaMovimiento', 'VARCHAR(10)'), 103), GETDATE()),
-            TM.id AS tipo_movimiento,
-            Movimiento.value('@Monto', 'DECIMAL(18,2)'),
-            Movimiento.value('@Descripcion', 'VARCHAR(256)'),
-            Movimiento.value('@Referencia', 'VARCHAR(64)')
-        FROM @xmlData.nodes('/root/fechaOperacion/Movimiento/Movimiento') AS T(Movimiento)
-        INNER JOIN TarjetaFisica TF ON TF.numero_tarjeta = Movimiento.value('@TF', 'VARCHAR(16)')
-        INNER JOIN TipoMovimiento TM ON TM.nombre_tipo_movimiento = Movimiento.value('@Nombre', 'VARCHAR(64)')
-        WHERE Movimiento.value('@TF', 'VARCHAR(16)') IS NOT NULL 
-          AND Movimiento.value('@FechaMovimiento', 'VARCHAR(10)') IS NOT NULL;
-
-        -- Registrar errores en movimientos con relaciones inválidas
-        INSERT INTO #ErroresMovimiento (numero_tarjeta, tipo_movimiento_nombre, error_mensaje)
-        SELECT 
-            Movimiento.value('@TF', 'VARCHAR(16)') AS numero_tarjeta,
-            Movimiento.value('@Nombre', 'VARCHAR(64)') AS tipo_movimiento_nombre,
-            CASE 
-                WHEN TF.id IS NULL THEN 'No se encontró TarjetaFisica con el número especificado.'
-                WHEN TM.id IS NULL THEN 'No se encontró TipoMovimiento con el nombre especificado.'
-            END AS error_mensaje
-        FROM @xmlData.nodes('/root/fechaOperacion/Movimiento/Movimiento') AS T(Movimiento)
-        LEFT JOIN TarjetaFisica TF ON TF.numero_tarjeta = Movimiento.value('@TF', 'VARCHAR(16)')
-        LEFT JOIN TipoMovimiento TM ON TM.nombre_tipo_movimiento = Movimiento.value('@Nombre', 'VARCHAR(64)')
-        WHERE TF.id IS NULL OR TM.id IS NULL;
-
-        -- Verificar contenido en #TempMovimiento y #ErroresMovimiento antes de la inserción final
-        SELECT * FROM #TempTarjetahabiente;
-        SELECT * FROM #TempCuentaTarjetaMaestra;
-        SELECT * FROM #TempTarjetaFisica;
-        SELECT * FROM #TempMovimiento;
-        SELECT * FROM #ErroresMovimiento;
+SELECT 
+    TF.id AS id_tf,
+    CASE 
+        WHEN Movimiento.value('@FechaMovimiento', 'VARCHAR(10)') IS NOT NULL 
+             AND TRY_CONVERT(DATETIME, Movimiento.value('@FechaMovimiento', 'VARCHAR(10)'), 103) IS NOT NULL
+        THEN TRY_CONVERT(DATETIME, Movimiento.value('@FechaMovimiento', 'VARCHAR(10)'), 103)
+        ELSE GETDATE()  -- Usar la fecha actual si la fecha no es válida o está ausente
+    END AS fecha_movimiento,
+    TM.id AS tipo_movimiento,
+    Movimiento.value('@Monto', 'DECIMAL(18,2)'),
+    Movimiento.value('@Descripcion', 'VARCHAR(256)'),
+    Movimiento.value('@Referencia', 'VARCHAR(64)')
+FROM @xmlData.nodes('/root/fechaOperacion/Movimiento/Movimiento') AS T(Movimiento)
+INNER JOIN TarjetaFisica TF ON TF.numero_tarjeta = Movimiento.value('@TF', 'VARCHAR(16)')
+INNER JOIN TipoMovimiento TM ON TM.nombre_tipo_movimiento = Movimiento.value('@Nombre', 'VARCHAR(64)')
+WHERE Movimiento.value('@TF', 'VARCHAR(16)') IS NOT NULL 
+  AND Movimiento.value('@FechaMovimiento', 'VARCHAR(10)') IS NOT NULL;
+  -- Actualizar el saldo de la cuenta maestra
+UPDATE CTM
+SET saldo_actual = saldo_actual + M.monto  -- Ajustar el saldo de la cuenta maestra según el movimiento
+FROM CuentaTarjetaMaestra CTM
+INNER JOIN CuentaTarjetaAdicional CTA ON CTA.id_tcm = CTM.id
+INNER JOIN Movimiento M ON M.id_tf = CTA.id
+WHERE M.tipo_movimiento = 1  -- O el tipo de movimiento que sea adecuado, por ejemplo, un depósito
+  AND M.fecha_movimiento BETWEEN '2024-01-01' AND '2024-12-31';  -- Rango de fechas según necesites
 
 
-        -- Insertar datos en CuentaTarjetaMaestra
-        INSERT INTO CuentaTarjetaMaestra (codigo_tcm, tipo_tcm, limite_credito, saldo_actual, id_th, fecha_creacion)
-        SELECT codigo_tcm, tipo_tcm, limite_credito, saldo_actual, id_th, fecha_creacion
-        FROM #TempCuentaTarjetaMaestra;
-
-        -- Insertar datos en TarjetaFisica
-        INSERT INTO TarjetaFisica (numero_tarjeta, cvv, fecha_vencimiento, id_tcm, id_tca, estado)
-        SELECT numero_tarjeta, cvv, fecha_vencimiento, id_tcm, id_tca, estado
-        FROM #TempTarjetaFisica;
-
-        -- Insertar datos en Movimiento
-        INSERT INTO Movimiento (id_tf, fecha_movimiento, tipo_movimiento, monto, descripcion, referencia)
-        SELECT id_tf, fecha_movimiento, tipo_movimiento, monto, descripcion, referencia
-        FROM #TempMovimiento;
+-- Cargar renovaciones por robo o pérdida
+UPDATE TF
+SET estado = CASE 
+                WHEN RRP.value('@Razon', 'VARCHAR(16)') = 'Robo' THEN 'Robo'
+                WHEN RRP.value('@Razon', 'VARCHAR(16)') = 'Perdida' THEN 'Perdida'
+                ELSE TF.estado
+             END
+FROM TarjetaFisica TF
+INNER JOIN @xmlData.nodes('/root/fechaOperacion/RenovacionRoboPerdida/RRP') AS T(RRP)
+    ON TF.numero_tarjeta = RRP.value('@TF', 'VARCHAR(16)')
+WHERE RRP.value('@TF', 'VARCHAR(16)') IS NOT NULL
+  AND (RRP.value('@Razon', 'VARCHAR(16)') = 'Robo' OR RRP.value('@Razon', 'VARCHAR(16)') = 'Perdida');
 
 
-        -- Limpieza de tablas temporales
+
+        -- Insertar datos en las tablas finales
+        --INSERT INTO Tarjetahabiente (nombre, id_tipo_documento, documento_identidad, nombre_usuario, password)
+        --SELECT nombre, id_tipo_documento, documento_identidad, nombre_usuario, password FROM #TempTarjetahabiente;
+
+        --INSERT INTO CuentaTarjetaMaestra (codigo_tcm, tipo_tcm, limite_credito, saldo_actual, id_th, fecha_creacion)
+        --SELECT codigo_tcm, tipo_tcm, limite_credito, saldo_actual, id_th, fecha_creacion FROM #TempCuentaTarjetaMaestra;
+
+        --INSERT INTO CuentaTarjetaAdicional (codigo_tca, id_tcm, id_th)
+        --SELECT codigo_tca, id_tcm, id_th FROM #TempCuentaTarjetaAdicional;
+
+        --INSERT INTO TarjetaFisica (numero_tarjeta, cvv, fecha_vencimiento, id_tcm, id_tca, estado)
+        --SELECT numero_tarjeta, cvv, fecha_vencimiento, id_tcm, id_tca, estado FROM #TempTarjetaFisica;
+
+        --INSERT INTO Movimiento (id_tf, fecha_movimiento, tipo_movimiento, monto, descripcion, referencia)
+        --SELECT id_tf, fecha_movimiento, tipo_movimiento, monto, descripcion, referencia FROM #TempMovimiento;
+
+        -- Limpiar tablas temporales
         DROP TABLE #TempTarjetahabiente;
         DROP TABLE #TempCuentaTarjetaMaestra;
+        DROP TABLE #TempCuentaTarjetaAdicional;
         DROP TABLE #TempTarjetaFisica;
         DROP TABLE #TempMovimiento;
-        DROP TABLE #ErroresMovimiento;
 
     END TRY
     BEGIN CATCH
-        -- Capturar errores en la tabla DBErrors y ajustar la longitud de Message para evitar truncamiento
+        -- Registrar errores en DBErrors con tamaño ajustado de Message
         DECLARE @ErrorMessage NVARCHAR(128) = LEFT(ERROR_MESSAGE(), 128);
         INSERT INTO DBErrors 
         VALUES (SUSER_NAME(), ERROR_NUMBER(), ERROR_STATE(), ERROR_SEVERITY(), ERROR_LINE(), ERROR_PROCEDURE(), @ErrorMessage, GETDATE());

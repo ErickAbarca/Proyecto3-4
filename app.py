@@ -11,9 +11,10 @@ CORS(app)
 def get_db_connection():
     connection = pyodbc.connect(
         'DRIVER={ODBC Driver 17 for SQL Server};'
-        'SERVER=ERICKPC;'
+        #'SERVER=ERICKPC;'
+        'SERVER=JESUSPC;'
         'DATABASE=proyecto3;'
-        'UID=hola;' 
+        'UID=sa;' 
         'PWD=12345678'
     )
     return connection
@@ -110,6 +111,35 @@ def abrir_movimiento_empleado():
     username = request.args.get('username')
     documento = request.args.get('documento')
     return render_template('movimientos.html', username=username, documento=documento)
+
+@app.route('/tarjetas', methods=['GET'])
+def get_tarjetas():
+    documento_identidad = request.args.get('documento')
+
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    
+    try:
+        cursor.execute("EXEC SP_ConsultarTarjetasPorTarjetahabiente ?", documento_identidad)
+        rows = cursor.fetchall()
+        
+        tarjetas = []
+        for row in rows:
+            tarjetas.append({
+                'numero_tarjeta': row[0],
+                'estado': row[1],
+                'fecha_vencimiento': row[2],
+                'tipo_cuenta': row[3]
+            })
+        
+        return jsonify(tarjetas)
+    
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+    
+    finally:
+        cursor.close()
+        conn.close()
 
 
 

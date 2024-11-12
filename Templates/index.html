@@ -27,7 +27,8 @@
     </style>
 </head>
 <body>
-    <h1>Tarjetahabientes</h1>
+    <h1 id="bienvenida">Bienvenido, {{ username }}</h1> <!-- Usar variable de Flask para nombre de usuario -->
+    <h2>Tarjetahabientes</h2>
     <table id="tarjetahabientesTable">
         <thead>
             <tr>               
@@ -46,8 +47,7 @@
             fetch('/tarjetahabientes')
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
-                
+                    console.log(data);                
                     const tableBody = document.querySelector('#tarjetahabientesTable tbody');
                     tableBody.innerHTML = '';
                     data.forEach(t => {
@@ -56,7 +56,7 @@
                             <td>${t.documento_identidad}</td>
                             <td>${t.nombre}</td>
                             <td>
-                                <button onclick="realizarAccion('Ver', ${t.documento_identidad})">Ver</button>
+                                <button onclick="realizarAccion('Ver', '${t.documento_identidad}')">Ver</button>
                             </td>
                         `;
                         tableBody.appendChild(row);
@@ -66,28 +66,15 @@
         });
 
         // Función para manejar la acción seleccionada
-        function realizarAccion(accion, id) {
-            fetch('/accion', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ accion, id })
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert(data.message);
-                if (accion === 'Eliminar') location.reload(); // Recargar la página si se elimina
-            })
-            .catch(error => console.error('Error al realizar la acción:', error));
+        function realizarAccion(accion, documento) {
+            if (accion === 'Ver') {
+                const username = document.getElementById('bienvenida').textContent.split(' ')[1];
+                window.location.href = `/cuentasTH?documento=${documento}&username=${username}`;
+            } else {
+                // Aquí podrías manejar otras acciones (Eliminar, etc.)
+                alert(`Acción "${accion}" seleccionada para el documento: ${documento}`);
+            }
         }
-
-        document.getElementById('movimientos').addEventListener('click', function() {
-            const seleccion = document.getElementById('seleccion');
-            const documento = seleccion.querySelector('td:nth-child(1)').textContent;
-            const username = document.getElementById('bienvenida').textContent.split(' ')[1];
-            window.location.href = `/movimientoemp?documento=${documento}&username=${username}`;
-        });
     </script>
 </body>
 </html>

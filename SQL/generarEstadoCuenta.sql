@@ -1,91 +1,105 @@
-CREATE PROCEDURE [dbo].[SP_GenerarEstadoCuenta]
-    @id_tcm INT,  -- ID de la cuenta maestra
-    @OutResulTCode INT OUTPUT
+ALTER PROCEDURE [dbo].[SP_GenerarEstadoCuentaDiario]
+    @id_tcm INT,           -- ID de la CuentaTarjetaMaestra
+    @fecha_corte DATE,     -- Fecha del estado de cuenta
+    @OutResultCode INT OUTPUT  -- Declaración correcta de la variable de salida
 AS
 BEGIN
     SET NOCOUNT ON;
-    DECLARE @saldo_actual DECIMAL(18,2);
-    DECLARE @intereses_corrientes DECIMAL(18,2) = 0;
-    DECLARE @intereses_moratorios DECIMAL(18,2) = 0;
-    DECLARE @pago_minimo DECIMAL(18,2);
-    DECLARE @pago_contado DECIMAL(18,2);
+
+    -- Verificar si ya hay una transacción activa antes de comenzar una nueva
+    IF XACT_STATE() = 0
+    BEGIN
+        BEGIN TRANSACTION;  -- Iniciar la transacción solo si no hay una activa
+    END
 
     BEGIN TRY
-        SET @OutResulTCode = 0;
+        -- Inicializar el código de salida
+        SET @OutResultCode = 0;
 
-        -- Obtener saldo actual de la cuenta
+        -- Variables para almacenar valores calculados
+        DECLARE @saldo_actual DECIMAL(18,2);
+        DECLARE @pago_minimo DECIMAL(18,2);
+        DECLARE @pago_contado DECIMAL(18,2);
+        DECLARE @intereses_corrientes DECIMAL(18,2) = 0;
+        DECLARE @intereses_moratorios DECIMAL(18,2) = 0;
+
+        -- Obtener saldo actual de la Cuenta Maestra hasta la fecha de corte
         SELECT @saldo_actual = saldo_actual
-        FROM dbo.CuentaTarjetaMaestra
+        FROM CuentaTarjetaMaestra
         WHERE id = @id_tcm;
 
-        -- Validación: Verificar si la cuenta existe
+        -- Verificar si no se encontró saldo para la cuenta
         IF @saldo_actual IS NULL
         BEGIN
-            SET @OutResulTCode = 50013;  -- Error: Cuenta maestra no encontrada
+            -- Insertar el error en la tabla DBErrors
+            INSERT INTO dbo.DBErrors
+            VALUES (
+                SYSTEM_USER,
+                50001,  -- Código de error personalizado
+                1,      -- Estado de error
+                16,     -- Severidad
+                ERROR_LINE(),
+                'SP_GenerarEstadoCuentaDiario', 
+                'Saldo no encontrado para la cuenta ' + CAST(@id_tcm AS VARCHAR(10)),
+                GETDATE()
+            );
+
+            -- Establecer código de error y terminar el procedimiento
+            SET @OutResultCode = 50001;  -- Código de error personalizado
+            ROLLBACK TRANSACTION;  -- Asegurarse de que la transacción se revierta en caso de error
             RETURN;
         END
 
-        -- Calcular intereses corrientes y moratorios acumulados (asume cálculos previos)
-        SELECT @intereses_corrientes = ISNULL(SUM(monto_interes), 0)
-        FROM dbo.InteresCorriente
-        WHERE id_tcm = @id_tcm;
+        -- Calcular pago mínimo como un porcentaje del saldo actual
+        SET @pago_minimo = @saldo_actual * 0.05;
 
-        SELECT @intereses_moratorios = ISNULL(SUM(monto_interes), 0)
-        FROM dbo.InteresMoratorio
-        WHERE id_tcm = @id_tcm;
+        -- El pago de contado es el saldo completo
+        SET @pago_contado = @saldo_actual;
 
-        -- Calcular pago mínimo (e.g., 5% del saldo actual + intereses acumulados)
-        SET @pago_minimo = @saldo_actual * 0.05 + @intereses_corrientes + @intereses_moratorios;
-        SET @pago_contado = @saldo_actual + @intereses_corrientes + @intereses_moratorios;
+        -- Asignar un valor de 0 si no hay intereses corrientes
+SELECT @intereses_corrientes = ISNULL(SUM(monto_interes), 0)
+FROM InteresCorriente
+WHERE id_tcm = @id_tcm AND fecha_operacion <= @fecha_corte;
 
-        -- Comienza la transacción
-        BEGIN TRANSACTION;
 
-        -- Insertar el estado de cuenta
-        INSERT INTO dbo.EstadoCuenta (
-            id_tcm,
-            fecha_corte,
-            saldo_actual,
-            pago_minimo,
-            pago_contado,
-            intereses_corrientes,
-            intereses_moratorios
-        ) VALUES (
-            @id_tcm,
-            GETDATE(),
-            @saldo_actual,
-            @pago_minimo,
-            @pago_contado,
-            @intereses_corrientes,
-            @intereses_moratorios
-        );
+-- Asignar un valor de 0 si no hay intereses moratorios
+SELECT @intereses_moratorios = ISNULL(SUM(monto_interes), 0)
+FROM InteresMoratorio
+WHERE id_tcm = @id_tcm AND fecha_operacion <= @fecha_corte;
 
-        -- Confirmar la transacción
+
+        -- Insertar el estado de cuenta en la tabla EstadoCuenta
+        INSERT INTO EstadoCuenta (id_tcm, fecha_corte, saldo_actual, pago_minimo, pago_contado, intereses_corrientes, intereses_moratorios)
+        VALUES (@id_tcm, @fecha_corte, @saldo_actual, @pago_minimo, @pago_contado, @intereses_corrientes, @intereses_moratorios);
+
+        -- Realizar el COMMIT solo si todo ha ido bien
         COMMIT TRANSACTION;
-
-        SET @OutResulTCode = 0;
 
     END TRY
     BEGIN CATCH
+        -- Si ocurre un error, hacer rollback de la transacción
         IF XACT_STATE() <> 0
-        BEGIN
             ROLLBACK TRANSACTION;
-        END
 
-        INSERT INTO dbo.DBErrors VALUES (
-            SUSER_SNAME(),
-            ERROR_NUMBER(),
-            ERROR_STATE(),
-            ERROR_SEVERITY(),
-            ERROR_LINE(),
-            ERROR_PROCEDURE(),
-            ERROR_MESSAGE(),
-            GETDATE()
-        );
+        -- Ajustar el tamaño del mensaje antes de insertarlo en DBErrors
+DECLARE @ErrorMessage NVARCHAR(4000) = LEFT(ERROR_MESSAGE(), 4000);
+INSERT INTO dbo.DBErrors
+VALUES (
+    SYSTEM_USER,
+    ERROR_NUMBER(),
+    ERROR_STATE(),
+    ERROR_SEVERITY(),
+    ERROR_LINE(),
+    ERROR_PROCEDURE(),
+    @ErrorMessage,
+    GETDATE()
+);
 
-        SET @OutResulTCode = 50008;
+
+        -- Código de error estándar
+        SET @OutResultCode = 50008;
     END CATCH;
 
+    -- Asegurarse de que siempre se desactive el conteo de filas
     SET NOCOUNT OFF;
 END;
-GO

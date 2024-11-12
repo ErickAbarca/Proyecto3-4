@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas del Tarjetahabiente</title>
+    <style>
+        /* Estilos básicos para la tabla */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tarjetas del Tarjetahabiente</h1>
+    <h2>Documento de Identidad: {{ documento }}</h2>
+    
+    <table id="tarjetasTable">
+        <thead>
+            <tr>
+                <th>Número de Tarjeta</th>
+                <th>Estado</th>
+                <th>Fecha de Vencimiento</th>
+                <th>Tipo de Cuenta</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        // Obtener documento de identidad del tarjetahabiente desde el URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const documento = urlParams.get('documento');
+
+        // Obtener tarjetas del tarjetahabiente y mostrarlas en la tabla
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch(`/tarjetas?documento=${documento}`)
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.querySelector('#tarjetasTable tbody');
+                    tableBody.innerHTML = '';
+                    data.forEach(t => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${t.numero_tarjeta}</td>
+                            <td>${t.estado}</td>
+                            <td>${t.fecha_vencimiento}</td>
+                            <td>${t.tipo_cuenta}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error al obtener tarjetas:', error));
+        });
+    </script>
+</body>
+</html>
