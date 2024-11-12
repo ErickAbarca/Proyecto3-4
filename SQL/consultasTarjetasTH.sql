@@ -1,10 +1,14 @@
-CREATE PROCEDURE [dbo].[SP_ConsultarTarjetasPorTarjetahabiente]
-    @id_th INT,
+ALTER PROCEDURE [dbo].[SP_ConsultarTarjetasPorTarjetahabiente]
+    @documentoIdentidad NVARCHAR(20),
     @OutResulTCode INT OUTPUT
 AS
 BEGIN
     SET NOCOUNT ON;
     BEGIN TRY
+        DECLARE @idTarjetahabiente INT;
+        SET @idTarjetahabiente = (SELECT id
+                              FROM Tarjetahabiente 
+                              WHERE documento_identidad = @documentoIdentidad);
         SET @OutResulTCode = 0;
 
         -- Consulta de tarjetas físicas asociadas al tarjetahabiente

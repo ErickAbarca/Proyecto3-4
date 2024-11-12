@@ -11,10 +11,11 @@ CORS(app)
 def get_db_connection():
     connection = pyodbc.connect(
         'DRIVER={ODBC Driver 17 for SQL Server};'
-        #'SERVER=ERICKPC;'
-        'SERVER=JESUSPC;'
+        'SERVER=ERICKPC;'
+        #'SERVER=JESUSPC;'
         'DATABASE=proyecto3;'
-        'UID=sa;' 
+        #'UID=sa;' 
+        'UID=hola;' 
         'PWD=12345678'
     )
     return connection
@@ -45,7 +46,6 @@ SELECT	@OutResultCode as N'@OutResultCode'
                 """, (username, password))
 
         out_result_code = cursor.fetchone()[0]
-        print('hola',out_result_code)
 
 
         conn.commit()
@@ -120,8 +120,16 @@ def get_tarjetas():
     cursor = conn.cursor()
     
     try:
-        cursor.execute("EXEC SP_ConsultarTarjetasPorTarjetahabiente ?", documento_identidad)
-        rows = cursor.fetchall()
+        cursor.execute("""
+            DECLARE	@OutResultCode int
+
+            EXEC	[dbo].[SP_ConsultarTarjetasPorTarjetahabiente]
+		    @id_th = ?,
+		    @OutResultCode = @OutResultCode OUTPUT
+
+            SELECT	@OutResultCode as N'@OutResultCode'
+        """ , (210))
+        rows = cursor.fetchall()    
         
         tarjetas = []
         for row in rows:
@@ -132,7 +140,29 @@ def get_tarjetas():
                 'tipo_cuenta': row[3]
             })
         
-        return jsonify(tarjetas)
+        cursor.execute("""
+        EXEC [dbo].[SP_ObtenerCuentasPorTarjetahabiente]
+		@idTarjetahabiente = ?
+        """, (210))
+
+        rows = cursor.fetchall()
+
+        cuentas = []
+        for row in rows:
+            cuentas.append({
+                'nombre': row[1],
+                'cuenta': row[3],
+                'limite': row[4],
+                'saldo': row[5],
+                'fecha_apertura': row[6],
+                'tipo_cuenta': row[7]
+            })
+
+        print(cuentas)
+
+        conn.commit()
+
+        return jsonify({'tarjetas': tarjetas, 'cuentas': cuentas})
     
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -140,6 +170,7 @@ def get_tarjetas():
     finally:
         cursor.close()
         conn.close()
+    
 
 
 
