@@ -160,17 +160,15 @@ def get_tarjetas():
         adicionales = []
         for row in rows:
             adicionales.append({
-                'nombre': row[1],
-                'cuenta': row[3],
-                'limite': row[4],
-                'saldo': row[5],
-                'fecha_apertura': row[6],
-                'tipo_cuenta': row[7]
+                'cuenta': row[0],
+                'maestra': row[1],
+                'documento': row[2],
+                'nombre': row[3]
             })
 
         conn.commit()
 
-        return jsonify({'tarjetas': tarjetas, 'cuenta': cuentas, 'cuenta_adicional': adicionales})
+        return jsonify({'tarjetas': tarjetas, 'cuenta': cuentas, 'adicionales': adicionales})
     
     except Exception as e:
         return jsonify({'error': str(e)}), 500

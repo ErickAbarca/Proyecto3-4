@@ -25,7 +25,6 @@
     <div>
     <h1>Datos del Tarjetahabiente</h1>
     <h2>Documento de Identidad: {{ documento }}</h2>
-    <button onclick="redireccionarEstados()">Volver</button>
     </div>
     <h2>Cuenta Maestra</h2>
     <table id="maestraTable">
@@ -58,12 +57,10 @@
     <table id="adicionalTable">
         <thead>
             <tr>
-                <th>Nombre</th>
                 <th>Numero de Cuenta</th>
-                <th>Limite</th>
-                <th>Saldo</th>
-                <th>Fecha de Apertura</th>
-                <th>Tipo de Cuenta</th>
+                <th>Numero de cuenta maestra</th>
+                <th>Documento de identidad</th>
+                <th>Nombre</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -89,8 +86,16 @@
             fetch(`/tarjetas?documento=${documento}`)
                 .then(response => response.json())
                 .then(data => {
-                    const tableBody = document.querySelector('#maestraTable tbody');
+                    console.log(data);
+                    let tableBody = document.querySelector('#maestraTable tbody');
                     tableBody.innerHTML = '';
+                    if (data.cuenta.length == 0){
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td colspan="7">No hay cuentas maestras asociadas</td>
+                        `;
+                        tableBody.appendChild(row);
+                    }else{
                     data.cuenta.forEach(cuenta => {
                         const row = document.createElement('tr');
                         row.innerHTML = `
@@ -103,32 +108,43 @@
                             <td><button onclick="redireccionarEstados(${cuenta.cuenta})">Ver Estado de Cuenta</button></td>
                         `;
                         tableBody.appendChild(row);
-                    });
+                    });}
+                    tableBody = document.querySelector('#tarjetasTable tbody');
+                    if (data.tarjetas.length == 0){
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td colspan="4">No hay tarjetas asociadas</td>
+                        `;
+                        tableBody.appendChild(row);
+                    }else{
                     data.tarjetas.forEach(tarjeta => {
-                        const tableBody = document.querySelector('#tarjetasTable tbody');
                         const row = document.createElement('tr');
                         row.innerHTML = `
                             <td>${tarjeta.numero_tarjeta}</td>
                             <td>${tarjeta.estado}</td>
                             <td>${tarjeta.fecha_vencimiento}</td>
-                            <td>${tarjeta.tipo_tarjeta}</td>
+                            <td>${tarjeta.tipo_cuenta}</td>
                         `;
                         tableBody.appendChild(row);
-                    });
-                    data.adicional.forEach(cuenta => {
-                        const tableBody = document.querySelector('#adicionalTable tbody');
+                    });}
+                    tableBody = document.querySelector('#adicionalTable tbody');
+                    if (data.adicionales.length == 0){
                         const row = document.createElement('tr');
                         row.innerHTML = `
-                            <td>${cuenta.nombre}</td>
-                            <td>${cuenta.cuenta}</td>
-                            <td>${cuenta.limite}</td>
-                            <td>${cuenta.saldo}</td>
-                            <td>${cuenta.fecha_apertura}</td>
-                            <td>${cuenta.tipo_cuenta}</td>
+                            <td colspan="4">No hay cuentas adicionales asociadas</td>
                         `;
                         tableBody.appendChild(row);
-                    });
-                    
+                    }else{
+                    data.adicionales.forEach(cuenta => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${cuenta.cuenta}</td>
+                            <td>${cuenta.maestra}</td>
+                            <td>${cuenta.documento}</td>
+                            <td>${cuenta.nombre}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });}
                 })
                 .catch(error => console.error('Error al obtener tarjetas:', error));
         });
