@@ -1,10 +1,16 @@
-CREATE PROCEDURE SP_ObtenerEstadoCuenta
+ALTER PROCEDURE SP_ObtenerEstadoCuenta
     @id_cuenta INT
 AS
 BEGIN
     SET NOCOUNT ON;
 
     BEGIN TRY
+
+        DECLARE @idCuenta INT;
+        SET @idCuenta = (SELECT id 
+                              FROM CuentaTarjetaMaestra
+                              WHERE codigo_tcm = @id_cuenta);
+
         SELECT 
             id_tcm,
             fecha_corte,
@@ -14,7 +20,7 @@ BEGIN
             intereses_corrientes,
             intereses_moratorios
         FROM dbo.EstadoCuenta
-        WHERE id_tcm = @id_cuenta;
+        WHERE id_tcm = @idCuenta;
     END TRY
     BEGIN CATCH
         DECLARE @ErrorMessage NVARCHAR(128) = LEFT(ERROR_MESSAGE(), 128);
