@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos del Tarjetahabiente</title>
+    <title>Estados de cuenta</title>
     <style>
         /* Estilos básicos para la tabla */
         table {
@@ -28,47 +28,22 @@
     <table id="maestraTable">
         <thead>
             <tr>
-                <th>Nombre</th>
-                <th>Numero de Cuenta</th>
-                <th>Limite</th>
+                <th>ID Cuenta</th>
+                <th>Fecha de Corte</th>
                 <th>Saldo</th>
-                <th>Fecha de Apertura</th>
-                <th>Tipo de Cuenta</th>
+                <th>Pago Minimo</th>
+                <th>Pago Contado</th>
+                <th>Intereses Corrientes</th>
+                <th>Intereses Moratorios</th>
             </tr>
         </thead>
         <tbody></tbody>
     </table>
-    <h2>Tarjetas asociadas</h2>
-    <table id="tarjetasTable">
-        <thead>
-            <tr>
-                <th>Numero de Tarjeta</th>
-                <th>Estado</th>
-                <th>Fecha de Vencimiento</th>
-                <th>Tipo de Tarjeta</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-    <h2>Cuentas adicionales</h2>
-    <table id="adicionalTable">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Numero de Cuenta</th>
-                <th>Limite</th>
-                <th>Saldo</th>
-                <th>Fecha de Apertura</th>
-                <th>Tipo de Cuenta</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    
 
     <button onclick="redireccionar()">Volver</button>
 
     <script>
-        // Obtener documento de identidad del tarjetahabiente desde el URL
         const urlParams = new URLSearchParams(window.location.search);
         const documento = urlParams.get('documento');
         const username = urlParams.get('username');
@@ -79,44 +54,21 @@
 
         // Obtener tarjetas del tarjetahabiente y mostrarlas en la tabla
         document.addEventListener('DOMContentLoaded', () => {
-            fetch(`/tarjetas?documento=${documento}`)
+            fetch(`/estados?documento=${documento}`)
                 .then(response => response.json())
                 .then(data => {
                     const tableBody = document.querySelector('#maestraTable tbody');
                     tableBody.innerHTML = '';
-                    data.cuenta.forEach(cuenta => {
+                    data.estados.forEach(estado => {
                         const row = document.createElement('tr');
                         row.innerHTML = `
-                            <td>${cuenta.nombre}</td>
-                            <td>${cuenta.cuenta}</td>
-                            <td>${cuenta.limite}</td>
-                            <td>${cuenta.saldo}</td>
-                            <td>${cuenta.fecha_apertura}</td>
-                            <td>${cuenta.tipo_cuenta}</td>
-                        `;
-                        tableBody.appendChild(row);
-                    });
-                    data.tarjetas.forEach(tarjeta => {
-                        const tableBody = document.querySelector('#tarjetasTable tbody');
-                        const row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td>${tarjeta.numero_tarjeta}</td>
-                            <td>${tarjeta.estado}</td>
-                            <td>${tarjeta.fecha_vencimiento}</td>
-                            <td>${tarjeta.tipo_tarjeta}</td>
-                        `;
-                        tableBody.appendChild(row);
-                    });
-                    data.adicional.forEach(cuenta => {
-                        const tableBody = document.querySelector('#adicionalTable tbody');
-                        const row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td>${cuenta.nombre}</td>
-                            <td>${cuenta.cuenta}</td>
-                            <td>${cuenta.limite}</td>
-                            <td>${cuenta.saldo}</td>
-                            <td>${cuenta.fecha_apertura}</td>
-                            <td>${cuenta.tipo_cuenta}</td>
+                            <td>${estado.id_cuenta}</td>
+                            <td>${estado.fecha}</td>
+                            <td>${estado.saldo}</td>
+                            <td>${estado.pago_minimo}</td>
+                            <td>${estado.pago_contado}</td>
+                            <td>${estado.intereses_corrientes}</td>
+                            <td>${estado.intereses_moratorios}</td>
                         `;
                         tableBody.appendChild(row);
                     });

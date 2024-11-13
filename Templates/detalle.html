@@ -22,8 +22,11 @@
     </style>
 </head>
 <body>
+    <div>
     <h1>Datos del Tarjetahabiente</h1>
     <h2>Documento de Identidad: {{ documento }}</h2>
+    <button onclick="redireccionarEstados()">Volver</button>
+    </div>
     <h2>Cuenta Maestra</h2>
     <table id="maestraTable">
         <thead>
@@ -34,6 +37,7 @@
                 <th>Saldo</th>
                 <th>Fecha de Apertura</th>
                 <th>Tipo de Cuenta</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -76,6 +80,9 @@
         function redireccionar(){
             window.location.href = `pagina_principal/${username}`;
         }
+        function redireccionarEstados(num_cuenta){
+            window.location.href = `/estadosTH?documento=${num_cuenta}&username=${username}`;
+        }
 
         // Obtener tarjetas del tarjetahabiente y mostrarlas en la tabla
         document.addEventListener('DOMContentLoaded', () => {
@@ -93,6 +100,7 @@
                             <td>${cuenta.saldo}</td>
                             <td>${cuenta.fecha_apertura}</td>
                             <td>${cuenta.tipo_cuenta}</td>
+                            <td><button onclick="redireccionarEstados(${cuenta.cuenta})">Ver Estado de Cuenta</button></td>
                         `;
                         tableBody.appendChild(row);
                     });
