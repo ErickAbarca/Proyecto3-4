@@ -97,20 +97,11 @@ def get_tarjetahabientes():
         conn.close()
 
 
-
-@app.route('/accion', methods=['POST'])
-def accion():
-    accion = request.json.get('accion')
-    id_tarjetahabiente = request.json.get('id')
-    
-    return jsonify({'message': f'Acción {accion} realizada en tarjetahabiente {id_tarjetahabiente}'})
-
-
 @app.route('/cuentasTH', methods=['GET'])
 def abrir_movimiento_empleado():
     username = request.args.get('username')
     documento = request.args.get('documento')
-    return render_template('movimientos.html', username=username, documento=documento)
+    return render_template('detalle.html', username=username, documento=documento)
 
 @app.route('/tarjetas', methods=['GET'])
 def get_tarjetas():
@@ -187,9 +178,6 @@ def get_tarjetas():
     finally:
         cursor.close()
         conn.close()
-    
-
-
 
 
 if __name__ == '__main__':
