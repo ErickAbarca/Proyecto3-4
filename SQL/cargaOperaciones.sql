@@ -82,16 +82,28 @@ WHERE NTCM.value('@Codigo', 'VARCHAR(32)') IS NOT NULL
         FROM @xmlData.nodes('/root/fechaOperacion/NTCA/NTCA') AS T(NTCA)
         WHERE NTCA.value('@CodigoTCA', 'VARCHAR(32)') IS NOT NULL;
 
-        INSERT INTO #TempTarjetaFisica (numero_tarjeta, cvv, fecha_vencimiento, id_tcm, id_tca, estado)
+INSERT INTO #TempTarjetaFisica (numero_tarjeta, cvv, fecha_vencimiento, id_tcm, id_tca, estado)
 SELECT DISTINCT
     NTF.value('@Codigo', 'VARCHAR(16)'),
     NTF.value('@CCV', 'VARCHAR(4)'),
-    ISNULL(TRY_CONVERT(DATE, NTF.value('@FechaVencimiento', 'VARCHAR(10)'), 103), '9999-12-31'),  -- Usar fecha por defecto si es NULL
+    
+    -- Detectar el formato y convertir a una fecha válida, o asignar la fecha predeterminada '9999-12-31' si no se puede convertir
+    ISNULL(
+        CASE 
+            WHEN LEN(NTF.value('@FechaVencimiento', 'VARCHAR(10)')) = 7  -- Formato MM/yyyy
+                THEN TRY_CONVERT(DATE, CONCAT('01/', NTF.value('@FechaVencimiento', 'VARCHAR(10)')), 103)
+            ELSE TRY_CONVERT(DATE, NTF.value('@FechaVencimiento', 'VARCHAR(10)'), 103)
+        END, 
+        '9999-12-31'  -- Fecha predeterminada si la conversión falla
+    ),
+    
     (SELECT TOP 1 id FROM CuentaTarjetaMaestra WHERE codigo_tcm = NTF.value('@TCAsociada', 'VARCHAR(32)')),
     (SELECT TOP 1 id FROM CuentaTarjetaAdicional WHERE codigo_tca = NTF.value('@TCAsociada', 'VARCHAR(32)')),
     'Activa'
 FROM @xmlData.nodes('/root/fechaOperacion/NTF/NTF') AS T(NTF)
 WHERE NTF.value('@Codigo', 'VARCHAR(16)') IS NOT NULL;
+
+
 
 
         INSERT INTO #TempMovimiento (id_tf, fecha_movimiento, tipo_movimiento, monto, descripcion, referencia)
