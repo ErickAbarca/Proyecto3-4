@@ -115,6 +115,7 @@ def abrir_movimiento_empleado():
 @app.route('/tarjetas', methods=['GET'])
 def get_tarjetas():
     documento_identidad = request.args.get('documento')
+    print(documento_identidad)
 
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -124,11 +125,11 @@ def get_tarjetas():
             DECLARE	@OutResultCode int
 
             EXEC	[dbo].[SP_ConsultarTarjetasPorTarjetahabiente]
-		    @id_th = ?,
+		    @documentoIdentidad = ?,
 		    @OutResultCode = @OutResultCode OUTPUT
 
             SELECT	@OutResultCode as N'@OutResultCode'
-        """ , (210))
+        """ , documento_identidad)
         rows = cursor.fetchall()    
         
         tarjetas = []
@@ -142,8 +143,8 @@ def get_tarjetas():
         
         cursor.execute("""
         EXEC [dbo].[SP_ObtenerCuentasPorTarjetahabiente]
-		@idTarjetahabiente = ?
-        """, (210))
+		@documento_identidad = ?
+        """, documento_identidad)
 
         rows = cursor.fetchall()
 
@@ -158,11 +159,27 @@ def get_tarjetas():
                 'tipo_cuenta': row[7]
             })
 
-        print(cuentas)
+        cursor.execute("""
+        EXEC [dbo].[SP_ConsultarCuentaAdicional]
+		@documento_identidad = ?
+        """, documento_identidad)
+
+        rows = cursor.fetchall()
+
+        adicionales = []
+        for row in rows:
+            adicionales.append({
+                'nombre': row[1],
+                'cuenta': row[3],
+                'limite': row[4],
+                'saldo': row[5],
+                'fecha_apertura': row[6],
+                'tipo_cuenta': row[7]
+            })
 
         conn.commit()
 
-        return jsonify({'tarjetas': tarjetas, 'cuentas': cuentas})
+        return jsonify({'tarjetas': tarjetas, 'cuenta': cuentas, 'cuenta_adicional': adicionales})
     
     except Exception as e:
         return jsonify({'error': str(e)}), 500

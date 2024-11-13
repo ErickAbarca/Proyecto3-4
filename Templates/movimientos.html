@@ -22,43 +22,105 @@
     </style>
 </head>
 <body>
-    <h1>Tarjetas del Tarjetahabiente</h1>
+    <h1>Datos del Tarjetahabiente</h1>
     <h2>Documento de Identidad: {{ documento }}</h2>
-    
+    <h2>Cuenta Maestra</h2>
+    <table id="maestraTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Numero de Cuenta</th>
+                <th>Limite</th>
+                <th>Saldo</th>
+                <th>Fecha de Apertura</th>
+                <th>Tipo de Cuenta</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2>Tarjetas asociadas</h2>
     <table id="tarjetasTable">
         <thead>
             <tr>
-                <th>Número de Tarjeta</th>
+                <th>Numero de Tarjeta</th>
                 <th>Estado</th>
                 <th>Fecha de Vencimiento</th>
+                <th>Tipo de Tarjeta</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2>Cuentas adicionales</h2>
+    <table id="adicionalTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Numero de Cuenta</th>
+                <th>Limite</th>
+                <th>Saldo</th>
+                <th>Fecha de Apertura</th>
                 <th>Tipo de Cuenta</th>
             </tr>
         </thead>
         <tbody></tbody>
     </table>
 
+    <button onclick="redireccionar()">Volver</button>
+
     <script>
         // Obtener documento de identidad del tarjetahabiente desde el URL
         const urlParams = new URLSearchParams(window.location.search);
         const documento = urlParams.get('documento');
+        const username = urlParams.get('username');
+
+        function redireccionar(){
+            window.location.href = `pagina_principal/${username}`;
+        }
 
         // Obtener tarjetas del tarjetahabiente y mostrarlas en la tabla
         document.addEventListener('DOMContentLoaded', () => {
             fetch(`/tarjetas?documento=${documento}`)
                 .then(response => response.json())
                 .then(data => {
-                    const tableBody = document.querySelector('#tarjetasTable tbody');
+                    const tableBody = document.querySelector('#maestraTable tbody');
                     tableBody.innerHTML = '';
-                    data.forEach(t => {
+                    data.cuenta.forEach(cuenta => {
                         const row = document.createElement('tr');
                         row.innerHTML = `
-                            <td>${t.numero_tarjeta}</td>
-                            <td>${t.estado}</td>
-                            <td>${t.fecha_vencimiento}</td>
-                            <td>${t.tipo_cuenta}</td>
+                            <td>${cuenta.nombre}</td>
+                            <td>${cuenta.cuenta}</td>
+                            <td>${cuenta.limite}</td>
+                            <td>${cuenta.saldo}</td>
+                            <td>${cuenta.fecha_apertura}</td>
+                            <td>${cuenta.tipo_cuenta}</td>
                         `;
                         tableBody.appendChild(row);
                     });
+                    data.tarjetas.forEach(tarjeta => {
+                        const tableBody = document.querySelector('#tarjetasTable tbody');
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${tarjeta.numero_tarjeta}</td>
+                            <td>${tarjeta.estado}</td>
+                            <td>${tarjeta.fecha_vencimiento}</td>
+                            <td>${tarjeta.tipo_tarjeta}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                    data.adicional.forEach(cuenta => {
+                        const tableBody = document.querySelector('#adicionalTable tbody');
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${cuenta.nombre}</td>
+                            <td>${cuenta.cuenta}</td>
+                            <td>${cuenta.limite}</td>
+                            <td>${cuenta.saldo}</td>
+                            <td>${cuenta.fecha_apertura}</td>
+                            <td>${cuenta.tipo_cuenta}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                    
                 })
                 .catch(error => console.error('Error al obtener tarjetas:', error));
         });
