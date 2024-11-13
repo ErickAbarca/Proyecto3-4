@@ -61,6 +61,7 @@
                 <th>Numero de cuenta maestra</th>
                 <th>Documento de identidad</th>
                 <th>Nombre</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -79,6 +80,9 @@
         }
         function redireccionarEstados(num_cuenta){
             window.location.href = `/estadosTH?documento=${num_cuenta}&username=${username}`;
+        }
+        function redireccionarSubEstados(num_cuenta){
+            window.location.href = `/subEstadosTH?documento=${num_cuenta}&username=${username}`;
         }
 
         // Obtener tarjetas del tarjetahabiente y mostrarlas en la tabla
@@ -142,6 +146,7 @@
                             <td>${cuenta.maestra}</td>
                             <td>${cuenta.documento}</td>
                             <td>${cuenta.nombre}</td>
+                            <td><button onclick="redireccionarSubEstados(${cuenta.cuenta})">Ver Estado de Cuenta</button></td>
                         `;
                         tableBody.appendChild(row);
                     });}

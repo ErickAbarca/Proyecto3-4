@@ -11,11 +11,11 @@ CORS(app)
 def get_db_connection():
     connection = pyodbc.connect(
         'DRIVER={ODBC Driver 17 for SQL Server};'
-        #'SERVER=ERICKPC;'
-        'SERVER=JESUSPC;'
+        'SERVER=ERICKPC;'
+        #'SERVER=JESUSPC;'
         'DATABASE=proyecto3;'
-        'UID=sa;' 
-        #'UID=hola;' 
+        #'UID=sa;' 
+        'UID=hola;' 
         'PWD=12345678'
     )
     return connection
@@ -194,6 +194,49 @@ def get_estados():
         cursor.execute("""
             EXEC	[dbo].[SP_ObtenerEstadoCuenta]
             @id_cuenta = ?
+        """ , cuentaId)
+        rows = cursor.fetchall()    
+        
+        estados = []
+        for row in rows:
+            estados.append({
+                'id_cuenta': row[0],
+                'fecha': row[1],
+                'saldo': row[2],
+                'pago_minimo': row[3],
+                'pago_contado': row[4],
+                'intereses_corrientes': row[5],
+                'intereses_moratorios': row[6]
+            })
+        
+        conn.commit()
+
+        return jsonify({'estados': estados})
+    
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+    
+    finally:
+        cursor.close()
+        conn.close()
+
+@app.route('/subEstadosTH', methods=['GET'])
+def abrirSubEstados():
+    username = request.args.get('username')
+    documento = request.args.get('documento')
+    return render_template('subEstados.html', username=username, documento=documento)
+
+@app.route('/subEstados', methods=['GET'])
+def get_Subestados():
+    cuentaId = request.args.get('documento')
+
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    
+    try:
+        cursor.execute("""
+            EXEC	[dbo].[SP_ConsultarSubEstadoCuenta]
+            @num_cuenta = ?
         """ , cuentaId)
         rows = cursor.fetchall()    
         

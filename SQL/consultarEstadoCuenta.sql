@@ -8,7 +8,7 @@ BEGIN
         SET @OutResulTCode = 0;
 
         -- Consultar el estado de cuenta más reciente
-        SELECT TOP 1 
+        SELECT  
             fecha_corte,
             saldo_actual,
             pago_minimo,

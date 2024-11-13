@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Estados de cuenta</title>
+    <style>
+        /* Estilos básicos para la tabla */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estados de Cuenta</h1>
+    <h2>Número de cuenta: {{ documento }}</h2>
+    <table id="maestraTable">
+        <thead>
+            <tr>
+                <th>ID Cuenta</th>
+                <th>Fecha de Corte</th>
+                <th>Saldo</th>
+                <th>Pago Minimo</th>
+                <th>Pago Contado</th>
+                <th>Intereses Corrientes</th>
+                <th>Intereses Moratorios</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+
+    <button onclick="redireccionar()">Volver</button>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const documento = urlParams.get('documento');
+        const username = urlParams.get('username');
+
+        function redireccionar(){
+            window.location.href = `pagina_principal/${username}`;
+        }
+
+        // Obtener tarjetas del tarjetahabiente y mostrarlas en la tabla
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch(`/subEstados?documento=${documento}`)
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.querySelector('#maestraTable tbody');
+                    tableBody.innerHTML = '';
+                    data.estados.forEach(estado => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${estado.id_cuenta}</td>
+                            <td>${estado.fecha}</td>
+                            <td>${estado.saldo}</td>
+                            <td>${estado.pago_minimo}</td>
+                            <td>${estado.pago_contado}</td>
+                            <td>${estado.intereses_corrientes}</td>
+                            <td>${estado.intereses_moratorios}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                    
+                })
+                .catch(error => console.error('Error al obtener tarjetas:', error));
+        });
+    </script>
+</body>
+</html>

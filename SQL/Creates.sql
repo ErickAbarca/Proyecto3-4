@@ -132,16 +132,16 @@ CREATE TABLE EstadoCuenta (
 
 CREATE TABLE SubEstadoCuenta (
     id INT PRIMARY KEY IDENTITY(1,1),
-    id_tcm INT NOT NULL,                 -- ID de la Cuenta Maestra
-    id_tca INT NOT NULL,                 -- ID de la Cuenta Adicional
-    fecha_corte DATE NOT NULL,           -- Fecha de corte del sub-estado de cuenta
-    saldo_actual DECIMAL(18,2) NOT NULL, -- Saldo actual reflejado en la cuenta maestra
-    pago_minimo DECIMAL(18,2) NOT NULL,  -- Monto de pago mínimo requerido
-    pago_contado DECIMAL(18,2) NOT NULL, -- Monto total a pagar para saldar la cuenta
-    intereses_corrientes DECIMAL(18,2),  -- Intereses corrientes aplicados
-    intereses_moratorios DECIMAL(18,2),  -- Intereses por mora aplicados
-    FOREIGN KEY (id_tcm) REFERENCES CuentaTarjetaMaestra(id), -- Relación con la cuenta maestra
-    FOREIGN KEY (id_tca) REFERENCES CuentaTarjetaAdicional(id) -- Relación con la cuenta adicional
+    id_tcm INT NOT NULL,                 
+    id_tca INT NOT NULL,                
+    fecha_corte DATE NOT NULL,          
+    saldo_actual DECIMAL(18,2) NOT NULL, 
+    pago_minimo DECIMAL(18,2) NOT NULL,  
+    pago_contado DECIMAL(18,2) NOT NULL, 
+    intereses_corrientes DECIMAL(18,2),
+    intereses_moratorios DECIMAL(18,2),
+    FOREIGN KEY (id_tcm) REFERENCES CuentaTarjetaMaestra(id),
+    FOREIGN KEY (id_tca) REFERENCES CuentaTarjetaAdicional(id) 
 );
 
 CREATE TABLE [dbo].[DBErrors](
