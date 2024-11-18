@@ -144,6 +144,15 @@ CREATE TABLE SubEstadoCuenta (
     FOREIGN KEY (id_tca) REFERENCES CuentaTarjetaAdicional(id) 
 );
 
+CREATE TABLE HistorialEstadoTarjeta (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    id_tarjeta INT NOT NULL,
+    estado_anterior VARCHAR(16),
+    nuevo_estado VARCHAR(16),
+    fecha_cambio DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (id_tarjeta) REFERENCES TarjetaFisica(id)
+);
+
 CREATE TABLE [dbo].[DBErrors](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[UserName] [varchar](128) NULL,
